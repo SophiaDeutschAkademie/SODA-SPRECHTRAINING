@@ -63,7 +63,7 @@ window.DIALOG_DATA.MZ = [
   },
   {
     no: 2, lv: "MZ",
-    title: "Du hast nicht mal angerufen", titleKo: "전화도 안 했잖아요", type: "Streit", typeKo: "다툼",
+    title: "Du hast nicht mal angerufen", titleKo: "전화도 안 했잖아", type: "Streit", typeKo: "다툼",
     intro: "약속을 어긴 친구에게 서운함을 말하고, 사과하고 화해하는 대화예요.",
     focus: ["weil + Hauptsatz", "Vorwurf und Entschuldigung", "eben · halt · nämlich"],
     roles: { A: "Nele", B: "Ben" },
@@ -121,7 +121,7 @@ window.DIALOG_DATA.MZ = [
   },
   {
     no: 3, lv: "MZ",
-    title: "Immer nur am Handy", titleKo: "맨날 휴대폰만 봐요", type: "Geschwister", typeKo: "남매",
+    title: "Immer nur am Handy", titleKo: "맨날 휴대폰만 봐", type: "Geschwister", typeKo: "남매",
     intro: "휴대폰만 보는 동생에게 설거지와 저녁 준비를 말하는 집 안 대화예요.",
     focus: ["nix · gibt's · leg's", "Aufforderung im Alltag", "Keine Ahnung · Na also"],
     roles: { A: "Luca", B: "Sophie" },

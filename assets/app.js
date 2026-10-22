@@ -12,7 +12,9 @@
     { code: 'B2', de: 'Selbständige Sprachverwendung', ko: '경험을 설명하기', step: 4,
       desc: '면접, 협상, 갈등 중재, 상담, 항의, 토론처럼 논리적으로 설명하는 대화예요.' },
     { code: 'C1', de: 'Fachkundige Sprachkenntnisse', ko: '논쟁하고 타협하기', step: 5,
-      desc: '반론하고 조건을 달며 합의안을 만드는 토론, 인터뷰, 협상, 문학 대화예요.' }
+      desc: '반론하고 조건을 달며 합의안을 만드는 토론, 인터뷰, 협상, 문학 대화예요.' },
+    { code: 'MZ', de: 'Jugendsprache', ko: 'MZ 구어체', step: 0, special: true,
+      desc: '독일 젊은 층이 친구끼리 쓰는 은어와 구어체를 대화로 익혀요. 2026년 10월 기준 표현이에요.' }
   ];
   var LEVEL_BY = {};
   LEVELS.forEach(function (l) { LEVEL_BY[l.code] = l; });
@@ -25,6 +27,7 @@
     hide: 'none',     // none | A | B | all
     mine: 'none',     // none | A | B  (내가 맡는 역할)
     ko: true,         // 해석 보기
+    sl: true,         // 은어 표시
     peek: {},         // 가려진 줄 중 눌러서 연 것
     practice: -1,     // 단계별 연습 중 현재 줄 번호 (-1: 꺼짐)
     recs: {},         // 녹음 결과 (메모리에만 보관)
@@ -48,6 +51,29 @@
   }
   function pad(n) { return (n < 10 ? '0' : '') + n; }
   function keyOf(i) { return current.lv + '-' + pad(current.no) + '-' + i; }
+  function inTurn(it, i) {
+    var t = it.t;
+    return Array.isArray(t) ? t.indexOf(i + 1) >= 0 : t === i + 1;
+  }
+  function hlSlang(text, items, i) {
+    if (!state.sl || !items || !items.length) return esc(text);
+    var low = text.toLowerCase(), ranges = [];
+    items.forEach(function (it) {
+      if (!inTurn(it, i)) return;
+      var idx = low.indexOf(it.de.toLowerCase());
+      if (idx < 0) return;
+      var end = idx + it.de.length;
+      if (ranges.some(function (r) { return idx < r[1] && end > r[0]; })) return;
+      ranges.push([idx, end]);
+    });
+    ranges.sort(function (a, b) { return a[0] - b[0]; });
+    var out = '', pos = 0;
+    ranges.forEach(function (r) {
+      out += esc(text.slice(pos, r[0])) + '<mark class="sl">' + esc(text.slice(r[0], r[1])) + '</mark>';
+      pos = r[1];
+    });
+    return out + esc(text.slice(pos));
+  }
   function isMineRole(r) { return state.mine !== 'none' && state.mine === r; }
   function phraseCount(t) {
     var n = 0;
@@ -200,7 +226,7 @@
       '<div class="hero"><h1 class="title" id="cover-title"><span class="t1">SODA</span><span class="t2">SPRECHTRAINING</span></h1>' +
       '<a class="cta" href="#/levels">레벨 선택하기' + ICON.right + '</a></div>' +
       '<footer class="cover-foot"><span>Innovative Learning Beyond the Traditional</span>' +
-      '<span>A1 – C1' + (total ? ' · ' + total + ' Dialoge' : '') + '</span></footer></main>';
+      '<span>A1 – C1 · MZ' + (total ? ' · ' + total + ' Dialoge' : '') + '</span></footer></main>';
   }
 
   /* ───────── 레벨 선택 ───────── */
@@ -212,6 +238,7 @@
       list.forEach(function (d) { turns += d.turns.length; });
       var steps = '';
       for (var k = 1; k <= 5; k++) steps += '<i class="' + (k <= l.step ? 'on' : '') + '"></i>';
+      if (l.special) steps = '<b class="sp-lab">SPECIAL</b>';
       return '<li><a class="lv" href="#/' + l.code.toLowerCase() + '" style="--i:' + i + '">' +
         '<span class="lv-code">' + l.code + '</span>' +
         '<div><div class="lv-de" lang="de">' + esc(l.de) + '</div><div class="lv-ko">' + esc(l.ko) + '</div>' +
@@ -222,7 +249,7 @@
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/', '표지') +
       '<div class="sec-h"><span class="kicker">STUFE</span><h1>레벨 선택</h1>' +
-      '<p>레벨마다 대화가 6개 있어요. 역할을 나눠 따라 말하고, 문장을 가린 뒤 말해 보고, 녹음해서 원문과 비교해요.</p></div>' +
+      '<p>A1–C1은 레벨마다 대화가 6개 있어요. 마지막 MZ 챕터에는 독일 젊은 층의 구어체 대화 6개가 있어요. 역할을 나눠 따라 말하고, 문장을 가린 뒤 말해 보고, 녹음해서 원문과 비교해요.</p></div>' +
       '<ul class="levels">' + cards + '</ul></main>';
   }
 
@@ -244,6 +271,7 @@
       '<div class="sec-h"><div class="lvhead"><span class="lv-code">' + lv + '</span>' +
       '<div><span class="kicker" lang="de">' + esc(L.de.toUpperCase()) + '</span><h1>' + esc(L.ko) + '</h1></div></div>' +
       '<p>' + esc(L.desc) + '</p></div>' +
+      (L.special ? '<aside class="mznote"><b>사용하기 전에</b><p>이 챕터의 표현은 친구 사이에서만 쓰는 구어체와 은어예요. 시험, 직장, 공식 자리에서는 쓰지 않아요. 유행어는 금방 바뀌니 대화마다 있는 ‘표준 독일어’ 풀이로 바꿔 쓰는 연습도 함께 해요.</p></aside>' : '') +
       (items.length ? '<ul class="grid">' + cards + '</ul>' : '<p class="empty">아직 대화가 없어요.</p>') + '</main>';
   }
 
@@ -263,7 +291,9 @@
       '<div class="dctl-row"><span class="dctl-lab">보기</span>' +
       '<button type="button" class="dctl-btn" data-act="ko" aria-pressed="' + (state.ko ? 'true' : 'false') + '">해석 ' + (state.ko ? '가리기' : '보기') + '</button>' +
       '<button type="button" class="dctl-btn" data-act="practice" aria-pressed="' + (pr >= 0 ? 'true' : 'false') + '">' +
-      (pr >= 0 ? '연습 끝내기' : '단계별 연습') + '</button></div>' +
+      (pr >= 0 ? '연습 끝내기' : '단계별 연습') + '</button>' +
+      (t.slang && t.slang.length ? '<button type="button" class="dctl-btn" data-act="sl" aria-pressed="' + (state.sl ? 'true' : 'false') + '">은어 표시 ' + (state.sl ? '끄기' : '켜기') + '</button>' : '') +
+      '</div>' +
       '<p class="dctl-note">가려진 문장은 눌러서 볼 수 있어요. 녹음은 이 화면을 떠나면 사라져요.</p>' +
       '</div>';
 
@@ -292,10 +322,24 @@
       }
       turns += '<li class="' + cls + '"' + (hidden ? ' data-act="peek" data-i="' + i + '"' : '') + '>' +
         '<div class="who"><b>' + esc(turn.r) + '</b><span>' + esc(t.roles[turn.r]) + '</span></div>' +
-        '<p class="de-line" lang="de">' + esc(turn.de) + '</p>' +
+        '<p class="de-line" lang="de">' + hlSlang(turn.de, t.slang, i) + '</p>' +
         (state.ko ? '<p class="ko-line">' + esc(turn.ko) + '</p>' : '') +
         '<div class="tools"><button type="button" class="tool" data-act="speak" data-i="' + i + '">🔊 원문 듣기</button>' + rec + '</div>' +
         '</li>';
+    }
+
+    var gloss = '';
+    if (t.slang && t.slang.length) {
+      gloss = '<section class="gloss"><h2>Slang · 은어와 구어 표현</h2>' +
+        '<p>표현을 누르면 독일어로 들을 수 있어요. 구어와 은어는 친구 사이에서만 쓰고, 시험·직장·공식 자리에서는 ‘표준 독일어’로 바꿔 써요.</p>' +
+        '<ul class="glist">' + t.slang.map(function (it) {
+          return '<li><button type="button" data-act="say" data-text="' + esc(it.de) + '">' +
+            '<span class="g-top"><span class="rde" lang="de">' + esc(it.de) + '</span>' +
+            (it.reg ? '<span class="g-chip">' + esc(it.reg) + '</span>' : '') +
+            (it.badge ? '<span class="g-chip hot">' + esc(it.badge) + '</span>' : '') + '</span>' +
+            '<span class="rko">' + esc(it.ko) + '</span>' +
+            '<span class="g-std"><small>표준 독일어</small><span lang="de">' + esc(it.std) + '</span></span></button></li>';
+        }).join('') + '</ul></section>';
     }
 
     var redem = '<section class="redem"><h2>Redemittel</h2>' +
@@ -323,9 +367,10 @@
       '<div class="sec-h"><span class="kicker" lang="de">' + esc(t.type) + ' · ' + esc(t.typeKo) + '</span>' +
       '<h1 class="de" lang="de">' + esc(t.title) + '</h1>' +
       '<p>' + esc(t.titleKo) + ' · ' + esc(t.intro) + '</p></div>' +
+      (t.lv === 'MZ' ? '<p class="mzline">친구 사이 구어체예요. 시험·직장·공식 자리에서는 쓰지 않아요.</p>' : '') +
       controls + bar +
       '<ol class="dlg">' + turns + '</ol>' +
-      redem + nav + '</main>';
+      gloss + redem + nav + '</main>';
   }
 
   /* ───────── 이벤트 ───────── */
@@ -337,6 +382,7 @@
     if (act === 'mine') { state.mine = el.getAttribute('data-v'); if (state.practice >= 0) state.practice = -1; render(); }
     else if (act === 'hide') { state.hide = el.getAttribute('data-v'); state.peek = {}; render(); }
     else if (act === 'ko') { state.ko = !state.ko; render(); }
+    else if (act === 'sl') { state.sl = !state.sl; render(); }
     else if (act === 'practice') { if (state.practice >= 0) stopPractice(); else startPractice(); }
     else if (act === 'next') { if (state.practice + 1 < current.turns.length) enterStep(state.practice + 1); else stopPractice(); }
     else if (act === 'peek') { state.peek[keyOf(i)] = true; render(); }

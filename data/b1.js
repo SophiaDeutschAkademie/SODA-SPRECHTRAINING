@@ -97,40 +97,40 @@ window.DIALOG_DATA.B1 = [
     focus: ["의견 말하기", "찬반 논의", "Konjunktiv II"],
     roles: { A: "Hannah", B: "Lukas" },
     turns: [
-      { r: "A", de: "Sag mal, Lukas, hast du schon gehört? Die Stadt will im Zentrum mehr Radwege bauen und dafür Parkplätze streichen. Was hältst du davon?", ko: "있잖아요, 루카스, 들었어요? 시에서 도심에 자전거 도로를 더 만들고 그 대신 주차 공간을 없앤대요. 어떻게 생각해요?" },
-      { r: "B", de: "Ehrlich gesagt finde ich das übertrieben. Ich bin auf mein Auto angewiesen, weil ich in einem Vorort wohne und der Bus nur alle 30 Minuten fährt.", ko: "솔직히 지나치다고 생각해요. 저는 교외에 살고 버스가 30분에 한 대뿐이라서 자동차가 꼭 필요해요." },
-      { r: "A", de: "Das verstehe ich, aber meiner Meinung nach würden viele Leute umsteigen, wenn es sichere Radwege gäbe. Ich fahre selbst jeden Tag mit dem Fahrrad zur Arbeit, und manchmal ist es wirklich gefährlich.", ko: "이해해요. 그래도 제 생각에는 안전한 자전거 도로가 있으면 많은 사람이 바꿀 거예요. 저는 매일 자전거로 출근하는데 가끔 정말 위험하거든요." },
-      { r: "B", de: "Da hast du recht, die Sicherheit ist wichtig. Trotzdem darf man Autofahrer nicht benachteiligen. Was ist mit Handwerkern oder älteren Menschen, die nicht Rad fahren können?", ko: "맞아요, 안전은 중요해요. 그래도 운전자를 불리하게 만들면 안 돼요. 기술자나 자전거를 탈 수 없는 노인은 어떻게 하고요?" },
-      { r: "A", de: "Das ist ein guter Punkt. Man könnte Ausnahmen für Lieferverkehr und Menschen mit Behinderung machen. Außerdem hätte die Stadt weniger Lärm und bessere Luft.", ko: "좋은 지적이에요. 배송 차량이나 장애가 있는 분들은 예외로 할 수 있겠죠. 게다가 도시가 더 조용해지고 공기도 좋아질 거예요." },
-      { r: "B", de: "Das stimmt schon, andererseits würden Geschäfte im Zentrum Kunden verlieren, wenn niemand mehr dort parken kann.", ko: "그건 맞아요. 하지만 한편으로는 도심에 주차할 수 없으면 가게들이 손님을 잃을 거예요." },
-      { r: "A", de: "Ich habe gelesen, dass Radfahrer und Fußgänger im Durchschnitt häufiger einkaufen, weil sie nicht nach einem Parkplatz suchen müssen.", ko: "자전거나 걸어서 오는 사람들은 주차 공간을 찾을 필요가 없어서 평균적으로 더 자주 장을 본다고 읽었어요." },
-      { r: "B", de: "Kann sein. Mein Vorschlag wäre, zuerst den Bus besser auszubauen. Dann würde ich mein Auto auch öfter stehen lassen.", ko: "그럴 수도 있겠네요. 제 제안은 먼저 버스를 더 잘 확충하는 거예요. 그러면 저도 차를 더 자주 두고 다닐 거예요." },
-      { r: "A", de: "Das wäre ein guter Kompromiss: mehr Busse und sichere Radwege.", ko: "좋은 타협안이네요. 버스를 늘리고 안전한 자전거 도로도 만드는 거요." },
-      { r: "B", de: "Einverstanden. Aber nur, wenn die Parkhäuser am Stadtrand günstig bleiben.", ko: "동의해요. 다만 외곽 주차장 요금이 계속 저렴할 때만요." },
-      { r: "A", de: "Abgemacht! Dann sind wir uns ja fast einig.", ko: "좋아요! 그럼 거의 의견이 같네요." },
-      { r: "B", de: "Fast. Bei Regen nehme ich trotzdem weiter das Auto.", ko: "거의요. 그래도 비 오는 날에는 계속 차를 탈 거예요." }
+      { r: "A", de: "Sag mal, Lukas, hast du schon gehört? Die Stadt will im Zentrum mehr Radwege bauen und dafür Parkplätze streichen. Was hältst du davon?", ko: "있잖아, 루카스, 들었어? 시에서 도심에 자전거 도로를 더 만들고 그 대신 주차 공간을 없앤대. 어떻게 생각해?" },
+      { r: "B", de: "Ehrlich gesagt finde ich das übertrieben. Ich bin auf mein Auto angewiesen, weil ich in einem Vorort wohne und der Bus nur alle 30 Minuten fährt.", ko: "솔직히 지나치다고 생각해. 나는 교외에 살고 버스가 30분에 한 대뿐이라서 자동차가 꼭 필요해." },
+      { r: "A", de: "Das verstehe ich, aber meiner Meinung nach würden viele Leute umsteigen, wenn es sichere Radwege gäbe. Ich fahre selbst jeden Tag mit dem Fahrrad zur Arbeit, und manchmal ist es wirklich gefährlich.", ko: "이해해. 그래도 내 생각에는 안전한 자전거 도로가 있으면 많은 사람이 바꿀 거야. 나는 매일 자전거로 출근하는데 가끔 정말 위험하거든." },
+      { r: "B", de: "Da hast du recht, die Sicherheit ist wichtig. Trotzdem darf man Autofahrer nicht benachteiligen. Was ist mit Handwerkern oder älteren Menschen, die nicht Rad fahren können?", ko: "맞아, 안전은 중요해. 그래도 운전자를 불리하게 만들면 안 돼. 기술자나 자전거를 탈 수 없는 노인은 어떻게 하고?" },
+      { r: "A", de: "Das ist ein guter Punkt. Man könnte Ausnahmen für Lieferverkehr und Menschen mit Behinderung machen. Außerdem hätte die Stadt weniger Lärm und bessere Luft.", ko: "좋은 지적이야. 배송 차량이나 장애가 있는 분들은 예외로 할 수 있겠지. 게다가 도시가 더 조용해지고 공기도 좋아질 거야." },
+      { r: "B", de: "Das stimmt schon, andererseits würden Geschäfte im Zentrum Kunden verlieren, wenn niemand mehr dort parken kann.", ko: "그건 맞아. 하지만 한편으로는 도심에 주차할 수 없으면 가게들이 손님을 잃을 거야." },
+      { r: "A", de: "Ich habe gelesen, dass Radfahrer und Fußgänger im Durchschnitt häufiger einkaufen, weil sie nicht nach einem Parkplatz suchen müssen.", ko: "자전거나 걸어서 오는 사람들은 주차 공간을 찾을 필요가 없어서 평균적으로 더 자주 장을 본다고 읽었어." },
+      { r: "B", de: "Kann sein. Mein Vorschlag wäre, zuerst den Bus besser auszubauen. Dann würde ich mein Auto auch öfter stehen lassen.", ko: "그럴 수도 있겠네. 내 제안은 먼저 버스를 더 잘 확충하는 거야. 그러면 나도 차를 더 자주 두고 다닐 거야." },
+      { r: "A", de: "Das wäre ein guter Kompromiss: mehr Busse und sichere Radwege.", ko: "좋은 타협안이네. 버스를 늘리고 안전한 자전거 도로도 만드는 거지." },
+      { r: "B", de: "Einverstanden. Aber nur, wenn die Parkhäuser am Stadtrand günstig bleiben.", ko: "동의해. 다만 외곽 주차장 요금이 계속 저렴할 때만." },
+      { r: "A", de: "Abgemacht! Dann sind wir uns ja fast einig.", ko: "좋아! 그럼 거의 의견이 같네." },
+      { r: "B", de: "Fast. Bei Regen nehme ich trotzdem weiter das Auto.", ko: "거의. 그래도 비 오는 날에는 계속 차를 탈 거야." }
     ],
     redemittel: [
       { group: "의견 묻기", items: [
-        { de: "Was hältst du davon?", ko: "어떻게 생각해요?" }
+        { de: "Was hältst du davon?", ko: "어떻게 생각해?" }
       ] },
       { group: "의견 말하기", items: [
-        { de: "Ehrlich gesagt finde ich das übertrieben.", ko: "솔직히 지나치다고 생각해요." },
-        { de: "Meiner Meinung nach würden viele … , wenn …", ko: "제 생각에는 …하면 많은 사람이 …할 거예요." }
+        { de: "Ehrlich gesagt finde ich das übertrieben.", ko: "솔직히 지나치다고 생각해." },
+        { de: "Meiner Meinung nach würden viele … , wenn …", ko: "내 생각에는 …하면 많은 사람이 …할 거야." }
       ] },
       { group: "동의 · 부분 동의", items: [
-        { de: "Da hast du recht.", ko: "맞아요." },
-        { de: "Das ist ein guter Punkt.", ko: "좋은 지적이에요." },
-        { de: "Das stimmt schon, andererseits …", ko: "맞기는 하지만, 한편으로는 …" }
+        { de: "Da hast du recht.", ko: "맞아." },
+        { de: "Das ist ein guter Punkt.", ko: "좋은 지적이야." },
+        { de: "Das stimmt schon, andererseits …", ko: "맞기는 한데, 한편으로는 …" }
       ] },
       { group: "반론 · 근거", items: [
-        { de: "Trotzdem darf man … nicht …", ko: "그래도 …해서는 안 돼요." },
-        { de: "Ich habe gelesen, dass …", ko: "…라고 읽었어요." }
+        { de: "Trotzdem darf man … nicht …", ko: "그래도 …해서는 안 돼." },
+        { de: "Ich habe gelesen, dass …", ko: "…라고 읽었어." }
       ] },
       { group: "제안 · 타협", items: [
-        { de: "Mein Vorschlag wäre … ", ko: "제 제안은 …예요." },
-        { de: "Das wäre ein guter Kompromiss.", ko: "좋은 타협안이네요." },
-        { de: "Einverstanden, aber nur, wenn …", ko: "동의해요. 다만 …할 때만요." }
+        { de: "Mein Vorschlag wäre … ", ko: "내 제안은 …야." },
+        { de: "Das wäre ein guter Kompromiss.", ko: "좋은 타협안이네." },
+        { de: "Einverstanden, aber nur, wenn …", ko: "동의해. 다만 …할 때만." }
       ] }
     ]
   },
@@ -142,34 +142,34 @@ window.DIALOG_DATA.B1 = [
     focus: ["제안하기", "비교하기", "sonst · allerdings"],
     roles: { A: "Eva", B: "Daniel" },
     turns: [
-      { r: "A", de: "Daniel, wir müssen endlich entscheiden, wohin wir im Sommer fahren. Hast du dir schon Gedanken gemacht?", ko: "다니엘, 이제 여름에 어디로 갈지 정해야 해요. 생각해 봤어요?" },
-      { r: "B", de: "Ja, ich hätte Lust auf eine Rundreise durch Italien. Wir könnten Rom, Florenz und Venedig besuchen.", ko: "네, 이탈리아 일주 여행이 하고 싶어요. 로마, 피렌체, 베네치아를 둘러볼 수 있을 거예요." },
-      { r: "A", de: "Klingt interessant, aber im Sommer ist es dort ziemlich heiß und überall sind Touristen. Ich würde lieber ans Meer fahren und mich einfach erholen.", ko: "흥미롭긴 한데, 여름에는 거기가 꽤 덥고 어디나 관광객이 많아요. 저는 차라리 바다에 가서 푹 쉬고 싶어요." },
-      { r: "B", de: "Am Meer finde ich es nach drei Tagen langweilig. Was hältst du von Kroatien? Dort gibt es schöne Strände, aber wir könnten auch Städte und Nationalparks besichtigen.", ko: "저는 바닷가는 3일이면 지루해져요. 크로아티아는 어때요? 멋진 해변도 있고, 도시와 국립공원도 둘러볼 수 있어요." },
-      { r: "A", de: "Das gefällt mir schon besser. Wie kommen wir dorthin? Mit dem Auto sind es bestimmt zehn Stunden.", ko: "그게 훨씬 마음에 들어요. 거기까지 어떻게 가죠? 차로는 분명 열 시간쯤 걸릴 거예요." },
-      { r: "B", de: "Wir könnten fliegen, das ist allerdings teurer. Oder wir fahren mit dem Auto und machen unterwegs eine Übernachtung in Österreich.", ko: "비행기를 탈 수도 있는데, 그러면 더 비싸요. 아니면 차로 가면서 중간에 오스트리아에서 하룻밤 묵을 수 있어요." },
-      { r: "A", de: "Die Zwischenübernachtung wäre eine gute Lösung. Und wie lange sollen wir bleiben? Ich habe nur zwei Wochen Urlaub.", ko: "중간 숙박이 좋은 방법이겠네요. 그런데 얼마나 머물까요? 저는 휴가가 2주뿐이에요." },
-      { r: "B", de: "Zwei Wochen reichen doch. Eine Woche an der Küste, die zweite Woche in den Nationalparks im Landesinneren.", ko: "2주면 충분해요. 첫 주는 해안에서, 둘째 주는 내륙의 국립공원에서 보내요." },
-      { r: "A", de: "Okay. Wir sollten bald buchen, sonst sind die schönen Unterkünfte weg.", ko: "좋아요. 곧 예약해야 해요. 안 그러면 좋은 숙소가 다 나가요." },
-      { r: "B", de: "Stimmt. Ich schaue heute Abend nach Angeboten und schicke dir drei Vorschläge. Dann entscheiden wir gemeinsam.", ko: "맞아요. 오늘 저녁에 숙소를 찾아보고 세 가지 후보를 보내 줄게요. 그다음 같이 정해요." },
-      { r: "A", de: "Perfekt. Ich freue mich schon!", ko: "좋아요. 벌써 기대돼요!" }
+      { r: "A", de: "Daniel, wir müssen endlich entscheiden, wohin wir im Sommer fahren. Hast du dir schon Gedanken gemacht?", ko: "다니엘, 이제 여름에 어디로 갈지 정해야 해. 생각해 봤어?" },
+      { r: "B", de: "Ja, ich hätte Lust auf eine Rundreise durch Italien. Wir könnten Rom, Florenz und Venedig besuchen.", ko: "응, 이탈리아 일주 여행이 하고 싶어. 로마, 피렌체, 베네치아를 둘러볼 수 있을 거야." },
+      { r: "A", de: "Klingt interessant, aber im Sommer ist es dort ziemlich heiß und überall sind Touristen. Ich würde lieber ans Meer fahren und mich einfach erholen.", ko: "흥미롭긴 한데, 여름에는 거기가 꽤 덥고 어디나 관광객이 많아. 나는 차라리 바다에 가서 푹 쉬고 싶어." },
+      { r: "B", de: "Am Meer finde ich es nach drei Tagen langweilig. Was hältst du von Kroatien? Dort gibt es schöne Strände, aber wir könnten auch Städte und Nationalparks besichtigen.", ko: "나는 바닷가는 3일이면 지루해져. 크로아티아는 어때? 멋진 해변도 있고, 도시와 국립공원도 둘러볼 수 있어." },
+      { r: "A", de: "Das gefällt mir schon besser. Wie kommen wir dorthin? Mit dem Auto sind es bestimmt zehn Stunden.", ko: "그게 훨씬 마음에 들어. 거기까지 어떻게 가지? 차로는 분명 열 시간쯤 걸릴 거야." },
+      { r: "B", de: "Wir könnten fliegen, das ist allerdings teurer. Oder wir fahren mit dem Auto und machen unterwegs eine Übernachtung in Österreich.", ko: "비행기를 탈 수도 있는데, 그러면 더 비싸. 아니면 차로 가면서 중간에 오스트리아에서 하룻밤 묵을 수 있어." },
+      { r: "A", de: "Die Zwischenübernachtung wäre eine gute Lösung. Und wie lange sollen wir bleiben? Ich habe nur zwei Wochen Urlaub.", ko: "중간 숙박이 좋은 방법이겠네. 그런데 얼마나 머물까? 나는 휴가가 2주뿐이야." },
+      { r: "B", de: "Zwei Wochen reichen doch. Eine Woche an der Küste, die zweite Woche in den Nationalparks im Landesinneren.", ko: "2주면 충분해. 첫 주는 해안에서, 둘째 주는 내륙의 국립공원에서 보내자." },
+      { r: "A", de: "Okay. Wir sollten bald buchen, sonst sind die schönen Unterkünfte weg.", ko: "좋아. 곧 예약해야 해. 안 그러면 좋은 숙소가 다 나가." },
+      { r: "B", de: "Stimmt. Ich schaue heute Abend nach Angeboten und schicke dir drei Vorschläge. Dann entscheiden wir gemeinsam.", ko: "맞아. 오늘 저녁에 숙소를 찾아보고 세 가지 후보를 보내 줄게. 그다음 같이 정하자." },
+      { r: "A", de: "Perfekt. Ich freue mich schon!", ko: "좋아. 벌써 기대돼!" }
     ],
     redemittel: [
       { group: "제안", items: [
-        { de: "Wir könnten … besuchen.", ko: "…을 둘러볼 수 있어요." },
-        { de: "Was hältst du von …?", ko: "…는 어때요?" }
+        { de: "Wir könnten … besuchen.", ko: "…을 둘러볼 수 있어." },
+        { de: "Was hältst du von …?", ko: "…는 어때?" }
       ] },
       { group: "선호", items: [
-        { de: "Ich würde lieber ans Meer fahren.", ko: "저는 차라리 바다에 가고 싶어요." },
-        { de: "Das gefällt mir schon besser.", ko: "그게 훨씬 마음에 들어요." }
+        { de: "Ich würde lieber ans Meer fahren.", ko: "나는 차라리 바다에 가고 싶어." },
+        { de: "Das gefällt mir schon besser.", ko: "그게 훨씬 마음에 들어." }
       ] },
       { group: "비교", items: [
-        { de: "Wir könnten fliegen, das ist allerdings teurer.", ko: "비행기를 탈 수도 있는데, 그러면 더 비싸요." },
-        { de: "Oder wir fahren mit dem Auto.", ko: "아니면 차로 가요." }
+        { de: "Wir könnten fliegen, das ist allerdings teurer.", ko: "비행기를 탈 수도 있는데, 그러면 더 비싸." },
+        { de: "Oder wir fahren mit dem Auto.", ko: "아니면 차로 가자." }
       ] },
       { group: "결정", items: [
-        { de: "Wir sollten bald buchen, sonst …", ko: "곧 예약해야 해요. 안 그러면 …" },
-        { de: "Dann entscheiden wir gemeinsam.", ko: "그다음 같이 정해요." }
+        { de: "Wir sollten bald buchen, sonst …", ko: "곧 예약해야 해. 안 그러면 …" },
+        { de: "Dann entscheiden wir gemeinsam.", ko: "그다음 같이 정하자." }
       ] }
     ]
   },
@@ -224,35 +224,35 @@ window.DIALOG_DATA.B1 = [
     focus: ["조언하기", "Konjunktiv II: solltest · würde", "시험 준비"],
     roles: { A: "Sophie", B: "Jin" },
     turns: [
-      { r: "A", de: "Hallo Jin! Du siehst müde aus. Ist alles in Ordnung?", ko: "안녕, 진! 피곤해 보여요. 별일 없어요?" },
-      { r: "B", de: "Ehrlich gesagt nicht so ganz. In drei Wochen habe ich meine B1-Prüfung, und ich weiß nicht, wie ich mich am besten vorbereiten soll.", ko: "솔직히 별로 괜찮지 않아요. 3주 뒤에 B1 시험이 있는데 어떻게 준비하는 게 가장 좋을지 모르겠어요." },
-      { r: "A", de: "Was fällt dir denn am schwersten?", ko: "뭐가 제일 어려워요?" },
-      { r: "B", de: "Das Sprechen. Ich kenne die Grammatik, aber wenn ich vor dem Prüfer sitze, bekomme ich einen Blackout.", ko: "말하기요. 문법은 아는데 시험관 앞에 앉으면 머리가 하얘져요." },
-      { r: "A", de: "Das kenne ich. An deiner Stelle würde ich mit Freunden üben, am besten jeden Tag zehn Minuten. Du könntest dich auch aufnehmen und die Aufnahme danach anhören.", ko: "그 기분 알아요. 제가 당신이라면 친구들과 연습하겠어요, 가능하면 매일 10분씩요. 녹음해서 나중에 들어 봐도 좋고요." },
-      { r: "B", de: "Aufnehmen? Das klingt komisch, aber vielleicht hilft es. Und was soll ich mit dem Schreiben machen?", ko: "녹음이요? 어색하게 들리지만 도움이 될 수도 있겠네요. 쓰기는 어떻게 하면 좋을까요?" },
-      { r: "A", de: "Du solltest Mustertexte lesen und wichtige Redemittel lernen. Aber lerne keine ganzen Texte auswendig, sonst passt am Ende das Thema nicht.", ko: "모범 글을 읽고 중요한 표현을 익히는 게 좋아요. 하지만 글 전체를 외우지는 마세요. 안 그러면 막상 주제가 안 맞을 수 있어요." },
-      { r: "B", de: "Gute Idee. Ich habe bisher viele Probetests gemacht. Meinst du, das reicht?", ko: "좋은 생각이에요. 저는 지금까지 모의고사를 많이 풀었어요. 그걸로 충분할까요?" },
-      { r: "A", de: "Probetests sind wichtig, aber sie allein reichen nicht. Du solltest zwischendurch auch Texte lesen, die dich wirklich interessieren. Dann lernst du Wörter, ohne es zu merken.", ko: "모의고사는 중요하지만 그것만으로는 부족해요. 중간중간 정말 관심 있는 글도 읽어야 해요. 그러면 모르는 사이에 단어가 늘어요." },
-      { r: "B", de: "Danke, das hilft mir sehr. Hättest du Lust, nächste Woche mit mir zu üben?", ko: "고마워요, 많이 도움이 돼요. 다음 주에 같이 연습해 줄래요?" },
-      { r: "A", de: "Gern! Wie wäre es mit Dienstag nach dem Kurs?", ko: "좋아요! 화요일 수업 끝나고 어때요?" },
-      { r: "B", de: "Perfekt. Ich bringe die Aufgaben mit.", ko: "좋아요. 문제지는 제가 가져올게요." }
+      { r: "A", de: "Hallo Jin! Du siehst müde aus. Ist alles in Ordnung?", ko: "안녕, 진! 피곤해 보여. 별일 없어?" },
+      { r: "B", de: "Ehrlich gesagt nicht so ganz. In drei Wochen habe ich meine B1-Prüfung, und ich weiß nicht, wie ich mich am besten vorbereiten soll.", ko: "솔직히 별로 괜찮지 않아. 3주 뒤에 B1 시험이 있는데 어떻게 준비하는 게 가장 좋을지 모르겠어." },
+      { r: "A", de: "Was fällt dir denn am schwersten?", ko: "뭐가 제일 어려워?" },
+      { r: "B", de: "Das Sprechen. Ich kenne die Grammatik, aber wenn ich vor dem Prüfer sitze, bekomme ich einen Blackout.", ko: "말하기. 문법은 아는데 시험관 앞에 앉으면 머리가 하얘져." },
+      { r: "A", de: "Das kenne ich. An deiner Stelle würde ich mit Freunden üben, am besten jeden Tag zehn Minuten. Du könntest dich auch aufnehmen und die Aufnahme danach anhören.", ko: "그 기분 알아. 내가 너라면 친구들과 연습할 거야, 가능하면 매일 10분씩. 녹음해서 나중에 들어 봐도 좋고." },
+      { r: "B", de: "Aufnehmen? Das klingt komisch, aber vielleicht hilft es. Und was soll ich mit dem Schreiben machen?", ko: "녹음? 어색하게 들리지만 도움이 될 수도 있겠네. 쓰기는 어떻게 하면 좋을까?" },
+      { r: "A", de: "Du solltest Mustertexte lesen und wichtige Redemittel lernen. Aber lerne keine ganzen Texte auswendig, sonst passt am Ende das Thema nicht.", ko: "모범 글을 읽고 중요한 표현을 익히는 게 좋아. 하지만 글 전체를 외우지는 마. 안 그러면 막상 주제가 안 맞을 수 있어." },
+      { r: "B", de: "Gute Idee. Ich habe bisher viele Probetests gemacht. Meinst du, das reicht?", ko: "좋은 생각이야. 나는 지금까지 모의고사를 많이 풀었어. 그걸로 충분할까?" },
+      { r: "A", de: "Probetests sind wichtig, aber sie allein reichen nicht. Du solltest zwischendurch auch Texte lesen, die dich wirklich interessieren. Dann lernst du Wörter, ohne es zu merken.", ko: "모의고사는 중요하지만 그것만으로는 부족해. 중간중간 정말 관심 있는 글도 읽어야 해. 그러면 모르는 사이에 단어가 늘어." },
+      { r: "B", de: "Danke, das hilft mir sehr. Hättest du Lust, nächste Woche mit mir zu üben?", ko: "고마워, 많이 도움이 돼. 다음 주에 같이 연습해 줄래?" },
+      { r: "A", de: "Gern! Wie wäre es mit Dienstag nach dem Kurs?", ko: "좋아! 화요일 수업 끝나고 어때?" },
+      { r: "B", de: "Perfekt. Ich bringe die Aufgaben mit.", ko: "좋아. 문제지는 내가 가져올게." }
     ],
     redemittel: [
       { group: "고민 이야기", items: [
-        { de: "Ich weiß nicht, wie ich mich vorbereiten soll.", ko: "어떻게 준비해야 할지 모르겠어요." },
-        { de: "Wenn ich vor dem Prüfer sitze, bekomme ich einen Blackout.", ko: "시험관 앞에 앉으면 머리가 하얘져요." }
+        { de: "Ich weiß nicht, wie ich mich vorbereiten soll.", ko: "어떻게 준비해야 할지 모르겠어." },
+        { de: "Wenn ich vor dem Prüfer sitze, bekomme ich einen Blackout.", ko: "시험관 앞에 앉으면 머리가 하얘져." }
       ] },
       { group: "조언", items: [
-        { de: "An deiner Stelle würde ich … ", ko: "제가 당신이라면 …하겠어요." },
-        { de: "Du solltest … ", ko: "…하는 게 좋아요." },
-        { de: "Du könntest dich auch aufnehmen.", ko: "녹음해 봐도 좋아요." }
+        { de: "An deiner Stelle würde ich … ", ko: "내가 너라면 …할 거야." },
+        { de: "Du solltest … ", ko: "…하는 게 좋아." },
+        { de: "Du könntest dich auch aufnehmen.", ko: "녹음해 봐도 좋아." }
       ] },
       { group: "경고 · 이유", items: [
-        { de: "Lerne keine ganzen Texte auswendig, sonst …", ko: "글 전체를 외우지 마세요. 안 그러면 …" }
+        { de: "Lerne keine ganzen Texte auswendig, sonst …", ko: "글 전체를 외우지 마. 안 그러면 …" }
       ] },
       { group: "제안 · 약속", items: [
-        { de: "Hättest du Lust, mit mir zu üben?", ko: "같이 연습해 줄래요?" },
-        { de: "Wie wäre es mit Dienstag nach dem Kurs?", ko: "화요일 수업 끝나고 어때요?" }
+        { de: "Hättest du Lust, mit mir zu üben?", ko: "같이 연습해 줄래?" },
+        { de: "Wie wäre es mit Dienstag nach dem Kurs?", ko: "화요일 수업 끝나고 어때?" }
       ] }
     ]
   }

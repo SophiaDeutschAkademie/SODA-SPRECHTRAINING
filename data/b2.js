@@ -232,39 +232,39 @@ window.DIALOG_DATA.B2 = [
     focus: ["찬반 논의", "우려 표현하기", "Konjunktiv II · statt … zu"],
     roles: { A: "Mira", B: "Paul" },
     turns: [
-      { r: "A", de: "Hast du mitbekommen, dass die Geschäftsleitung künftig ein KI-Tool für Kundenanfragen einsetzen will? Was hältst du davon?", ko: "경영진이 앞으로 고객 문의에 AI 도구를 쓰려고 한다는 거 들었어요? 어떻게 생각해요?" },
-      { r: "B", de: "Grundsätzlich finde ich die Idee sinnvoll. Routineanfragen könnten schneller beantwortet werden, und wir hätten mehr Zeit für komplizierte Fälle.", ko: "기본적으로 좋은 아이디어라고 생각해요. 일상적인 문의는 더 빨리 답할 수 있고 우리는 복잡한 사안에 쓸 시간이 늘어나겠죠." },
-      { r: "A", de: "Das sehe ich anders. Ich befürchte, dass die Qualität leiden wird. Kunden merken sofort, wenn sie mit einer Maschine sprechen, und fühlen sich nicht ernst genommen.", ko: "저는 생각이 달라요. 품질이 떨어질까 걱정돼요. 고객은 기계와 이야기한다는 걸 바로 알아채고 존중받지 못한다고 느낄 거예요." },
-      { r: "B", de: "Das kann sein, aber Qualität hängt vom Einsatz ab. Wenn das Tool nur Standardfragen beantwortet und alles andere an uns weiterleitet, entsteht doch kein Nachteil.", ko: "그럴 수도 있지만 품질은 어떻게 쓰느냐에 달려 있어요. 도구가 표준 질문에만 답하고 나머지는 우리에게 넘겨 준다면 불이익은 생기지 않잖아요." },
-      { r: "A", de: "In der Theorie ja. Aber was passiert, wenn das System Fehler macht und falsche Auskünfte erteilt? Wer trägt dann die Verantwortung?", ko: "이론상으로는 그렇죠. 하지만 시스템이 실수해서 잘못된 안내를 하면요? 그때 책임은 누가 지나요?" },
-      { r: "B", de: "Das ist ein berechtigter Einwand. Deshalb müsste man klare Regeln aufstellen und die Antworten stichprobenartig überprüfen.", ko: "타당한 지적이에요. 그래서 명확한 규칙을 세우고 답변을 무작위로 점검해야 할 거예요." },
-      { r: "A", de: "Außerdem mache ich mir Sorgen um Arbeitsplätze. Es heißt, dass zunächst nur Routineaufgaben automatisiert werden, aber wer garantiert, dass es dabei bleibt?", ko: "게다가 일자리도 걱정돼요. 처음에는 일상적인 업무만 자동화한다고 하지만, 거기서 멈춘다고 누가 보장하죠?" },
-      { r: "B", de: "Garantien gibt es nie. Andererseits hat jede technische Neuerung neue Aufgaben geschaffen. Entscheidend ist, dass wir uns weiterbilden und rechtzeitig mitgestalten, statt abzuwarten.", ko: "보장은 어디에도 없죠. 하지만 한편으로 모든 기술 혁신은 새로운 일을 만들어 냈어요. 중요한 건 기다리지 않고 우리가 공부하고 제때 함께 만들어 가는 거예요." },
-      { r: "A", de: "Da ist etwas dran. Vielleicht sollten wir dem Betriebsrat vorschlagen, dass wir an der Einführung beteiligt werden.", ko: "일리가 있네요. 도입 과정에 우리가 참여하도록 노동자 협의회에 제안해 볼 수 있겠어요." },
-      { r: "B", de: "Gute Idee. Dann könnten wir auch Schulungen einfordern.", ko: "좋은 생각이에요. 그러면 교육도 요구할 수 있겠죠." },
-      { r: "A", de: "Gut, dann formulieren wir einen kurzen Vorschlag.", ko: "좋아요, 그럼 간단한 제안서를 작성해요." },
-      { r: "B", de: "Einverstanden. Ich entwerfe ihn und schicke ihn dir bis morgen.", ko: "동의해요. 제가 초안을 써서 내일까지 보내 줄게요." }
+      { r: "A", de: "Hast du mitbekommen, dass die Geschäftsleitung künftig ein KI-Tool für Kundenanfragen einsetzen will? Was hältst du davon?", ko: "경영진이 앞으로 고객 문의에 AI 도구를 쓰려고 한다는 거 들었어? 어떻게 생각해?" },
+      { r: "B", de: "Grundsätzlich finde ich die Idee sinnvoll. Routineanfragen könnten schneller beantwortet werden, und wir hätten mehr Zeit für komplizierte Fälle.", ko: "기본적으로 좋은 아이디어라고 생각해. 일상적인 문의는 더 빨리 답할 수 있고 우리는 복잡한 사안에 쓸 시간이 늘어나겠지." },
+      { r: "A", de: "Das sehe ich anders. Ich befürchte, dass die Qualität leiden wird. Kunden merken sofort, wenn sie mit einer Maschine sprechen, und fühlen sich nicht ernst genommen.", ko: "나는 생각이 달라. 품질이 떨어질까 걱정돼. 고객은 기계와 이야기한다는 걸 바로 알아채고 존중받지 못한다고 느낄 거야." },
+      { r: "B", de: "Das kann sein, aber Qualität hängt vom Einsatz ab. Wenn das Tool nur Standardfragen beantwortet und alles andere an uns weiterleitet, entsteht doch kein Nachteil.", ko: "그럴 수도 있지만 품질은 어떻게 쓰느냐에 달려 있어. 도구가 표준 질문에만 답하고 나머지는 우리에게 넘겨 준다면 불이익은 생기지 않잖아." },
+      { r: "A", de: "In der Theorie ja. Aber was passiert, wenn das System Fehler macht und falsche Auskünfte erteilt? Wer trägt dann die Verantwortung?", ko: "이론상으로는 그렇지. 하지만 시스템이 실수해서 잘못된 안내를 하면? 그때 책임은 누가 지는데?" },
+      { r: "B", de: "Das ist ein berechtigter Einwand. Deshalb müsste man klare Regeln aufstellen und die Antworten stichprobenartig überprüfen.", ko: "타당한 지적이야. 그래서 명확한 규칙을 세우고 답변을 무작위로 점검해야 할 거야." },
+      { r: "A", de: "Außerdem mache ich mir Sorgen um Arbeitsplätze. Es heißt, dass zunächst nur Routineaufgaben automatisiert werden, aber wer garantiert, dass es dabei bleibt?", ko: "게다가 일자리도 걱정돼. 처음에는 일상적인 업무만 자동화한다고 하지만, 거기서 멈춘다고 누가 보장해?" },
+      { r: "B", de: "Garantien gibt es nie. Andererseits hat jede technische Neuerung neue Aufgaben geschaffen. Entscheidend ist, dass wir uns weiterbilden und rechtzeitig mitgestalten, statt abzuwarten.", ko: "보장은 어디에도 없지. 하지만 한편으로 모든 기술 혁신은 새로운 일을 만들어 냈어. 중요한 건 기다리지 않고 우리가 공부하고 제때 함께 만들어 가는 거야." },
+      { r: "A", de: "Da ist etwas dran. Vielleicht sollten wir dem Betriebsrat vorschlagen, dass wir an der Einführung beteiligt werden.", ko: "일리가 있네. 도입 과정에 우리가 참여하도록 노동자 협의회에 제안해 볼 수 있겠어." },
+      { r: "B", de: "Gute Idee. Dann könnten wir auch Schulungen einfordern.", ko: "좋은 생각이야. 그러면 교육도 요구할 수 있겠지." },
+      { r: "A", de: "Gut, dann formulieren wir einen kurzen Vorschlag.", ko: "좋아, 그럼 간단한 제안서를 작성하자." },
+      { r: "B", de: "Einverstanden. Ich entwerfe ihn und schicke ihn dir bis morgen.", ko: "동의해. 내가 초안을 써서 내일까지 보내 줄게." }
     ],
     redemittel: [
       { group: "의견 묻기", items: [
-        { de: "Was hältst du davon?", ko: "어떻게 생각해요?" }
+        { de: "Was hältst du davon?", ko: "어떻게 생각해?" }
       ] },
       { group: "찬성", items: [
-        { de: "Grundsätzlich finde ich die Idee sinnvoll.", ko: "기본적으로 좋은 아이디어라고 생각해요." }
+        { de: "Grundsätzlich finde ich die Idee sinnvoll.", ko: "기본적으로 좋은 아이디어라고 생각해." }
       ] },
       { group: "반대 · 우려", items: [
-        { de: "Das sehe ich anders.", ko: "저는 생각이 달라요." },
-        { de: "Ich befürchte, dass …", ko: "…일까 걱정돼요." },
-        { de: "Ich mache mir Sorgen um … ", ko: "…이 걱정돼요." }
+        { de: "Das sehe ich anders.", ko: "나는 생각이 달라." },
+        { de: "Ich befürchte, dass …", ko: "…일까 걱정돼." },
+        { de: "Ich mache mir Sorgen um … ", ko: "…이 걱정돼." }
       ] },
       { group: "인정 · 양보", items: [
-        { de: "Das ist ein berechtigter Einwand.", ko: "타당한 지적이에요." },
-        { de: "In der Theorie ja. Aber …", ko: "이론상으로는 그렇죠. 하지만 …" },
-        { de: "Da ist etwas dran.", ko: "일리가 있네요." }
+        { de: "Das ist ein berechtigter Einwand.", ko: "타당한 지적이야." },
+        { de: "In der Theorie ja. Aber …", ko: "이론상으로는 그렇지. 하지만 …" },
+        { de: "Da ist etwas dran.", ko: "일리가 있네." }
       ] },
       { group: "대안", items: [
         { de: "Andererseits … ", ko: "한편으로는 …" },
-        { de: "Entscheidend ist, dass wir … , statt abzuwarten.", ko: "중요한 건 기다리지 않고 우리가 …하는 거예요." }
+        { de: "Entscheidend ist, dass wir … , statt abzuwarten.", ko: "중요한 건 기다리지 않고 우리가 …하는 거야." }
       ] }
     ]
   }

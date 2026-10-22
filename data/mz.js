@@ -5,7 +5,7 @@ window.DIALOG_DATA = window.DIALOG_DATA || {};
 window.DIALOG_DATA.MZ = [
   {
     no: 1, lv: "MZ",
-    title: "Was machst du am Wochenende?", titleKo: "주말에 뭐 해요?", type: "Freunde", typeKo: "친구",
+    title: "Was machst du am Wochenende?", titleKo: "주말에 뭐 해?", type: "Freunde", typeKo: "친구",
     intro: "친구끼리 주말 약속을 잡고 저녁 메뉴를 정하는 대화예요.",
     focus: ["was = etwas", "'ne · hab · komm ich", "Passt schon · Versprochen"],
     roles: { A: "Mika", B: "Jule" },
@@ -292,20 +292,20 @@ window.DIALOG_DATA.MZ = [
     focus: ["Sag mal · Hauptsache", "was = etwas", "Wohnen und Alltag"],
     roles: { A: "Paula", B: "Daniel" },
     turns: [
-      { r: "A", de: "Hi, du bist bestimmt Daniel. Komm rein, die Schuhe kannst du einfach hier abstellen.", ko: "안녕하세요, 다니엘이시죠? 들어와요, 신발은 그냥 여기에 두면 돼요." },
-      { r: "B", de: "Hallo Paula, danke. Schön habt ihr's hier! Die Wohnung ist viel größer, als ich gedacht hab.", ko: "안녕하세요, 파울라. 고마워요. 여기 참 좋네요! 생각했던 것보다 집이 훨씬 커요." },
-      { r: "A", de: "Ja, das stimmt. Wir sind zu dritt, jeder hat sein eigenes Zimmer, und es gibt 'ne große Küche. Willst du was trinken?", ko: "네, 맞아요. 세 명이 살고, 각자 자기 방이 있고, 큰 부엌도 있어요. 뭘 좀 마실래요?" },
-      { r: "B", de: "Gern, ein Wasser wär super. Sag mal, wie läuft das bei euch mit dem Putzen?", ko: "좋아요, 물이면 좋겠어요. 그런데 청소는 여기서 어떻게 해요?" },
-      { r: "A", de: "Wir haben 'nen Putzplan. Jeder ist eine Woche dran. Ist eigentlich recht entspannt.", ko: "청소 당번표가 있어요. 각자 일주일씩 맡아요. 사실 꽤 부담 없는 편이에요." },
-      { r: "B", de: "Das klingt gut. Ich bin ziemlich ordentlich, nur manchmal bleibt das Geschirr ein bisschen länger stehen.", ko: "좋게 들려요. 저는 꽤 깔끔한 편인데, 가끔 설거지가 조금 오래 쌓여 있긴 해요." },
-      { r: "A", de: "Haha, kenn ich. Dafür ist die Spülmaschine ja da. Und was machst du so beruflich?", ko: "하하, 저도 알아요. 그래서 식기세척기가 있는 거죠. 그런데 일은 뭘 해요?" },
-      { r: "B", de: "Ich arbeite als Grafiker, meistens von zu Hause. Das heißt, ich bin tagsüber öfter da. Stört dich das?", ko: "그래픽 디자이너로 일하고, 대부분 집에서 해요. 그러니까 낮에 집에 있는 날이 많아요. 불편해요?" },
-      { r: "A", de: "Überhaupt nicht. Tagsüber sind wir sowieso fast nie da. Hauptsache, du bist abends nicht zu laut.", ko: "전혀요. 낮에는 어차피 우리가 거의 없어요. 중요한 건 저녁에 너무 시끄럽지 않은 거예요." },
-      { r: "B", de: "Keine Sorge, ich bin eher der ruhige Typ. Wie viel Miete wären das denn im Monat?", ko: "걱정 마세요, 저는 조용한 편이에요. 한 달에 월세가 얼마나 되나요?" },
-      { r: "A", de: "Vierhundertfünfzig warm, also mit allem drin. Internet und Strom sind auch dabei.", ko: "관리비 포함 450유로예요, 그러니까 전부 다 들어 있어요. 인터넷과 전기도 포함이에요." },
-      { r: "B", de: "Das ist fair. Ich würd's gern nehmen. Wann erfahr ich denn, ob es klappt?", ko: "합리적이네요. 꼭 들어오고 싶어요. 언제쯤 결과를 알 수 있을까요?" },
-      { r: "A", de: "Wir melden uns bis Freitag bei dir. Aber mein Bauchgefühl sagt: Das passt.", ko: "금요일까지 연락드릴게요. 그런데 제 직감으로는 잘 맞을 것 같아요." },
-      { r: "B", de: "Super, ich freu mich! Vielen Dank für die Einladung.", ko: "좋아요, 기대돼요! 초대해 주셔서 정말 고마워요." }
+      { r: "A", de: "Hi, du bist bestimmt Daniel. Komm rein, die Schuhe kannst du einfach hier abstellen.", ko: "안녕, 너 다니엘이지? 들어와, 신발은 그냥 여기에 두면 돼." },
+      { r: "B", de: "Hallo Paula, danke. Schön habt ihr's hier! Die Wohnung ist viel größer, als ich gedacht hab.", ko: "안녕 파울라, 고마워. 여기 참 좋다! 생각했던 것보다 집이 훨씬 커." },
+      { r: "A", de: "Ja, das stimmt. Wir sind zu dritt, jeder hat sein eigenes Zimmer, und es gibt 'ne große Küche. Willst du was trinken?", ko: "응, 맞아. 세 명이 살고, 각자 자기 방이 있고, 큰 부엌도 있어. 뭐 좀 마실래?" },
+      { r: "B", de: "Gern, ein Wasser wär super. Sag mal, wie läuft das bei euch mit dem Putzen?", ko: "좋아, 물이면 좋겠어. 그런데 여기는 청소를 어떻게 해?" },
+      { r: "A", de: "Wir haben 'nen Putzplan. Jeder ist eine Woche dran. Ist eigentlich recht entspannt.", ko: "청소 당번표가 있어. 각자 일주일씩 맡아. 사실 꽤 부담 없는 편이야." },
+      { r: "B", de: "Das klingt gut. Ich bin ziemlich ordentlich, nur manchmal bleibt das Geschirr ein bisschen länger stehen.", ko: "좋게 들려. 나는 꽤 깔끔한 편인데, 가끔 설거지가 조금 오래 쌓여 있긴 해." },
+      { r: "A", de: "Haha, kenn ich. Dafür ist die Spülmaschine ja da. Und was machst du so beruflich?", ko: "하하, 나도 알아. 그래서 식기세척기가 있는 거지. 그런데 너는 무슨 일 해?" },
+      { r: "B", de: "Ich arbeite als Grafiker, meistens von zu Hause. Das heißt, ich bin tagsüber öfter da. Stört dich das?", ko: "그래픽 디자이너로 일하고, 대부분 집에서 해. 그러니까 낮에 집에 있는 날이 많아. 불편해?" },
+      { r: "A", de: "Überhaupt nicht. Tagsüber sind wir sowieso fast nie da. Hauptsache, du bist abends nicht zu laut.", ko: "전혀. 낮에는 어차피 우리가 거의 없어. 중요한 건 저녁에 너무 시끄럽지 않은 거야." },
+      { r: "B", de: "Keine Sorge, ich bin eher der ruhige Typ. Wie viel Miete wären das denn im Monat?", ko: "걱정 마, 나는 조용한 편이야. 한 달에 월세가 얼마야?" },
+      { r: "A", de: "Vierhundertfünfzig warm, also mit allem drin. Internet und Strom sind auch dabei.", ko: "관리비 포함 450유로야, 그러니까 전부 다 들어 있어. 인터넷과 전기도 포함이야." },
+      { r: "B", de: "Das ist fair. Ich würd's gern nehmen. Wann erfahr ich denn, ob es klappt?", ko: "합리적이네. 꼭 들어오고 싶어. 언제쯤 결과를 알 수 있어?" },
+      { r: "A", de: "Wir melden uns bis Freitag bei dir. Aber mein Bauchgefühl sagt: Das passt.", ko: "금요일까지 연락할게. 그런데 내 직감으로는 잘 맞을 것 같아." },
+      { r: "B", de: "Super, ich freu mich! Vielen Dank für die Einladung.", ko: "좋아, 기대돼! 초대해 줘서 정말 고마워." }
     ],
     umg: [
       { de: "Hi", t: 1, ko: "안녕 (가벼운 인사)", std: "Guten Tag", reg: "구어" },
@@ -313,37 +313,37 @@ window.DIALOG_DATA.MZ = [
       { de: "gedacht hab", t: 2, ko: "생각했던 (habe의 e 탈락)", std: "gedacht habe", reg: "축약" },
       { de: "'ne", t: 3, ko: "eine의 구어 축약", std: "eine", reg: "축약" },
       { de: "was trinken", t: 3, ko: "뭘 좀 마시다 (was = etwas)", std: "etwas trinken", reg: "축약" },
-      { de: "Sag mal", t: 4, ko: "그런데요, 있잖아요", std: "Ich möchte gern wissen", reg: "추임새" },
-      { de: "wär", t: 4, ko: "…면 좋겠어요 (wäre의 e 탈락)", std: "wäre", reg: "축약" },
+      { de: "Sag mal", t: 4, ko: "그런데, 있잖아", std: "Ich möchte gern wissen", reg: "추임새" },
+      { de: "wär", t: 4, ko: "…면 좋겠어 (wäre의 e 탈락)", std: "wäre", reg: "축약" },
       { de: "'nen", t: 5, ko: "einen의 구어 축약", std: "einen", reg: "축약" },
       { de: "dran", t: 5, ko: "차례인, 당번인", std: "an der Reihe", reg: "구어" },
       { de: "recht", t: 5, ko: "꽤, 제법", std: "ziemlich", reg: "구어" },
       { de: "ziemlich", t: 6, ko: "꽤, 상당히", std: "relativ", reg: "구어" },
-      { de: "kenn ich", t: 7, ko: "저도 알아요, 그 마음 알아요", std: "Das kenne ich auch.", reg: "구어" },
-      { de: "was machst du so beruflich", t: 7, ko: "일은 뭘 하세요? (so = 대략, 부드럽게 묻는 말)", std: "Welchen Beruf haben Sie?", reg: "구어" },
-      { de: "Überhaupt nicht", t: 9, ko: "전혀 아니에요", std: "Gar nicht", reg: "구어" },
+      { de: "kenn ich", t: 7, ko: "나도 알아, 그 마음 알아", std: "Das kenne ich auch.", reg: "구어" },
+      { de: "was machst du so beruflich", t: 7, ko: "일은 뭘 해? (so = 대략, 부드럽게 묻는 말)", std: "Welchen Beruf haben Sie?", reg: "구어" },
+      { de: "Überhaupt nicht", t: 9, ko: "전혀 아니야", std: "Gar nicht", reg: "구어" },
       { de: "Hauptsache", t: 9, ko: "중요한 건, 그것만 되면", std: "Wichtig ist, dass", reg: "구어" },
       { de: "Typ", t: 10, ko: "…한 사람, 유형", std: "Mensch, Person", reg: "구어" },
       { de: "warm", t: 11, ko: "관리비 포함 (월세 Warmmiete)", std: "inklusive Nebenkosten", reg: "구어" },
-      { de: "würd's", t: 12, ko: "그걸 …하고 싶어요 (würde es)", std: "würde es", reg: "축약" },
+      { de: "würd's", t: 12, ko: "그걸 …하고 싶어 (würde es)", std: "würde es", reg: "축약" },
       { de: "klappt", t: 12, ko: "잘 풀리다, 성사되다", std: "funktioniert", reg: "구어" },
       { de: "Bauchgefühl", t: 13, ko: "직감", std: "Intuition", reg: "구어" },
       { de: "passt", t: 13, ko: "잘 맞다", std: "passt zusammen", reg: "구어" }
     ],
     redemittel: [
       { group: "집 보기", items: [
-        { de: "Schön habt ihr's hier!", ko: "여기 참 좋네요!" },
-        { de: "Willst du was trinken?", ko: "뭘 좀 마실래요?" }
+        { de: "Schön habt ihr's hier!", ko: "여기 참 좋다!" },
+        { de: "Willst du was trinken?", ko: "뭐 좀 마실래?" }
       ] },
       { group: "생활 규칙 묻기", items: [
-        { de: "Wie läuft das bei euch mit dem Putzen?", ko: "청소는 여기서 어떻게 해요?" },
-        { de: "Jeder ist eine Woche dran.", ko: "각자 일주일씩 맡아요." },
-        { de: "Wie viel Miete wären das im Monat?", ko: "한 달 월세가 얼마나 돼요?" }
+        { de: "Wie läuft das bei euch mit dem Putzen?", ko: "청소는 여기서 어떻게 해?" },
+        { de: "Jeder ist eine Woche dran.", ko: "각자 일주일씩 맡아." },
+        { de: "Wie viel Miete wären das im Monat?", ko: "한 달 월세가 얼마야?" }
       ] },
       { group: "관심 표현 · 마무리", items: [
-        { de: "Ich würd's gern nehmen.", ko: "꼭 들어오고 싶어요." },
-        { de: "Wann erfahr ich, ob es klappt?", ko: "언제쯤 결과를 알 수 있을까요?" },
-        { de: "Mein Bauchgefühl sagt: Das passt.", ko: "제 직감으로는 잘 맞을 것 같아요." }
+        { de: "Ich würd's gern nehmen.", ko: "꼭 들어오고 싶어." },
+        { de: "Wann erfahr ich, ob es klappt?", ko: "언제쯤 결과를 알 수 있어?" },
+        { de: "Mein Bauchgefühl sagt: Das passt.", ko: "내 직감으로는 잘 맞을 것 같아." }
       ] }
     ]
   }

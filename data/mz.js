@@ -346,7 +346,7 @@ window.DIALOG_DATA.MZ = [
       { de: "Ist eigentlich recht entspannt", t: 5, ko: "사실 꽤 편해 (주어 das가 빠짐, entspannt = 부담 없는)", std: "Das ist eigentlich recht unkompliziert.", reg: "구어" },
       { de: "Klingt gut", t: 6, ko: "좋네, 좋게 들려 (주어 das가 빠짐)", std: "Das klingt gut.", reg: "구어" },
       { de: "kenn ich", t: 7, ko: "그거 알지, 나도 그래 (주어 das가 빠지고 kenne의 e 탈락)", std: "Das kenne ich.", reg: "구어" },
-      { de: "was machst du so beruflich", t: 7, ko: "일은 뭐 해? (so = 대략, 부드럽게 묻는 말)", std: "Welchen Beruf hast du?", reg: "구어" },
+      { de: "was machst du so beruflich", t: 7, ko: "일은 뭐 해? (so = 대략, 부드럽게 묻는 말)", std: "Was bist du von Beruf?", reg: "구어" },
       { de: "Hauptsache", t: 9, ko: "중요한 건 …야, …만 되면 돼", std: "Wichtig ist, dass", reg: "구어" },
       { de: "warm", t: 11, ko: "관리비 포함 (월세 Warmmiete)", std: "inklusive Nebenkosten", reg: "구어" },
       { de: "mit allem drin", t: 11, ko: "전부 다 포함해서", std: "alles inbegriffen", reg: "구어" },

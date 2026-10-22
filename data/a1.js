@@ -50,7 +50,7 @@ window.DIALOG_DATA.A1 = [
       { r: "B", de: "Hallo, Lena! Ich heiße Min-jun. Ich komme aus Korea. Woher kommst du?", ko: "안녕, 레나! 나는 민준이야. 한국에서 왔어. 너는 어디에서 왔어?" },
       { r: "A", de: "Ich komme aus Polen, aus Warschau. Wo wohnst du jetzt?", ko: "나는 폴란드 바르샤바에서 왔어. 너는 지금 어디에 살아?" },
       { r: "B", de: "Ich wohne in Berlin, in Kreuzberg. Und du?", ko: "나는 베를린 크로이츠베르크에 살아. 너는?" },
-      { r: "A", de: "Ich wohne auch in Berlin, in Neukölln. Was machst du von Beruf?", ko: "나도 베를린에 살아. 노이쾰른에. 너는 무슨 일 해?" },
+      { r: "A", de: "Ich wohne auch in Berlin, in Neukölln. Was bist du von Beruf?", ko: "나도 베를린에 살아. 노이쾰른에. 너는 직업이 뭐야?" },
       { r: "B", de: "Ich bin Ingenieur und arbeite bei einer Firma in Berlin. Und du?", ko: "나는 엔지니어이고 베를린에 있는 회사에서 일해. 너는?" },
       { r: "A", de: "Ich bin Studentin. Ich studiere Biologie.", ko: "나는 대학생이야. 생물학을 전공해." },
       { r: "B", de: "Welche Sprachen sprichst du?", ko: "너는 무슨 언어를 할 줄 알아?" },
@@ -70,7 +70,8 @@ window.DIALOG_DATA.A1 = [
         { de: "Ich wohne in …", ko: "나는 …에 살아." }
       ] },
       { group: "직업", items: [
-        { de: "Was machst du von Beruf?", ko: "너는 무슨 일 해?" },
+        { de: "Was bist du von Beruf?", ko: "너는 직업이 뭐야?" },
+        { de: "Ich bin Ingenieur.", ko: "나는 엔지니어야." },
         { de: "Ich arbeite bei einer Firma.", ko: "나는 회사에서 일해." }
       ] },
       { group: "언어", items: [

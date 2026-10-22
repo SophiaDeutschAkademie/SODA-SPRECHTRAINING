@@ -22,7 +22,7 @@ window.DIALOG_DATA.A1 = [
     redemittel: [
       { group: "주문", items: [
         { de: "Was darf es sein?", ko: "뭘 드릴까요?" },
-        { de: "Ich möchte … , bitte.", ko: "…(을)를 주세요." },
+        { de: "Ich möchte …, bitte.", ko: "…(을)를 주세요." },
         { de: "Sonst noch etwas?", ko: "더 필요하신 건 없으세요?" }
       ] },
       { group: "가격", items: [
@@ -55,7 +55,7 @@ window.DIALOG_DATA.A1 = [
       { r: "A", de: "Ich bin Studentin. Ich studiere Biologie.", ko: "나는 대학생이야. 생물학을 전공해." },
       { r: "B", de: "Welche Sprachen sprichst du?", ko: "너는 무슨 언어를 할 줄 알아?" },
       { r: "A", de: "Ich spreche Polnisch, Englisch und ein bisschen Deutsch. Und du?", ko: "나는 폴란드어랑 영어를 하고, 독일어도 조금 해. 너는?" },
-      { r: "B", de: "Ich spreche Koreanisch, ein bisschen Englisch und jetzt Deutsch.", ko: "나는 한국어를 하고 영어도 조금 해. 그리고 이제는 독일어도 해." },
+      { r: "B", de: "Ich spreche Koreanisch und ein bisschen Englisch. Und jetzt lerne ich Deutsch.", ko: "나는 한국어를 하고 영어도 조금 해. 그리고 지금은 독일어를 배우고 있어." },
       { r: "A", de: "Schön, dich kennenzulernen, Min-jun!", ko: "만나서 반가워, 민준!" },
       { r: "B", de: "Freut mich auch! Bis morgen im Kurs!", ko: "나도 반가워! 내일 수업에서 봐!" }
     ],
@@ -99,13 +99,13 @@ window.DIALOG_DATA.A1 = [
       { r: "A", de: "Nach links, Bahnhofstraße. Ist das weit?", ko: "왼쪽으로, Bahnhofstraße요. 먼가요?" },
       { r: "B", de: "Nein, nicht weit. Zu Fuß sind es zehn Minuten.", ko: "아니요, 멀지 않아요. 걸어서 10분이에요." },
       { r: "A", de: "Super. Gibt es dort auch einen Geldautomaten?", ko: "잘됐네요. 거기에 현금인출기도 있어요?" },
-      { r: "B", de: "Ja, der Geldautomat ist direkt am Bahnhof.", ko: "네, 현금인출기는 기차역 바로 옆에 있어요." },
+      { r: "B", de: "Ja, direkt im Bahnhof gibt es einen.", ko: "네, 기차역 안에 하나 있어요." },
       { r: "A", de: "Vielen Dank! Das ist sehr nett.", ko: "정말 감사합니다! 친절하시네요." },
       { r: "B", de: "Bitte, gern geschehen. Schönen Tag noch!", ko: "천만에요. 좋은 하루 보내세요!" }
     ],
     redemittel: [
       { group: "길 묻기", items: [
-        { de: "Entschuldigung, wo ist … , bitte?", ko: "실례합니다. …(이)가 어디예요?" },
+        { de: "Entschuldigung, wo ist …, bitte?", ko: "실례합니다. …(이)가 어디예요?" },
         { de: "Ist das weit?", ko: "먼가요?" }
       ] },
       { group: "방향", items: [
@@ -148,11 +148,11 @@ window.DIALOG_DATA.A1 = [
     redemittel: [
       { group: "예약 · 자리", items: [
         { de: "Haben Sie reserviert?", ko: "예약하셨어요?" },
-        { de: "Ja, auf den Namen … , für zwei Personen.", ko: "네, … 이름으로 두 명이요." }
+        { de: "Ja, auf den Namen …, für zwei Personen.", ko: "네, … 이름으로 두 명이요." }
       ] },
       { group: "주문", items: [
         { de: "Was möchten Sie trinken?", ko: "음료는 뭘로 하시겠어요?" },
-        { de: "Ich möchte … , bitte.", ko: "…(을)를 주세요." },
+        { de: "Ich möchte …, bitte.", ko: "…(을)를 주세요." },
         { de: "Ich nehme die Gemüsesuppe.", ko: "저는 채소 수프로 할게요." }
       ] },
       { group: "식사", items: [
@@ -180,7 +180,7 @@ window.DIALOG_DATA.A1 = [
       { r: "A", de: "Eine Komödie. Der Film beginnt um 20 Uhr.", ko: "코미디야. 영화는 저녁 8시에 시작해." },
       { r: "B", de: "20 Uhr ist gut. Wo treffen wir uns?", ko: "8시 좋아. 어디에서 만날까?" },
       { r: "A", de: "Vor dem Kino, um 19 Uhr 30. Geht das?", ko: "영화관 앞에서 7시 반에. 괜찮아?" },
-      { r: "B", de: "Hmm, ich arbeite bis 19 Uhr. Ich komme erst um 19 Uhr 45. Ist das okay?", ko: "음, 나 7시까지 일해. 7시 45분은 돼야 도착해. 그래도 괜찮아?" },
+      { r: "B", de: "Hm, ich arbeite bis 19 Uhr. Ich komme erst um 19 Uhr 45. Ist das okay?", ko: "음, 나 7시까지 일해. 7시 45분은 돼야 도착해. 그래도 괜찮아?" },
       { r: "A", de: "Ja, kein Problem. Dann kaufe ich die Karten.", ko: "응, 문제없어. 그럼 표는 내가 살게." },
       { r: "B", de: "Super, danke! Dann bis Samstag.", ko: "좋아, 고마워! 그럼 토요일에 봐." },
       { r: "A", de: "Bis Samstag! Tschüs!", ko: "토요일에 봐! 안녕!" }
@@ -225,14 +225,14 @@ window.DIALOG_DATA.A1 = [
       { r: "A", de: "Gut. Was kostet die Fahrkarte?", ko: "좋아요. 승차권은 얼마예요?" },
       { r: "B", de: "Hin und zurück kostet sie hundertzwanzig Euro.", ko: "왕복은 120유로예요." },
       { r: "A", de: "Ich bin Student. Gibt es eine Ermäßigung?", ko: "제가 대학생인데요. 할인이 있나요?" },
-      { r: "B", de: "Für Studenten leider nicht. Aber mit dem Sparpreis kostet die Fahrkarte nur sechzig Euro. Dann können Sie nur diesen Zug nehmen.", ko: "학생 할인은 아쉽게도 없어요. 그런데 할인 요금으로 하시면 60유로밖에 안 해요. 대신 이 기차만 타실 수 있어요." },
+      { r: "B", de: "Für Studenten leider nicht. Aber mit dem Sparpreis kostet die Fahrkarte nur sechzig Euro. Sie können dann nur diesen Zug nehmen.", ko: "학생 할인은 아쉽게도 없어요. 그런데 할인 요금으로 하시면 60유로밖에 안 해요. 대신 이 기차만 타실 수 있어요." },
       { r: "A", de: "Kein Problem. Dann nehme ich den Sparpreis.", ko: "괜찮아요. 그럼 할인 요금으로 할게요." },
       { r: "B", de: "Gern. Hier ist Ihre Fahrkarte. Der Zug fährt von Gleis fünf. Gute Reise!", ko: "네. 여기 승차권이요. 기차는 5번 승강장에서 출발해요. 즐거운 여행 되세요!" },
       { r: "A", de: "Danke schön. Auf Wiedersehen!", ko: "감사합니다. 안녕히 계세요!" }
     ],
     redemittel: [
       { group: "표 사기", items: [
-        { de: "Ich möchte eine Fahrkarte nach … , bitte.", ko: "…행 승차권 한 장 주세요." },
+        { de: "Ich möchte eine Fahrkarte nach …, bitte.", ko: "…행 승차권 한 장 주세요." },
         { de: "Einfach oder hin und zurück?", ko: "편도로 드릴까요, 왕복으로 드릴까요?" }
       ] },
       { group: "시간", items: [

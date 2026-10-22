@@ -11,11 +11,11 @@ window.DIALOG_DATA.B2 = [
       { r: "A", de: "Herr Choi, in Ihrem Lebenslauf steht, dass Sie ein Projekt geleitet haben. Könnten Sie das genauer erläutern?", ko: "최 씨, 이력서를 보니 프로젝트를 이끈 경험이 있으시네요. 조금 더 자세히 설명해 주실 수 있을까요?" },
       { r: "B", de: "Gern. Vor zwei Jahren habe ich ein Team von fünf Personen geleitet, das ein neues Lagerverwaltungssystem einführen sollte. Dabei zeigte sich, dass die Kommunikation zwischen den Abteilungen das größte Hindernis war.", ko: "네, 말씀드리겠습니다. 2년 전에 새 재고 관리 시스템 도입을 맡은 5명 규모의 팀을 이끌었습니다. 그 과정에서 부서 간 소통이 가장 큰 걸림돌이라는 점이 드러났습니다." },
       { r: "A", de: "Wie sind Sie mit diesem Problem umgegangen?", ko: "그 문제는 어떻게 해결하셨어요?" },
-      { r: "B", de: "Ich habe wöchentliche Besprechungen eingeführt, in denen jede Abteilung kurz über ihren Stand berichtete. Dadurch ließen sich Missverständnisse früh klären.", ko: "매주 회의를 열어 각 부서가 진행 상황을 짧게 보고하도록 했습니다. 그 덕분에 오해를 일찍 풀 수 있었습니다." },
+      { r: "B", de: "Ich habe wöchentliche Besprechungen eingeführt, in denen jede Abteilung kurz über den aktuellen Stand berichtete. Dadurch ließen sich Missverständnisse früh klären.", ko: "매주 회의를 열어 각 부서가 진행 상황을 짧게 보고하도록 했습니다. 그 덕분에 오해를 일찍 풀 수 있었습니다." },
       { r: "A", de: "Das klingt sinnvoll. Wie reagieren Sie, wenn Ihre Vorschläge abgelehnt werden?", ko: "합리적인 방법이네요. 제안이 받아들여지지 않으면 어떻게 대응하세요?" },
       { r: "B", de: "Ich nehme Kritik ernst und versuche zunächst, die Gründe zu verstehen. Wenn ich überzeugt bin, dass meine Idee besser ist, argumentiere ich sachlich – zugleich bin ich aber bereit, Kompromisse einzugehen.", ko: "비판은 진지하게 받아들이고, 먼저 그 이유를 이해하려고 합니다. 제 아이디어가 더 낫다고 확신하면 근거를 들어 차분하게 설명합니다. 그러면서도 타협할 자세는 갖추고 있습니다." },
       { r: "A", de: "Und was erwarten Sie von dieser Stelle?", ko: "그럼 이 자리에 어떤 기대를 갖고 계세요?" },
-      { r: "B", de: "Ich erwarte eine Aufgabe, bei der ich Verantwortung übernehmen kann. Außerdem möchte ich mich im Unternehmen langfristig weiterentwickeln.", ko: "책임을 맡을 수 있는 업무를 기대합니다. 또 이 회사에서 오래 일하며 성장하고 싶습니다." },
+      { r: "B", de: "Ich wünsche mir eine Aufgabe, bei der ich Verantwortung übernehmen kann. Außerdem möchte ich mich im Unternehmen langfristig weiterentwickeln.", ko: "책임을 맡을 수 있는 업무를 바랍니다. 또 이 회사에서 오래 일하며 성장하고 싶습니다." },
       { r: "A", de: "Haben Sie noch Fragen an uns?", ko: "저희에게 궁금한 점이 더 있으세요?" },
       { r: "B", de: "Ja, mich würde interessieren, wie die Zusammenarbeit zwischen den Standorten organisiert ist.", ko: "네, 지점 간 협업이 어떤 방식으로 이루어지는지 궁금합니다." },
       { r: "A", de: "Gute Frage. Wir koordinieren das über eine wöchentliche Videokonferenz und gemeinsame Projektteams.", ko: "좋은 질문이에요. 매주 하는 화상 회의와 공동 프로젝트팀을 통해 조율하고 있어요." },
@@ -35,7 +35,7 @@ window.DIALOG_DATA.B2 = [
         { de: "Wenn …, argumentiere ich sachlich.", ko: "…하면 근거를 들어 차분하게 설명합니다." }
       ] },
       { group: "기대와 포부", items: [
-        { de: "Ich erwarte …", ko: "…을 기대합니다." },
+        { de: "Ich wünsche mir …", ko: "…을 바랍니다." },
         { de: "Ich möchte mich langfristig weiterentwickeln.", ko: "오래 일하며 성장하고 싶습니다." }
       ] },
       { group: "질문하기", items: [
@@ -111,7 +111,7 @@ window.DIALOG_DATA.B2 = [
       { r: "B", de: "Einverstanden. Und was passiert, wenn wir uns nicht einigen können?", ko: "좋아요. 그런데 합의가 안 되면 어떻게 되나요?" },
       { r: "A", de: "Dann überlegen wir gemeinsam, wie die Zusammenarbeit künftig klarer geregelt werden kann, zum Beispiel durch festgelegte Zuständigkeiten und Quellenangaben in Präsentationen.", ko: "그때는 앞으로 협업 방식을 어떻게 더 분명하게 정할지 함께 고민해요. 예를 들면 담당 업무를 확실히 나누고 발표 자료에 출처를 밝히는 식으로요." },
       { r: "B", de: "Das klingt vernünftig. Ich bin bereit, es zu versuchen.", ko: "합리적인 방법이네요. 한번 해 볼게요." },
-      { r: "A", de: "Gut. Ich lade Sie beide zu einem Gespräch am Donnerstag ein und schicke vorher eine kurze Agenda.", ko: "좋아요. 두 분께 목요일 면담 일정을 잡아 드리고, 그 전에 간단한 안건을 보내 드릴게요." }
+      { r: "A", de: "Gut. Ich lade Sie und Frau Roth für Donnerstag zu einem Gespräch ein und schicke Ihnen vorher eine kurze Agenda.", ko: "좋아요. 목요일에 로트 씨와 함께 이야기하는 자리를 마련하고, 그 전에 간단한 안건을 보내 드릴게요." }
     ],
     redemittel: [
       { group: "상황 듣기", items: [
@@ -151,7 +151,7 @@ window.DIALOG_DATA.B2 = [
       { r: "B", de: "Gibt es auch englischsprachige Masterstudiengänge? Mein Deutsch ist erst auf B2-Niveau.", ko: "영어로 수업하는 석사 과정도 있나요? 제 독일어는 아직 B2 수준이에요." },
       { r: "A", de: "Ja, davon gibt es inzwischen viele, vor allem in den Ingenieurwissenschaften. Allerdings sollten Sie bedenken, dass Deutschkenntnisse im Alltag und bei der Jobsuche dennoch wichtig bleiben.", ko: "네, 요즘은 특히 공학 분야에 많아요. 다만 일상생활이나 일자리를 구할 때는 그래도 독일어가 중요하다는 점을 생각하셔야 해요." },
       { r: "B", de: "Das leuchtet mir ein. Wie sieht es mit den Kosten aus? Muss ich Studiengebühren zahlen?", ko: "듣고 보니 그러네요. 비용은 어떤가요? 등록금을 내야 하나요?" },
-      { r: "A", de: "An den meisten öffentlichen Hochschulen fallen keine Studiengebühren an, nur ein Semesterbeitrag. Für internationale Studierende gibt es aber Ausnahmen in einzelnen Bundesländern. Außerdem müssen Sie für das Visum nachweisen, dass Sie Ihren Lebensunterhalt finanzieren können.", ko: "대부분의 공립 대학은 등록금이 없고 학기 분담금만 내요. 다만 몇몇 주에는 유학생에 대한 예외 규정이 있어요. 그리고 비자를 받으려면 생활비를 감당할 수 있다는 걸 증명해야 해요." },
+      { r: "A", de: "An den meisten öffentlichen Hochschulen fallen keine Studiengebühren an, nur ein Semesterbeitrag. In einzelnen Bundesländern, etwa in Baden-Württemberg, zahlen Studierende aus Nicht-EU-Ländern allerdings Studiengebühren. Außerdem müssen Sie für das Visum nachweisen, dass Sie Ihren Lebensunterhalt finanzieren können.", ko: "대부분의 공립 대학은 등록금이 없고 학기 분담금만 내요. 다만 바덴뷔르템베르크처럼 일부 주에서는 EU 밖에서 온 학생이 등록금을 내요. 그리고 비자를 받으려면 생활비를 감당할 수 있다는 걸 증명해야 해요." },
       { r: "B", de: "Und darf man neben dem Studium arbeiten?", ko: "그리고 학업과 병행해서 일해도 되나요?" },
       { r: "A", de: "Ja, in begrenztem Umfang. Die genauen Regeln sollten Sie aber vor der Einreise prüfen, zum Beispiel auf der Website der deutschen Botschaft, weil sie sich ändern können.", ko: "네, 정해진 범위 안에서는 돼요. 다만 규정이 바뀔 수 있으니 입국 전에 독일 대사관 홈페이지 등에서 정확한 내용을 확인해 보세요." },
       { r: "B", de: "Verstanden. Welche Schritte würden Sie mir für die nächsten Monate empfehlen?", ko: "알겠어요. 앞으로 몇 달 동안 어떤 순서로 준비하면 좋을까요?" },
@@ -192,11 +192,11 @@ window.DIALOG_DATA.B2 = [
       { r: "A", de: "Guten Tag, ich rufe wegen meiner Reise nach Mallorca an, von der ich letzte Woche zurückgekehrt bin. Ich möchte eine Reklamation einreichen.", ko: "안녕하세요, 지난주에 다녀온 마요르카 여행 건으로 전화드렸어요. 항의를 접수하고 싶어요." },
       { r: "B", de: "Das tut mir leid. Worum geht es genau?", ko: "불편을 겪으셨다니 죄송합니다. 어떤 일인지 자세히 말씀해 주시겠어요?" },
       { r: "A", de: "Gebucht hatten wir ein Doppelzimmer mit Meerblick. Tatsächlich haben wir ein Zimmer zum Parkplatz bekommen, und die Klimaanlage war in den ersten Tagen defekt. Dazu kam der Lärm von einer Baustelle neben dem Hotel – jeden Morgen ab sieben Uhr.", ko: "바다가 보이는 더블룸을 예약했는데, 실제로는 주차장 쪽 방을 받았어요. 처음 며칠은 에어컨도 고장 나 있었고요. 게다가 호텔 옆 공사장이 매일 아침 7시부터 시끄러웠어요." },
-      { r: "B", de: "Haben Sie den Mangel vor Ort der Rezeption gemeldet?", ko: "현지에서 프런트에 문제를 알리셨나요?" },
-      { r: "A", de: "Selbstverständlich, schon am ersten Abend. Man hat uns ein anderes Zimmer versprochen, aber umziehen konnten wir erst nach vier Tagen. Ich habe Fotos und eine schriftliche Bestätigung der Rezeption.", ko: "그럼요, 첫날 저녁에 바로 알렸어요. 다른 방을 주겠다고 했는데, 나흘이 지나서야 옮길 수 있었어요. 사진도 있고 프런트에서 받은 서면 확인서도 있어요." },
+      { r: "B", de: "Haben Sie die Mängel schon vor Ort gemeldet?", ko: "현지에서 바로 문제를 알리셨나요?" },
+      { r: "A", de: "Selbstverständlich, gleich am ersten Abend an der Rezeption. Man hat uns ein anderes Zimmer versprochen, aber umziehen konnten wir erst nach vier Tagen. Ich habe Fotos und eine schriftliche Bestätigung der Rezeption.", ko: "그럼요, 첫날 저녁에 바로 프런트에 알렸어요. 다른 방을 주겠다고 했는데, 나흘이 지나서야 옮길 수 있었어요. 사진도 있고 프런트에서 받은 서면 확인서도 있어요." },
       { r: "B", de: "Das ist gut, denn die Meldung vor Ort ist wichtig, damit eine Minderung geltend gemacht werden kann. Was genau erwarten Sie von uns?", ko: "잘하셨어요. 현지에서 알려야 감액을 청구할 수 있거든요. 저희에게 구체적으로 무엇을 원하세요?" },
       { r: "A", de: "Ich halte eine Preisminderung für angemessen. Für die ersten vier Tage ohne Meerblick und ohne funktionierende Klimaanlage würde ich 30 Prozent des anteiligen Reisepreises zurückfordern. Außerdem erwarte ich eine schriftliche Stellungnahme des Hotels.", ko: "요금 감액이 적절하다고 생각해요. 바다 전망도 없고 에어컨도 안 됐던 처음 나흘에 대해서는 그 기간 요금의 30퍼센트를 돌려받고 싶어요. 호텔 측의 서면 해명도 받고 싶고요." },
-      { r: "B", de: "Dreißig Prozent erscheinen mir hoch. Solche Minderungen richten sich nach der Schwere des Mangels und der Dauer. Wir werden den Fall prüfen und uns beim Hotel erkundigen.", ko: "30퍼센트는 높아 보여요. 이런 감액은 문제가 얼마나 심각했는지와 얼마나 오래 이어졌는지에 따라 정해지거든요. 사안을 검토하고 호텔에도 확인해 볼게요." },
+      { r: "B", de: "Dreißig Prozent erscheinen mir hoch. Solche Minderungen richten sich nach Art, Schwere und Dauer der Mängel. Wir werden den Fall prüfen und uns beim Hotel erkundigen.", ko: "30퍼센트는 높아 보여요. 이런 감액은 문제의 종류와 심각성, 기간에 따라 정해지거든요. 사안을 검토하고 호텔에도 확인해 볼게요." },
       { r: "A", de: "Ich habe volles Verständnis dafür, dass Sie das prüfen müssen. Allerdings bitte ich Sie, mir eine Frist zu nennen, innerhalb derer ich eine Antwort erhalte. Ansonsten müsste ich Rechtsberatung in Anspruch nehmen.", ko: "검토가 필요하다는 건 충분히 이해해요. 다만 언제까지 답변을 받을 수 있는지 기한을 알려 주세요. 그렇지 않으면 법률 상담을 받아야 할 것 같아요." },
       { r: "B", de: "Verständlich. Bitte schicken Sie uns Ihre Forderung schriftlich per E-Mail, zusammen mit den Fotos und der Bestätigung. Sobald alles vorliegt, melden wir uns innerhalb von zwei Wochen bei Ihnen.", ko: "알겠습니다. 요구 사항을 사진, 확인서와 함께 이메일로 보내 주세요. 자료가 다 들어오면 2주 안에 연락드릴게요." },
       { r: "A", de: "Gut, dann schicke ich Ihnen alles noch heute. Bitte bestätigen Sie mir den Eingang schriftlich.", ko: "좋아요, 그럼 오늘 중으로 다 보낼게요. 받으시면 서면으로 확인해 주세요." },
@@ -238,8 +238,8 @@ window.DIALOG_DATA.B2 = [
       { r: "B", de: "Das kann sein, aber die Qualität hängt davon ab, wie man das Tool einsetzt. Wenn es nur Standardfragen beantwortet und alles andere an uns weiterleitet, hat doch niemand einen Nachteil.", ko: "그럴 수도 있지. 그런데 질은 도구를 어떻게 쓰느냐에 달렸어. 정해진 질문에만 답하고 나머지는 다 우리한테 넘기면 손해 보는 사람은 없잖아." },
       { r: "A", de: "In der Theorie ja. Aber was passiert, wenn das System Fehler macht und falsche Auskünfte gibt? Wer trägt dann die Verantwortung?", ko: "이론상으로는 그렇지. 그런데 시스템이 실수해서 잘못 안내하면 어떡해? 그때 책임은 누가 져?" },
       { r: "B", de: "Das ist ein berechtigter Einwand. Deshalb müsste man klare Regeln aufstellen und die Antworten stichprobenartig überprüfen.", ko: "그건 맞는 지적이야. 그래서 규칙을 분명하게 세우고, 답변을 표본으로 골라 점검해야 할 거야." },
-      { r: "A", de: "Außerdem mache ich mir Sorgen um Arbeitsplätze. Es heißt, dass zunächst nur Routineaufgaben automatisiert werden, aber wer garantiert, dass es dabei bleibt?", ko: "게다가 일자리도 걱정돼. 처음에는 단순한 업무만 자동화한다고 하는데, 거기서 끝난다고 누가 장담해?" },
-      { r: "B", de: "Garantien gibt es nie. Andererseits hat bisher jede technische Neuerung auch neue Aufgaben geschaffen. Entscheidend ist, dass wir uns weiterbilden und rechtzeitig mitgestalten, statt abzuwarten.", ko: "장담할 수 있는 건 없지. 그래도 지금까지 기술 혁신은 늘 새로운 일도 만들어 냈어. 중요한 건 가만히 기다리지 말고, 우리가 계속 배우면서 제때 변화에 참여하는 거야." },
+      { r: "A", de: "Außerdem mache ich mir Sorgen um unsere Arbeitsplätze. Es heißt, dass zunächst nur Routineaufgaben automatisiert werden, aber wer garantiert, dass es dabei bleibt?", ko: "게다가 우리 일자리도 걱정돼. 처음에는 단순한 업무만 자동화한다고 하는데, 거기서 끝난다고 누가 장담해?" },
+      { r: "B", de: "Garantien gibt es nie. Andererseits hat bisher jede technische Neuerung auch neue Aufgaben geschaffen. Entscheidend ist, dass wir uns weiterbilden und die Veränderung rechtzeitig mitgestalten, statt abzuwarten.", ko: "장담할 수 있는 건 없지. 그래도 지금까지 기술 혁신은 늘 새로운 일도 만들어 냈어. 중요한 건 가만히 기다리지 말고, 계속 배우면서 변화를 제때 함께 만들어 가는 거야." },
       { r: "A", de: "Da ist etwas dran. Vielleicht sollten wir dem Betriebsrat vorschlagen, dass wir an der Einführung beteiligt werden.", ko: "일리가 있네. 도입 과정에 우리도 참여하게 해 달라고 직원 협의회에 제안해 보는 게 좋겠어." },
       { r: "B", de: "Gute Idee. Dann könnten wir auch Schulungen einfordern.", ko: "좋은 생각이야. 그러면 교육도 요구할 수 있겠지." },
       { r: "A", de: "Gut, dann formulieren wir einen kurzen Vorschlag.", ko: "좋아, 그럼 짧게 제안서를 써 보자." },

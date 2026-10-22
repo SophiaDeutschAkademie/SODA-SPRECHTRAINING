@@ -217,7 +217,7 @@ window.DIALOG_DATA.A2 = [
     roles: { A: "Sara", B: "Felix" },
     turns: [
       { r: "A", de: "Hallo Felix, hier ist Sara. Hast du kurz Zeit?", ko: "안녕, 펠릭스. 나 사라야. 잠깐 시간 돼?" },
-      { r: "B", de: "Hallo Sara! Ja, klar. Was gibt es?", ko: "안녕, 사라! 그럼. 무슨 일이야?" },
+      { r: "B", de: "Hallo Sara! Ja, klar. Was gibt's?", ko: "안녕, 사라! 그럼. 무슨 일이야?" },
       { r: "A", de: "Ich werde nächsten Samstag 30 und möchte mit ein paar Freunden feiern. Hast du Lust zu kommen?", ko: "나 다음 토요일에 서른 살이 되거든. 친구 몇 명이랑 파티하고 싶은데, 올래?" },
       { r: "B", de: "Oh, wie schön! Danke für die Einladung. Ich komme gern. Wann und wo feierst du?", ko: "와, 좋다! 초대해 줘서 고마워. 꼭 갈게. 언제, 어디서 해?" },
       { r: "A", de: "Ab 18 Uhr bei mir zu Hause. Wir grillen im Garten.", ko: "저녁 6시부터 우리 집에서. 마당에서 바비큐 할 거야." },

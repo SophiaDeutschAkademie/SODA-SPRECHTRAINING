@@ -59,7 +59,7 @@ window.DIALOG_DATA.B1 = [
       { r: "A", de: "Ja, beides. Das hat aber nichts geändert. Ich möchte entweder ein neues Gerät oder mein Geld zurück.", ko: "네, 둘 다 해 봤는데 달라진 게 없어요. 새 기기로 받거나 환불받고 싶어요." },
       { r: "B", de: "Wir müssen es zuerst prüfen lassen. Das dauert in der Regel bis zu zwei Wochen. Wenn der Mangel bestätigt wird, bekommen Sie ein Ersatzgerät.", ko: "먼저 점검을 맡겨야 해요. 보통 길게는 2주까지 걸려요. 결함이 확인되면 교환 제품을 받으실 수 있어요." },
       { r: "A", de: "Zwei Wochen sind mir zu lang, ich brauche das Telefon für die Arbeit. Gibt es in der Zwischenzeit ein Leihgerät?", ko: "2주는 너무 길어요. 일 때문에 휴대폰이 꼭 있어야 하거든요. 그동안 쓸 수 있는 대여폰이 있나요?" },
-      { r: "B", de: "Ein Leihgerät können wir leider nicht anbieten, aber ich kann versuchen, die Prüfung zu beschleunigen. Dann haben Sie Ihr Gerät vielleicht schon nach einer Woche zurück.", ko: "대여폰은 죄송하지만 드릴 수가 없어요. 대신 점검이 빨리 진행되도록 해 볼게요. 그러면 일주일 만에 돌려받으실 수도 있어요." },
+      { r: "B", de: "Ein Leihgerät können wir leider nicht anbieten, aber ich kann versuchen, die Prüfung zu beschleunigen. Dann haben Sie vielleicht schon nach einer Woche ein Ergebnis.", ko: "대여폰은 죄송하지만 드릴 수가 없어요. 대신 점검이 빨리 진행되도록 해 볼게요. 그러면 일주일 안에 결과가 나올 수도 있어요." },
       { r: "A", de: "Das wäre schon besser. Und was passiert, wenn der Fehler nicht gefunden wird?", ko: "그러면 좀 낫겠네요. 그런데 결함이 안 나오면 어떻게 되나요?" },
       { r: "B", de: "Dann bekommen Sie das Gerät unverändert zurück. Aber das Problem ist bei diesem Modell bekannt, deshalb bin ich zuversichtlich.", ko: "그 경우에는 기기를 그대로 돌려드려요. 하지만 이 모델은 그 문제가 이미 알려져 있어서 잘 해결될 거라고 봐요." },
       { r: "A", de: "Gut, dann lasse ich es hier. Bekomme ich das schriftlich?", ko: "알겠어요, 그럼 맡기고 갈게요. 이 내용을 서면으로 받을 수 있을까요?" },
@@ -227,7 +227,7 @@ window.DIALOG_DATA.B1 = [
       { r: "A", de: "Hallo Jin! Du siehst müde aus. Ist alles in Ordnung?", ko: "안녕, 진! 피곤해 보인다. 괜찮아?" },
       { r: "B", de: "Ehrlich gesagt nicht so ganz. In drei Wochen habe ich meine B1-Prüfung, und ich weiß nicht, wie ich mich am besten vorbereiten soll.", ko: "솔직히 좀 그래. 3주 뒤에 B1 시험인데 어떻게 준비하는 게 제일 좋을지 모르겠어." },
       { r: "A", de: "Was fällt dir denn am schwersten?", ko: "뭐가 제일 어려운데?" },
-      { r: "B", de: "Das Sprechen. Ich kenne die Grammatik, aber wenn ich vor dem Prüfer sitze, habe ich einen Blackout.", ko: "말하기. 문법은 아는데, 시험관 앞에만 앉으면 머리가 하얘져." },
+      { r: "B", de: "Das Sprechen. Ich kenne die Grammatik, aber wenn ich vor den Prüfern sitze, habe ich einen Blackout.", ko: "말하기. 문법은 아는데, 시험관 앞에만 앉으면 머리가 하얘져." },
       { r: "A", de: "Das kenne ich. An deiner Stelle würde ich mit Freunden üben, am besten jeden Tag zehn Minuten. Du könntest dich auch aufnehmen und die Aufnahme danach anhören.", ko: "나도 그런 적 있어. 내가 너라면 친구들이랑 연습하겠어. 되도록 매일 10분씩. 네 말을 녹음해서 나중에 들어 봐도 좋고." },
       { r: "B", de: "Aufnehmen? Das klingt komisch, aber vielleicht hilft es. Und wie soll ich mich aufs Schreiben vorbereiten?", ko: "녹음? 좀 어색할 것 같은데, 도움이 될 수도 있겠다. 그럼 쓰기는 어떻게 준비해야 해?" },
       { r: "A", de: "Du solltest Mustertexte lesen und wichtige Redemittel lernen. Aber lerne keine ganzen Texte auswendig, sonst passt dein Text in der Prüfung vielleicht nicht zum Thema.", ko: "모범 답안을 읽고 중요한 표현을 익혀 두는 게 좋아. 그런데 글을 통째로 외우지는 마. 안 그러면 시험에서 네 글이 주제에 안 맞을 수도 있어." },
@@ -240,7 +240,7 @@ window.DIALOG_DATA.B1 = [
     redemittel: [
       { group: "고민 이야기", items: [
         { de: "Ich weiß nicht, wie ich mich vorbereiten soll.", ko: "어떻게 준비해야 할지 모르겠어." },
-        { de: "Wenn ich vor dem Prüfer sitze, habe ich einen Blackout.", ko: "시험관 앞에만 앉으면 머리가 하얘져." }
+        { de: "Wenn ich vor den Prüfern sitze, habe ich einen Blackout.", ko: "시험관 앞에만 앉으면 머리가 하얘져." }
       ] },
       { group: "조언", items: [
         { de: "An deiner Stelle würde ich …", ko: "내가 너라면 …하겠어." },

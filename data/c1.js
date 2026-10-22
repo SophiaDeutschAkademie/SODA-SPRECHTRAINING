@@ -8,45 +8,45 @@ window.DIALOG_DATA.C1 = [
     focus: ["찬반 토론", "반론과 양보", "타협안 만들기"],
     roles: { A: "Teamleiterin Sabine", B: "Kollege Markus" },
     turns: [
-      { r: "A", de: "Ich habe den Eindruck, dass die Diskussion um das Homeoffice oft an der eigentlichen Frage vorbeigeht. Es geht nicht um Bequemlichkeit, sondern um Vertrauen.", ko: "재택근무 논의가 정작 핵심을 비켜 가는 것 같아요. 편하냐의 문제가 아니라 신뢰의 문제잖아요." },
-      { r: "B", de: "Da stimme ich dir zum Teil zu. Vertrauen lässt sich allerdings kaum an Anwesenheitszeiten messen. Wer produktiv ist, zeigt das am Ergebnis, nicht am Schreibtisch.", ko: "그 말에는 부분적으로 동의해요. 하지만 신뢰는 출근 시간으로 측정하기 어려워요. 생산성은 책상에 앉아 있는 시간이 아니라 결과로 드러나는 거죠." },
-      { r: "A", de: "Das mag stimmen, nur hat die Praxis gezeigt, dass informelle Absprachen bei reiner Remote-Arbeit deutlich leiden – zumal neue Kollegen kaum Gelegenheit haben, sich einzuarbeiten.", ko: "그럴 수도 있어요. 다만 실제로 보면 완전 원격 근무에서는 비공식적인 협의가 뚜렷하게 약해져요. 특히 신입은 적응할 기회가 거의 없고요." },
-      { r: "B", de: "Das ist ein berechtigter Einwand. Allerdings wird dabei oft übersehen, dass starre Anwesenheitspflichten viele Mitarbeitende auch nicht produktiver machen – im Großraumbüro leidet die Konzentration oft erheblich.", ko: "타당한 지적이에요. 하지만 경직된 출근 의무가 많은 직원을 더 생산적으로 만들지도 않는다는 점은 자주 간과돼요. 개방형 사무실에서는 집중력이 크게 떨어지는 경우도 많거든요." },
-      { r: "A", de: "Sicher, es gibt Argumente auf beiden Seiten. Mein Vorschlag wäre ein Modell, bei dem wir je nach Aufgabe entscheiden: konzeptionelle Arbeit zu Hause, Abstimmungen vor Ort.", ko: "물론 양쪽 모두 근거가 있어요. 제 제안은 업무에 따라 정하는 모델이에요. 구상 작업은 집에서, 협의는 사무실에서 하는 거죠." },
-      { r: "B", de: "Ein hybrides Modell liegt zwar nahe, doch es birgt die Gefahr, dass je nach Präsenz im Büro eine Art Zweiklassengesellschaft entsteht.", ko: "하이브리드 모델이 자연스럽긴 해요. 하지만 사무실에 얼마나 나오느냐에 따라 일종의 두 부류가 생길 위험이 있어요." },
-      { r: "A", de: "Das ist ein Punkt, den man ernst nehmen muss. Dem könnte man entgegenwirken, indem man die Regeln transparent festlegt und sie nicht dem Gutdünken einzelner überlässt.", ko: "그건 진지하게 봐야 할 지점이에요. 규칙을 투명하게 정하고 개인의 판단에 맡기지 않으면 그 위험을 줄일 수 있어요." },
-      { r: "B", de: "Einverstanden. Ich wäre sogar dafür, die Regelung nach einem halben Jahr zu evaluieren, es sei denn, die Kennzahlen des Teams zeigen früher deutliche Probleme.", ko: "동의해요. 저는 오히려 반년 뒤에 규정을 평가하자고 하고 싶어요. 팀 지표에서 더 일찍 뚜렷한 문제가 나타나지 않는다면요." },
-      { r: "A", de: "Dann schlage ich vor, dass wir bis Monatsende ein Konzept ausarbeiten und es dem Vorstand zur Entscheidung vorlegen.", ko: "그럼 월말까지 방안을 만들어서 이사회에 결정을 요청하자고 제안할게요." },
-      { r: "B", de: "Gut. Ich übernehme die Umfrage unter den Mitarbeitenden, damit wir eine belastbare Grundlage haben.", ko: "좋아요. 탄탄한 근거를 갖추도록 직원 설문은 제가 맡을게요." }
+      { r: "A", de: "Ich habe den Eindruck, dass die Diskussion um das Homeoffice oft an der eigentlichen Frage vorbeigeht. Es geht nicht um Bequemlichkeit, sondern um Vertrauen.", ko: "재택근무 논의가 정작 핵심을 비켜 가는 것 같아. 편하냐의 문제가 아니라 신뢰의 문제잖아." },
+      { r: "B", de: "Da stimme ich dir zum Teil zu. Vertrauen lässt sich allerdings kaum an Anwesenheitszeiten messen. Wer produktiv ist, zeigt das am Ergebnis, nicht am Schreibtisch.", ko: "그 말에는 부분적으로 동의해. 하지만 신뢰는 출근 시간으로 측정하기 어려워. 생산성은 책상에 앉아 있는 시간이 아니라 결과로 드러나는 거지." },
+      { r: "A", de: "Das mag stimmen, nur hat die Praxis gezeigt, dass informelle Absprachen bei reiner Remote-Arbeit deutlich leiden – zumal neue Kollegen kaum Gelegenheit haben, sich einzuarbeiten.", ko: "그럴 수도 있어. 다만 실제로 보면 완전 원격 근무에서는 비공식적인 협의가 뚜렷하게 약해져. 특히 신입은 적응할 기회가 거의 없고." },
+      { r: "B", de: "Das ist ein berechtigter Einwand. Allerdings wird dabei oft übersehen, dass starre Anwesenheitspflichten viele Mitarbeitende auch nicht produktiver machen – im Großraumbüro leidet die Konzentration oft erheblich.", ko: "타당한 지적이야. 하지만 경직된 출근 의무가 많은 직원을 더 생산적으로 만들지도 않는다는 점은 자주 간과돼. 개방형 사무실에서는 집중력이 크게 떨어지는 경우도 많거든." },
+      { r: "A", de: "Sicher, es gibt Argumente auf beiden Seiten. Mein Vorschlag wäre ein Modell, bei dem wir je nach Aufgabe entscheiden: konzeptionelle Arbeit zu Hause, Abstimmungen vor Ort.", ko: "물론 양쪽 모두 근거가 있어. 내 제안은 업무에 따라 정하는 모델이야. 구상 작업은 집에서, 협의는 사무실에서 하는 거지." },
+      { r: "B", de: "Ein hybrides Modell liegt zwar nahe, doch es birgt die Gefahr, dass je nach Präsenz im Büro eine Art Zweiklassengesellschaft entsteht.", ko: "하이브리드 모델이 자연스럽긴 해. 하지만 사무실에 얼마나 나오느냐에 따라 일종의 두 부류가 생길 위험이 있어." },
+      { r: "A", de: "Das ist ein Punkt, den man ernst nehmen muss. Dem könnte man entgegenwirken, indem man die Regeln transparent festlegt und sie nicht dem Gutdünken einzelner überlässt.", ko: "그건 진지하게 봐야 할 지점이야. 규칙을 투명하게 정하고 개인의 판단에 맡기지 않으면 그 위험을 줄일 수 있어." },
+      { r: "B", de: "Einverstanden. Ich wäre sogar dafür, die Regelung nach einem halben Jahr zu evaluieren, es sei denn, die Kennzahlen des Teams zeigen früher deutliche Probleme.", ko: "동의해. 나는 오히려 반년 뒤에 규정을 평가하자고 하고 싶어. 팀 지표에서 더 일찍 뚜렷한 문제가 나타나지 않는다면." },
+      { r: "A", de: "Dann schlage ich vor, dass wir bis Monatsende ein Konzept ausarbeiten und es dem Vorstand zur Entscheidung vorlegen.", ko: "그럼 월말까지 방안을 만들어서 이사회에 결정을 요청하자고 제안할게." },
+      { r: "B", de: "Gut. Ich übernehme die Umfrage unter den Mitarbeitenden, damit wir eine belastbare Grundlage haben.", ko: "좋아. 탄탄한 근거를 갖추도록 직원 설문은 내가 맡을게." }
     ],
     redemittel: [
       { group: "의견 제시", items: [
-        { de: "Ich habe den Eindruck, dass …", ko: "…라는 인상을 받았어요." }
+        { de: "Ich habe den Eindruck, dass …", ko: "…라는 인상을 받았어." }
       ] },
       { group: "부분 동의", items: [
-        { de: "Da stimme ich dir zum Teil zu.", ko: "그 말에는 부분적으로 동의해요." }
+        { de: "Da stimme ich dir zum Teil zu.", ko: "그 말에는 부분적으로 동의해." }
       ] },
       { group: "반론", items: [
         { de: "Das mag stimmen, nur …", ko: "그럴 수도 있지만, …" },
-        { de: "Das ist ein berechtigter Einwand.", ko: "타당한 지적이에요." },
-        { de: "Allerdings wird oft übersehen, dass …", ko: "하지만 …는 자주 간과돼요." }
+        { de: "Das ist ein berechtigter Einwand.", ko: "타당한 지적이야." },
+        { de: "Allerdings wird oft übersehen, dass …", ko: "하지만 …는 자주 간과돼." }
       ] },
       { group: "중립 정리", items: [
-        { de: "Es gibt Argumente auf beiden Seiten.", ko: "양쪽 모두 근거가 있어요." }
+        { de: "Es gibt Argumente auf beiden Seiten.", ko: "양쪽 모두 근거가 있어." }
       ] },
       { group: "우려", items: [
-        { de: "… birgt die Gefahr, dass …", ko: "…할 위험이 있어요." }
+        { de: "… birgt die Gefahr, dass …", ko: "…할 위험이 있어." }
       ] },
       { group: "대안", items: [
-        { de: "Dem könnte man entgegenwirken, indem man …", ko: "…함으로써 이를 막을 수 있어요." },
+        { de: "Dem könnte man entgegenwirken, indem man …", ko: "…함으로써 이를 막을 수 있어." },
         { de: "Ein Modell, bei dem …", ko: "…하는 방식의 모델" }
       ] },
       { group: "조건", items: [
         { de: "… , es sei denn, …", ko: "…라면 몰라도." }
       ] },
       { group: "찬성 · 합의", items: [
-        { de: "Ich wäre sogar dafür, …", ko: "저는 오히려 …에 찬성해요." },
-        { de: "Einverstanden.", ko: "동의해요." }
+        { de: "Ich wäre sogar dafür, …", ko: "나는 오히려 …에 찬성해." },
+        { de: "Einverstanden.", ko: "동의해." }
       ] }
     ]
   },
@@ -146,40 +146,40 @@ window.DIALOG_DATA.C1 = [
     focus: ["경험 평가", "장단점 따져 보기", "Konjunktiv I: sei · indirekte Rede"],
     roles: { A: "Carla", B: "Tobias" },
     turns: [
-      { r: "A", de: "Nach zehn Jahren in der Stadt überlegen wir ernsthaft, aufs Land zu ziehen. Du hast ja selbst vor zwei Jahren den Schritt gewagt – würdest du ihn im Nachhinein wieder machen?", ko: "10년 동안 도시에 살다가 우리는 시골로 이사하는 걸 진지하게 고민하고 있어요. 당신은 2년 전에 직접 그 결정을 했잖아요. 돌이켜보면 다시 그렇게 할 건가요?" },
-      { r: "B", de: "Im Großen und Ganzen ja, wobei ich anfangs unterschätzt habe, wie sehr man auf das Auto angewiesen ist. Ohne eigenes Fahrzeug wäre das Leben hier kaum zu organisieren.", ko: "대체로 그래요. 다만 처음에는 자동차에 얼마나 의존해야 하는지 과소평가했어요. 자기 차가 없으면 여기서 생활하기가 거의 어려울 거예요." },
-      { r: "A", de: "Das ist genau das, was mich zögern lässt. Wir wollen eigentlich weniger Auto fahren, nicht mehr. Dafür locken uns die Ruhe und die Möglichkeit, endlich ein Haus mit Garten bezahlen zu können.", ko: "바로 그 점이 저를 망설이게 해요. 우리는 사실 차를 덜 타고 싶거든요. 대신 고요함과 마침내 정원 딸린 집을 살 수 있다는 가능성이 끌려요." },
-      { r: "B", de: "Bezahlbarer Wohnraum ist sicher ein starkes Argument. Man darf aber nicht vergessen, dass das Land nicht automatisch Idylle bedeutet. Das soziale Leben spielt sich oft in Vereinen ab, und wer nicht dazugehört, braucht Zeit, um Anschluss zu finden.", ko: "감당할 만한 주거비는 분명 강력한 논거예요. 하지만 시골이 곧 전원 풍경은 아니라는 점도 잊으면 안 돼요. 사회생활이 흔히 동호회 안에서 이뤄지고, 거기에 속하지 않은 사람은 어울리기까지 시간이 걸려요." },
-      { r: "A", de: "Das habe ich befürchtet. Andererseits hört man auch, dass der Zusammenhalt auf dem Dorf stärker sei als in der Anonymität der Großstadt.", ko: "그럴까 봐 걱정했어요. 한편으로는 마을의 유대가 대도시의 익명성보다 더 강하다는 말도 들리잖아요." },
-      { r: "B", de: "Das stimmt zum Teil, aber Zusammenhalt hat seinen Preis: Man kennt sich, und man spricht über einen. Wer Wert auf Privatsphäre legt, muss damit leben können.", ko: "부분적으로는 맞아요. 하지만 유대에는 대가가 따라요. 서로 알고, 사람들이 나에 대해 이야기하죠. 사생활을 중요하게 여기는 사람은 그걸 견딜 수 있어야 해요." },
-      { r: "A", de: "Wie sieht es mit der Infrastruktur aus – Ärzte, Schulen, Internet?", ko: "기반 시설은 어때요? 병원, 학교, 인터넷은요?" },
-      { r: "B", de: "Das ist ein wunder Punkt. Der nächste Facharzt ist 25 Kilometer entfernt, und das Glasfasernetz wird erst jetzt ausgebaut. Dank Homeoffice fällt das weniger ins Gewicht, als es vor ein paar Jahren der Fall gewesen wäre.", ko: "그건 약점이에요. 가장 가까운 전문의가 25킬로미터 떨어져 있고, 광케이블망은 이제야 확충되고 있어요. 재택근무 덕분에 몇 년 전만큼 크게 문제가 되지는 않지만요." },
-      { r: "A", de: "Dann hängt die Entscheidung wohl davon ab, wie flexibel wir beruflich bleiben können.", ko: "그럼 결정은 우리가 직업적으로 얼마나 유연하게 지낼 수 있느냐에 달려 있겠네요." },
-      { r: "B", de: "Genau. Mein Rat wäre, nicht übereilt zu entscheiden: Mietet erst einmal für ein halbes Jahr, bevor ihr ein Haus kauft. Dann merkt ihr, ob ihr den Alltag tatsächlich so wollt.", ko: "맞아요. 제 조언은 서두르지 말라는 거예요. 집을 사기 전에 우선 반년만 세를 얻어 보세요. 그러면 그런 일상을 정말 원하는지 알게 돼요." },
-      { r: "A", de: "Das ist ein kluger Gedanke. Wir würden damit nichts Unumkehrbares tun.", ko: "현명한 생각이에요. 그렇게 하면 되돌릴 수 없는 일을 하는 건 아니니까요." },
-      { r: "B", de: "Eben. Und wenn es nicht passt, ist die Stadt ja nur eine Autostunde entfernt.", ko: "그렇죠. 그리고 맞지 않으면 도시는 차로 한 시간 거리밖에 안 되니까요." }
+      { r: "A", de: "Nach zehn Jahren in der Stadt überlegen wir ernsthaft, aufs Land zu ziehen. Du hast ja selbst vor zwei Jahren den Schritt gewagt – würdest du ihn im Nachhinein wieder machen?", ko: "10년 동안 도시에 살다가 우리는 시골로 이사하는 걸 진지하게 고민하고 있어. 너는 2년 전에 직접 그 결정을 했잖아. 돌이켜보면 다시 그렇게 할 거야?" },
+      { r: "B", de: "Im Großen und Ganzen ja, wobei ich anfangs unterschätzt habe, wie sehr man auf das Auto angewiesen ist. Ohne eigenes Fahrzeug wäre das Leben hier kaum zu organisieren.", ko: "대체로 그래. 다만 처음에는 자동차에 얼마나 의존해야 하는지 과소평가했어. 자기 차가 없으면 여기서 생활하기가 거의 어려울 거야." },
+      { r: "A", de: "Das ist genau das, was mich zögern lässt. Wir wollen eigentlich weniger Auto fahren, nicht mehr. Dafür locken uns die Ruhe und die Möglichkeit, endlich ein Haus mit Garten bezahlen zu können.", ko: "바로 그 점이 나를 망설이게 해. 우리는 사실 차를 덜 타고 싶거든. 대신 고요함과 마침내 정원 딸린 집을 살 수 있다는 가능성이 끌려." },
+      { r: "B", de: "Bezahlbarer Wohnraum ist sicher ein starkes Argument. Man darf aber nicht vergessen, dass das Land nicht automatisch Idylle bedeutet. Das soziale Leben spielt sich oft in Vereinen ab, und wer nicht dazugehört, braucht Zeit, um Anschluss zu finden.", ko: "감당할 만한 주거비는 분명 강력한 논거야. 하지만 시골이 곧 전원 풍경은 아니라는 점도 잊으면 안 돼. 사회생활이 흔히 동호회 안에서 이뤄지고, 거기에 속하지 않은 사람은 어울리기까지 시간이 걸려." },
+      { r: "A", de: "Das habe ich befürchtet. Andererseits hört man auch, dass der Zusammenhalt auf dem Dorf stärker sei als in der Anonymität der Großstadt.", ko: "그럴까 봐 걱정했어. 한편으로는 마을의 유대가 대도시의 익명성보다 더 강하다는 말도 들리잖아." },
+      { r: "B", de: "Das stimmt zum Teil, aber Zusammenhalt hat seinen Preis: Man kennt sich, und man spricht über einen. Wer Wert auf Privatsphäre legt, muss damit leben können.", ko: "부분적으로는 맞아. 하지만 유대에는 대가가 따라. 서로 알고, 사람들이 나에 대해 이야기하지. 사생활을 중요하게 여기는 사람은 그걸 견딜 수 있어야 해." },
+      { r: "A", de: "Wie sieht es mit der Infrastruktur aus – Ärzte, Schulen, Internet?", ko: "기반 시설은 어때? 병원, 학교, 인터넷은?" },
+      { r: "B", de: "Das ist ein wunder Punkt. Der nächste Facharzt ist 25 Kilometer entfernt, und das Glasfasernetz wird erst jetzt ausgebaut. Dank Homeoffice fällt das weniger ins Gewicht, als es vor ein paar Jahren der Fall gewesen wäre.", ko: "그건 약점이야. 가장 가까운 전문의가 25킬로미터 떨어져 있고, 광케이블망은 이제야 확충되고 있어. 재택근무 덕분에 몇 년 전만큼 크게 문제가 되지는 않지만." },
+      { r: "A", de: "Dann hängt die Entscheidung wohl davon ab, wie flexibel wir beruflich bleiben können.", ko: "그럼 결정은 우리가 직업적으로 얼마나 유연하게 지낼 수 있느냐에 달려 있겠네." },
+      { r: "B", de: "Genau. Mein Rat wäre, nicht übereilt zu entscheiden: Mietet erst einmal für ein halbes Jahr, bevor ihr ein Haus kauft. Dann merkt ihr, ob ihr den Alltag tatsächlich so wollt.", ko: "맞아. 내 조언은 서두르지 말라는 거야. 집을 사기 전에 우선 반년만 세를 얻어 봐. 그러면 그런 일상을 정말 원하는지 알게 돼." },
+      { r: "A", de: "Das ist ein kluger Gedanke. Wir würden damit nichts Unumkehrbares tun.", ko: "현명한 생각이야. 그렇게 하면 되돌릴 수 없는 일을 하는 건 아니니까." },
+      { r: "B", de: "Eben. Und wenn es nicht passt, ist die Stadt ja nur eine Autostunde entfernt.", ko: "그렇지. 그리고 맞지 않으면 도시는 차로 한 시간 거리밖에 안 되니까." }
     ],
     redemittel: [
       { group: "경험 돌아보기", items: [
-        { de: "Würdest du den Schritt im Nachhinein wieder machen?", ko: "돌이켜보면 그 결정을 다시 할 건가요?" },
-        { de: "Im Großen und Ganzen ja, wobei …", ko: "대체로 그래요. 다만 …" }
+        { de: "Würdest du den Schritt im Nachhinein wieder machen?", ko: "돌이켜보면 그 결정을 다시 할 거야?" },
+        { de: "Im Großen und Ganzen ja, wobei …", ko: "대체로 그래. 다만 …" }
       ] },
       { group: "망설임", items: [
-        { de: "Das ist genau das, was mich zögern lässt.", ko: "바로 그 점이 저를 망설이게 해요." }
+        { de: "Das ist genau das, was mich zögern lässt.", ko: "바로 그 점이 나를 망설이게 해." }
       ] },
       { group: "상대화", items: [
-        { de: "Man darf aber nicht vergessen, dass …", ko: "하지만 …라는 점도 잊으면 안 돼요." },
+        { de: "Man darf aber nicht vergessen, dass …", ko: "하지만 …라는 점도 잊으면 안 돼." },
         { de: "Das stimmt zum Teil, aber …", ko: "부분적으로는 맞지만 …" }
       ] },
       { group: "전해 들은 말", items: [
-        { de: "Man hört, dass der Zusammenhalt stärker sei.", ko: "유대가 더 강하다고들 해요." }
+        { de: "Man hört, dass der Zusammenhalt stärker sei.", ko: "유대가 더 강하다고들 해." }
       ] },
       { group: "약점 · 비중", items: [
-        { de: "Das ist ein wunder Punkt.", ko: "그건 약점이에요." },
-        { de: "Das fällt weniger ins Gewicht.", ko: "그건 비중이 덜해요." }
+        { de: "Das ist ein wunder Punkt.", ko: "그건 약점이야." },
+        { de: "Das fällt weniger ins Gewicht.", ko: "그건 비중이 덜해." }
       ] },
       { group: "조언", items: [
-        { de: "Mein Rat wäre, nicht übereilt zu entscheiden.", ko: "제 조언은 서두르지 말라는 거예요." }
+        { de: "Mein Rat wäre, nicht übereilt zu entscheiden.", ko: "내 조언은 서두르지 말라는 거야." }
       ] }
     ]
   },
@@ -191,39 +191,39 @@ window.DIALOG_DATA.C1 = [
     focus: ["해석하기", "추측 표현", "양보절: wenngleich · zwar"],
     roles: { A: "Marlene", B: "Jonas" },
     turns: [
-      { r: "A", de: "Bevor wir ins Detail gehen: Wie hat euch der Roman insgesamt gefallen? Ich muss gestehen, dass ich anfangs Schwierigkeiten hatte, in die Handlung hineinzukommen.", ko: "세부 이야기에 들어가기 전에, 소설 전체가 어땠나요? 고백하자면 저는 처음에 줄거리에 몰입하기 어려웠어요." },
-      { r: "B", de: "Mir ging es ähnlich, aber ab dem zweiten Drittel hat mich das Buch gepackt. Besonders gelungen finde ich, wie die Autorin mit den Zeitebenen spielt: Die Vergangenheit schiebt sich immer wieder in die Gegenwart der Erzählerin.", ko: "저도 비슷했어요. 하지만 중반부터는 책에 빠져들었어요. 작가가 시간대를 다루는 방식이 특히 잘 됐다고 생각해요. 과거가 계속 화자의 현재 속으로 끼어들죠." },
-      { r: "A", de: "Ja, das wirkt auf mich weniger wie ein formaler Kniff als wie eine Darstellung dessen, wie Erinnerung funktioniert – unscharf, sprunghaft und von der Gegenwart gefärbt.", ko: "맞아요, 제게는 형식적인 기교라기보다 기억이 어떻게 작동하는지를 보여 주는 묘사처럼 느껴져요. 흐릿하고 건너뛰고 현재에 물들어 있는 기억이요." },
-      { r: "B", de: "Das sehe ich auch so. Allerdings frage ich mich, ob man der Erzählerin trauen kann. An mehreren Stellen widerspricht sie sich, ohne dass der Text das kommentiert.", ko: "저도 그렇게 봐요. 다만 화자를 믿어도 되는지는 의문이에요. 여러 곳에서 화자가 스스로 모순되는데도 텍스트는 그걸 언급하지 않아요." },
-      { r: "A", de: "Das könnte Absicht sein. Vielleicht soll uns der Roman gerade vor Augen führen, dass jede Erinnerung eine Konstruktion ist, die man nicht für bare Münze nehmen darf.", ko: "의도일 수도 있어요. 모든 기억은 곧이곧대로 받아들여서는 안 되는 하나의 구성물이라는 걸 소설이 일부러 보여 주려는 걸지도 몰라요." },
-      { r: "B", de: "Eine überzeugende Lesart, wenngleich ich sie ein wenig zu glatt finde. Man könnte genauso gut sagen, dass die Widersprüche schlicht eine Unachtsamkeit der Autorin sind.", ko: "설득력 있는 해석이에요. 다만 제게는 조금 매끄러운 감이 있어요. 모순이 그저 작가의 부주의라고 말할 수도 있잖아요." },
-      { r: "A", de: "Das halte ich für unwahrscheinlich, dafür ist das Buch zu sorgfältig komponiert. Was mich eher gestört hat, ist die Sprache. Die langen Satzgefüge haben mich bisweilen ermüdet.", ko: "그럴 가능성은 낮다고 봐요. 책이 그러기엔 너무 세심하게 구성돼 있어요. 오히려 거슬렸던 건 문체였어요. 긴 복합문이 가끔 지치게 했어요." },
-      { r: "B", de: "Da widerspreche ich dir. Gerade die Sprache macht für mich den Reiz aus. Sie bildet das Kreisen der Gedanken ab, und ohne sie wäre der Roman deutlich weniger eindringlich.", ko: "그 점은 반대예요. 저에게는 바로 그 문체가 매력이에요. 생각이 맴도는 모습을 그대로 담고 있고, 문체가 없었다면 소설은 훨씬 덜 강렬했을 거예요." },
-      { r: "A", de: "Das lässt sich nicht von der Hand weisen. Trotzdem hätte ich mir an einigen Stellen mehr Verdichtung gewünscht.", ko: "부정할 수 없는 말이에요. 그래도 몇몇 대목은 더 응축되었으면 했어요." },
-      { r: "B", de: "Vielleicht liegt es auch an den Erwartungen. Wer eine geradlinige Handlung sucht, wird enttäuscht, wer sich auf den Rhythmus einlässt, wird belohnt.", ko: "기대치 문제일지도 몰라요. 직선적인 줄거리를 찾는 사람은 실망하고, 리듬에 몸을 맡기는 사람은 보상을 받아요." },
-      { r: "A", de: "Schön formuliert. Dann würde ich sagen: kein einfaches Buch, aber eines, über das man lange nachdenkt.", ko: "표현이 멋지네요. 그럼 이렇게 말하고 싶어요. 쉬운 책은 아니지만 오래 생각하게 만드는 책이라고요." },
-      { r: "B", de: "Genau das macht es für mich empfehlenswert.", ko: "바로 그 점이 제게는 이 책을 추천하게 만들어요." }
+      { r: "A", de: "Bevor wir ins Detail gehen: Wie hat euch der Roman insgesamt gefallen? Ich muss gestehen, dass ich anfangs Schwierigkeiten hatte, in die Handlung hineinzukommen.", ko: "세부 이야기에 들어가기 전에, 소설 전체가 어땠어? 고백하자면 나는 처음에 줄거리에 몰입하기 어려웠어." },
+      { r: "B", de: "Mir ging es ähnlich, aber ab dem zweiten Drittel hat mich das Buch gepackt. Besonders gelungen finde ich, wie die Autorin mit den Zeitebenen spielt: Die Vergangenheit schiebt sich immer wieder in die Gegenwart der Erzählerin.", ko: "나도 비슷했어. 하지만 중반부터는 책에 빠져들었어. 작가가 시간대를 다루는 방식이 특히 잘 됐다고 생각해. 과거가 계속 화자의 현재 속으로 끼어들지." },
+      { r: "A", de: "Ja, das wirkt auf mich weniger wie ein formaler Kniff als wie eine Darstellung dessen, wie Erinnerung funktioniert – unscharf, sprunghaft und von der Gegenwart gefärbt.", ko: "맞아, 나한테는 형식적인 기교라기보다 기억이 어떻게 작동하는지를 보여 주는 묘사처럼 느껴져. 흐릿하고 건너뛰고 현재에 물들어 있는 기억 말이야." },
+      { r: "B", de: "Das sehe ich auch so. Allerdings frage ich mich, ob man der Erzählerin trauen kann. An mehreren Stellen widerspricht sie sich, ohne dass der Text das kommentiert.", ko: "나도 그렇게 봐. 다만 화자를 믿어도 되는지는 의문이야. 여러 곳에서 화자가 스스로 모순되는데도 텍스트는 그걸 언급하지 않아." },
+      { r: "A", de: "Das könnte Absicht sein. Vielleicht soll uns der Roman gerade vor Augen führen, dass jede Erinnerung eine Konstruktion ist, die man nicht für bare Münze nehmen darf.", ko: "의도일 수도 있어. 모든 기억은 곧이곧대로 받아들여서는 안 되는 하나의 구성물이라는 걸 소설이 일부러 보여 주려는 걸지도 몰라." },
+      { r: "B", de: "Eine überzeugende Lesart, wenngleich ich sie ein wenig zu glatt finde. Man könnte genauso gut sagen, dass die Widersprüche schlicht eine Unachtsamkeit der Autorin sind.", ko: "설득력 있는 해석이야. 다만 나한테는 조금 매끄러운 감이 있어. 모순이 그저 작가의 부주의라고 말할 수도 있잖아." },
+      { r: "A", de: "Das halte ich für unwahrscheinlich, dafür ist das Buch zu sorgfältig komponiert. Was mich eher gestört hat, ist die Sprache. Die langen Satzgefüge haben mich bisweilen ermüdet.", ko: "그럴 가능성은 낮다고 봐. 책이 그러기엔 너무 세심하게 구성돼 있어. 오히려 거슬렸던 건 문체였어. 긴 복합문이 가끔 지치게 했어." },
+      { r: "B", de: "Da widerspreche ich dir. Gerade die Sprache macht für mich den Reiz aus. Sie bildet das Kreisen der Gedanken ab, und ohne sie wäre der Roman deutlich weniger eindringlich.", ko: "그 점은 반대야. 나한테는 바로 그 문체가 매력이야. 생각이 맴도는 모습을 그대로 담고 있고, 문체가 없었다면 소설은 훨씬 덜 강렬했을 거야." },
+      { r: "A", de: "Das lässt sich nicht von der Hand weisen. Trotzdem hätte ich mir an einigen Stellen mehr Verdichtung gewünscht.", ko: "부정할 수 없는 말이야. 그래도 몇몇 대목은 더 응축되었으면 했어." },
+      { r: "B", de: "Vielleicht liegt es auch an den Erwartungen. Wer eine geradlinige Handlung sucht, wird enttäuscht, wer sich auf den Rhythmus einlässt, wird belohnt.", ko: "기대치 문제일지도 몰라. 직선적인 줄거리를 찾는 사람은 실망하고, 리듬에 몸을 맡기는 사람은 보상을 받아." },
+      { r: "A", de: "Schön formuliert. Dann würde ich sagen: kein einfaches Buch, aber eines, über das man lange nachdenkt.", ko: "표현이 멋지네. 그럼 이렇게 말하고 싶어. 쉬운 책은 아니지만 오래 생각하게 만드는 책이라고." },
+      { r: "B", de: "Genau das macht es für mich empfehlenswert.", ko: "바로 그 점이 나한테는 이 책을 추천하게 만들어." }
     ],
     redemittel: [
       { group: "첫인상", items: [
-        { de: "Wie hat euch der Roman insgesamt gefallen?", ko: "소설 전체가 어땠나요?" }
+        { de: "Wie hat euch der Roman insgesamt gefallen?", ko: "소설 전체가 어땠어?" }
       ] },
       { group: "해석", items: [
-        { de: "Das wirkt auf mich weniger wie … als wie …", ko: "제게는 …라기보다 …처럼 느껴져요." }
+        { de: "Das wirkt auf mich weniger wie … als wie …", ko: "나한테는 …라기보다 …처럼 느껴져." }
       ] },
       { group: "의문 · 추측", items: [
-        { de: "Ich frage mich, ob man … trauen kann.", ko: "…를 믿어도 되는지 의문이에요." },
-        { de: "Das könnte Absicht sein.", ko: "의도일 수도 있어요." }
+        { de: "Ich frage mich, ob man … trauen kann.", ko: "…를 믿어도 되는지 의문이야." },
+        { de: "Das könnte Absicht sein.", ko: "의도일 수도 있어." }
       ] },
       { group: "다른 해석", items: [
-        { de: "Man könnte genauso gut sagen, dass …", ko: "…라고 말할 수도 있잖아요." }
+        { de: "Man könnte genauso gut sagen, dass …", ko: "…라고 말할 수도 있잖아." }
       ] },
       { group: "반대 · 양보", items: [
-        { de: "Da widerspreche ich dir.", ko: "그 점은 반대예요." },
-        { de: "Das lässt sich nicht von der Hand weisen.", ko: "부정할 수 없는 말이에요." }
+        { de: "Da widerspreche ich dir.", ko: "그 점은 반대야." },
+        { de: "Das lässt sich nicht von der Hand weisen.", ko: "부정할 수 없는 말이야." }
       ] },
       { group: "정리", items: [
-        { de: "Dann würde ich sagen: kein einfaches Buch, aber …", ko: "그럼 이렇게 말하고 싶어요. 쉬운 책은 아니지만 …" }
+        { de: "Dann würde ich sagen: kein einfaches Buch, aber …", ko: "그럼 이렇게 말하고 싶어. 쉬운 책은 아니지만 …" }
       ] }
     ]
   },

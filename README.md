@@ -26,6 +26,7 @@ Sophia Deutsch Akademie의 독일어 대화 말하기 훈련 웹앱입니다. �
 
 - `index.html` : 앱 화면 (표지, 레벨 선택, 목록, 대화 화면을 한 페이지 안에서 전환)
 - `assets/` : 화면 스타일(`app.css`, `dialog.css`), 동작(`app.js`), 로고, 아이콘, 글꼴
+- `version.json`, `tools/bump-version.py` : 배포 버전 표시와 버전 올리기 도구 (아래 ‘버전 올리기’ 참고)
 - `data/` : 대화문 데이터. 레벨별 파일 `a1.js` … `c1.js`, 특별 챕터 `mz.js` (각 6개)
 
 ## 대화 고치기·추가하기
@@ -43,6 +44,16 @@ Sophia Deutsch Akademie의 독일어 대화 말하기 훈련 웹앱입니다. �
 | `redemittel` | 표현 묶음. `group`(기능 이름), `items`(`de`, `ko`) |
 
 대화를 더 만들 때는 같은 레벨 배열 끝에 `{ ... }`를 쉼표로 이어 붙이고 `no`를 다음 번호로 정하면 됩니다. 목록, 이전·다음 대화 이동에 자동으로 나타나요. 한 레벨의 `no`는 1, 2, 3…처럼 겹치지 않게 쓰세요(주소는 `#/a1/02` 형식).
+
+## 고친 내용이 바로 보이게 하기 (버전 올리기)
+
+GitHub Pages는 파일을 10분 동안 캐시해요. 그래서 `data/`나 `assets/`를 고친 뒤에는 커밋하기 전에 꼭 버전을 올리세요.
+
+```
+python3 tools/bump-version.py
+```
+
+이 명령은 `index.html`이 불러오는 CSS·JS 주소 끝의 `?v=` 값, `window.APP_VERSION`, `version.json`을 같은 새 버전으로 바꿔요. 주소가 바뀌므로 새로고침하면 새 파일을 받아요. 홈 화면에 추가한 앱처럼 예전 `index.html`이 열린 경우에도, 앱이 시작할 때 `version.json`을 확인해 새 버전이면 한 번 다시 불러와요(녹음한 내용이 있을 때는 다시 불러오지 않아요).
 
 ## MZ 챕터
 

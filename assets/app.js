@@ -393,4 +393,21 @@
 
   window.addEventListener('hashchange', route);
   route();
+
+  // 새 버전 확인: 브라우저가 예전 index.html을 캐시에서 열었으면 새 주소로 한 번만 다시 불러와요.
+  (function checkVersion() {
+    var cur = window.APP_VERSION;
+    if (!cur || location.protocol === 'file:' || !window.fetch || !window.URLSearchParams) return;
+    fetch('version.json?t=' + Date.now(), { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        if (!j || !j.v || j.v === cur) return;
+        var q = new URLSearchParams(location.search);
+        if (q.get('v') === j.v) return;                                   // 이미 새 주소로 열었으면 반복하지 않음
+        if (state.recording !== null || Object.keys(state.recs).length) return; // 녹음한 내용이 있으면 그대로 둠
+        q.set('v', j.v);
+        location.replace(location.pathname + '?' + q.toString() + location.hash);
+      })
+      .catch(function () {});
+  })();
 })();

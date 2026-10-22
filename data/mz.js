@@ -1,375 +1,349 @@
-/* SODA SPRECHTRAINING · MZ 챕터: 독일 젊은 층의 구어체 대화 (2026년 10월 기준)
-   slang 항목: de(대화에 실제로 나오는 표현), t(나오는 줄 번호, 1부터), ko, std(표준 독일어), reg(종류), badge(청소년어 선정 기록) */
+/* SODA SPRECHTRAINING · MZ 챕터: 독일 사람들이 일상에서 실제로 쓰는 구어체 (Umgangssprache)
+   은어와 유행어는 쓰지 않고, 오래 쓰여 온 일상 구어체만 모았어요.
+   umg 항목: de(대화에 실제로 나오는 표현), t(나오는 줄 번호, 1부터. 여러 줄이면 배열), ko, std(표준 독일어), reg(종류) */
 window.DIALOG_DATA = window.DIALOG_DATA || {};
 window.DIALOG_DATA.MZ = [
   {
     no: 1, lv: "MZ",
-    title: "Was geht am Wochenende?", titleKo: "주말에 뭐 해요?", type: "Freunde", typeKo: "친구",
+    title: "Was machst du am Wochenende?", titleKo: "주말에 뭐 해요?", type: "Freunde", typeKo: "친구",
     intro: "친구끼리 주말 약속을 잡고 저녁 메뉴를 정하는 대화예요.",
-    focus: ["Bock haben", "Same · safe · Läuft", "구어 축약 'ne"],
+    focus: ["was = etwas", "'ne · hab · komm ich", "Passt schon · Versprochen"],
     roles: { A: "Mika", B: "Jule" },
     turns: [
-      { r: "A", de: "Yo Jule, was geht am Wochenende? Hast du Bock auf irgendwas?", ko: "율레, 이번 주말에 뭐 해요? 딱 땡기는 거 있어요?" },
-      { r: "B", de: "Ehrlich? Lowkey bin ich komplett platt von der Woche. Ich hab null Bock auf Party.", ko: "솔직히요? 은근히 이번 주 때문에 완전 녹초예요. 파티는 1도 땡기지 않아요." },
-      { r: "A", de: "Same, Digga. Aber Lena macht am Samstag 'ne Einweihungsparty, und die ganze Gang ist am Start. Wir sollten wenigstens kurz vorbeischauen.", ko: "저도요, 친구. 그런데 레나가 토요일에 집들이를 하는데 무리 전체가 와요. 적어도 잠깐은 들러야 해요." },
-      { r: "B", de: "Wer kommt denn alles? Wenn Tim wieder seine Ex mitbringt, bin ich raus. Das ist mir viel zu awkward.", ko: "누구누구 와요? 팀이 또 전 애인을 데려오면 저는 빠질래요. 너무 어색해요." },
-      { r: "A", de: "Tim ist übers Wochenende bei seinen Eltern. Seine Ex ist eh nicht eingeladen. Alles safe.", ko: "팀은 주말에 부모님 댁에 있어요. 전 애인은 어차피 초대도 안 했고요. 문제없어요." },
-      { r: "B", de: "Okay, dann komm ich mit. Aber ich bleib nur bis Mitternacht, ich bin echt durch.", ko: "좋아요, 그럼 갈게요. 대신 자정까지만 있을래요. 진짜 방전이에요." },
-      { r: "A", de: "Läuft! Wir treffen uns um acht bei mir und bestellen vorher was zu essen. Döner oder Pizza?", ko: "좋아요! 8시에 우리 집에서 만나서 먼저 뭘 시켜 먹어요. 되너 케밥 아니면 피자?" },
-      { r: "B", de: "Döner, auf jeden Fall. Aber bitte nicht wieder bei dem Laden an der Ecke. Die haben letztes Mal unsere Bestellung vergessen, das war echt bodenlos.", ko: "무조건 되너예요. 그런데 모퉁이 가게는 제발 또 가지 말아요. 지난번에 주문을 잊어버렸는데, 진짜 너무했어요." },
-      { r: "A", de: "Stimmt, krass, ich hab fast 'ne Stunde gewartet. Dann lieber der neue Laden in der Weststraße. Der hat voll gute Bewertungen.", ko: "맞아요, 대박이었죠. 거의 한 시간이나 기다렸어요. 그럼 차라리 Weststraße의 새 가게로 가요. 후기가 진짜 좋아요." },
-      { r: "B", de: "Süper, dann bestell ich schon mal. Bist du Team Knoblauch oder Team ohne?", ko: "좋아요, 그럼 제가 먼저 주문할게요. 마늘소스 팀이에요, 아니면 소스 없는 팀이에요?" },
-      { r: "A", de: "Team Knoblauch, ohne Diskussion. Und Digga, diesmal sind wir wirklich pünktlich!", ko: "마늘소스 팀이죠, 따질 것도 없어요. 그리고 친구, 이번에는 진짜 제시간에 와요!" },
-      { r: "B", de: "Ehrenwort! Bis Samstag.", ko: "맹세해요! 토요일에 봐요." }
+      { r: "A", de: "Na, was machst du am Wochenende? Hast du schon was vor?", ko: "있잖아요, 주말에 뭐 해요? 벌써 계획이 있어요?" },
+      { r: "B", de: "Eigentlich nichts. Ich bin diese Woche echt fertig und will einfach mal ausschlafen.", ko: "사실 아무것도 없어요. 이번 주에 정말 지쳐서 그냥 늦잠이나 자고 싶어요." },
+      { r: "A", de: "Verstehe ich. Aber Lena macht am Samstag 'ne Einweihungsparty. Da kommen ziemlich viele von uns.", ko: "이해해요. 그런데 레나가 토요일에 집들이를 해요. 우리 쪽 사람이 꽤 많이 와요." },
+      { r: "B", de: "Wer kommt denn alles? Wenn Tim wieder mit seiner Ex auftaucht, hab ich keine Lust. Das ist mir immer so peinlich.", ko: "누구누구 와요? 팀이 또 전 애인이랑 나타나면 가고 싶지 않아요. 늘 너무 민망해요." },
+      { r: "A", de: "Keine Sorge, Tim fährt übers Wochenende zu seinen Eltern. Seine Ex ist sowieso nicht eingeladen.", ko: "걱정 마요, 팀은 주말에 부모님 댁에 가요. 전 애인은 어차피 초대받지 않았고요." },
+      { r: "B", de: "Na gut, dann komm ich mit. Aber ich bleib nur bis Mitternacht, ich bin wirklich kaputt.", ko: "알겠어요, 그럼 같이 갈게요. 대신 자정까지만 있을래요. 정말 녹초예요." },
+      { r: "A", de: "Passt schon. Wir treffen uns um acht bei mir und essen vorher noch was. Döner oder Pizza?", ko: "괜찮아요. 8시에 우리 집에서 만나서 먼저 뭘 좀 먹어요. 되너 케밥 아니면 피자?" },
+      { r: "B", de: "Döner, auf jeden Fall. Aber bitte nicht wieder bei dem Laden an der Ecke. Die haben letztes Mal unsere Bestellung vergessen, das war echt eine Frechheit.", ko: "되너예요, 무조건요. 그런데 모퉁이 가게는 제발 또 가지 말아요. 지난번에 주문을 깜빡했는데, 정말 너무했어요." },
+      { r: "A", de: "Stimmt, ich hab fast 'ne Stunde gewartet. Dann gehen wir lieber zu dem neuen Laden in der Weststraße. Der soll richtig gut sein.", ko: "맞아요, 거의 한 시간을 기다렸어요. 그럼 차라리 Weststraße에 새로 생긴 가게로 가요. 아주 좋다고 하더라고요." },
+      { r: "B", de: "Gut, dann bestell ich gleich mal. Nimmst du Knoblauchsoße oder lieber ohne?", ko: "좋아요, 그럼 제가 바로 주문할게요. 마늘소스를 넣을래요, 아니면 빼는 게 좋아요?" },
+      { r: "A", de: "Mit Knoblauch, ist doch klar! Und diesmal kommen wir wirklich pünktlich, ja?", ko: "마늘소스 넣어야죠, 당연하잖아요! 그리고 이번에는 진짜 제시간에 가요, 알았죠?" },
+      { r: "B", de: "Versprochen! Dann bis Samstag.", ko: "약속해요! 그럼 토요일에 봐요." }
     ],
-    slang: [
-      { de: "was geht", t: 1, ko: "뭐 해요? / 잘 지내요? (안부 인사)", std: "Was machst du? / Wie geht es dir?", reg: "구어" },
-      { de: "Bock auf", t: 1, ko: "…하고 싶은 마음, 땡김", std: "Lust auf", reg: "구어" },
-      { de: "null Bock", t: 2, ko: "전혀 하고 싶지 않음", std: "keine Lust", reg: "구어" },
-      { de: "Lowkey", t: 2, ko: "은근히, 살짝, 겉으로 티 내지 않고", std: "irgendwie, ein bisschen", reg: "영어 차용" },
-      { de: "platt", t: 2, ko: "녹초가 된", std: "erschöpft", reg: "구어" },
-      { de: "Same", t: 3, ko: "저도요, 마찬가지예요", std: "Mir geht es genauso.", reg: "영어 차용" },
-      { de: "Digga", t: [3, 11], ko: "친구, 야 (호칭이자 추임새)", std: "Kumpel, Freund", reg: "은어", badge: "청소년어 2026 후보" },
-      { de: "Gang", t: 3, ko: "친구 무리", std: "Freundesgruppe, Clique", reg: "구어" },
-      { de: "am Start", t: 3, ko: "와 있는, 참석하는", std: "dabei, anwesend", reg: "구어" },
-      { de: "'ne", t: [3, 9], ko: "eine의 구어 축약 (말할 때만, 글에서는 쓰지 않음)", std: "eine", reg: "구어" },
-      { de: "bin ich raus", t: 4, ko: "저는 빠질래요 (더 이상 함께하지 않겠다)", std: "Dann nehme ich nicht teil.", reg: "구어" },
-      { de: "awkward", t: 4, ko: "어색한, 민망한", std: "unangenehm, peinlich", reg: "영어 차용" },
-      { de: "safe", t: 5, ko: "확실한, 문제없는", std: "sicher, in Ordnung", reg: "은어" },
-      { de: "durch", t: 6, ko: "방전된, 지칠 대로 지친 (ich bin durch)", std: "erschöpft", reg: "구어" },
-      { de: "Läuft", t: 7, ko: "좋아요!, 잘 되고 있어요", std: "Gut! / Einverstanden!", reg: "구어" },
-      { de: "bodenlos", t: 8, ko: "너무한, 어이없는", std: "unverschämt, sehr schlecht", reg: "은어" },
-      { de: "krass", t: 9, ko: "대박, 심하다 (좋은 뜻도 나쁜 뜻도 가능)", std: "unglaublich, heftig", reg: "구어" },
-      { de: "Süper", t: 10, ko: "아주 좋아요 (터키어 süper에서 온 말)", std: "super", reg: "은어", badge: "청소년어 2026 후보" },
-      { de: "Team Knoblauch", t: 10, ko: "마늘소스 파 (Team + 선택지: …파)", std: "Ich bin für Knoblauch.", reg: "구어" },
-      { de: "Ehrenwort", t: 12, ko: "맹세해요, 약속해요", std: "Ich verspreche es.", reg: "구어" }
+    umg: [
+      { de: "Na,", t: 1, ko: "있잖아요, 자 (말을 시작할 때 쓰는 추임새)", std: "Also, / Hallo,", reg: "추임새" },
+      { de: "was vor", t: 1, ko: "계획이 있다 (was = etwas)", std: "etwas vor", reg: "축약" },
+      { de: "Eigentlich", t: 2, ko: "사실은, 원래는 (말투를 부드럽게 하는 말)", std: "Im Grunde", reg: "불변화사" },
+      { de: "fertig", t: 2, ko: "지친 (끝났다는 뜻이 아니라 지쳤다는 뜻)", std: "erschöpft", reg: "구어" },
+      { de: "einfach mal", t: 2, ko: "그냥 한번", std: "einmal in Ruhe", reg: "불변화사" },
+      { de: "'ne", t: [3, 9], ko: "eine의 구어 축약 (말할 때만, 글에서는 쓰지 않음)", std: "eine", reg: "축약" },
+      { de: "ziemlich", t: 3, ko: "꽤, 상당히", std: "relativ viele", reg: "구어" },
+      { de: "auftaucht", t: 4, ko: "나타나다", std: "erscheint, kommt", reg: "구어" },
+      { de: "hab ich keine Lust", t: 4, ko: "…하고 싶지 않아요 (habe의 e 탈락)", std: "habe ich keine Lust", reg: "축약" },
+      { de: "sowieso", t: 5, ko: "어차피", std: "ohnehin", reg: "구어" },
+      { de: "Na gut", t: 6, ko: "알겠어요, 좋아요 (마지못해 받아들일 때)", std: "Also gut", reg: "추임새" },
+      { de: "kaputt", t: 6, ko: "녹초가 된 (원래는 ‘망가진’)", std: "sehr müde", reg: "구어" },
+      { de: "Passt schon", t: 7, ko: "괜찮아요, 문제없어요", std: "Das ist in Ordnung.", reg: "구어" },
+      { de: "noch was", t: 7, ko: "뭘 좀 더 (was = etwas)", std: "noch etwas", reg: "축약" },
+      { de: "auf jeden Fall", t: 8, ko: "무조건, 꼭", std: "ganz bestimmt", reg: "구어" },
+      { de: "eine Frechheit", t: 8, ko: "너무한 일, 뻔뻔한 일", std: "unverschämt", reg: "구어" },
+      { de: "richtig gut", t: 9, ko: "아주 좋은 (richtig = 매우)", std: "sehr gut", reg: "구어" },
+      { de: "gleich mal", t: 10, ko: "바로 한번", std: "sofort", reg: "불변화사" },
+      { de: "ist doch klar", t: 11, ko: "당연하잖아요", std: "Das ist selbstverständlich.", reg: "구어" },
+      { de: "Versprochen", t: 12, ko: "약속해요", std: "Ich verspreche es.", reg: "구어" }
     ],
     redemittel: [
-      { group: "의향 묻고 답하기", items: [
-        { de: "Hast du Bock auf …?", ko: "…하고 싶어요?" },
-        { de: "Ich hab null Bock auf …", ko: "…는 전혀 하고 싶지 않아요." }
+      { group: "계획 묻기", items: [
+        { de: "Was machst du am Wochenende?", ko: "주말에 뭐 해요?" },
+        { de: "Hast du schon was vor?", ko: "벌써 계획이 있어요?" }
       ] },
-      { group: "맞장구", items: [
-        { de: "Same.", ko: "저도요." },
-        { de: "Läuft!", ko: "좋아요!" },
-        { de: "Alles safe.", ko: "문제없어요." }
+      { group: "내키지 않을 때 · 받아들일 때", items: [
+        { de: "Wenn …, hab ich keine Lust.", ko: "…하면 가고 싶지 않아요." },
+        { de: "Na gut, dann komm ich mit.", ko: "알겠어요, 그럼 같이 갈게요." },
+        { de: "Passt schon.", ko: "괜찮아요." }
       ] },
-      { group: "빠지기 · 조건", items: [
-        { de: "Wenn …, bin ich raus.", ko: "…하면 저는 빠질래요." }
-      ] },
-      { group: "지침", items: [
-        { de: "Ich bin echt durch.", ko: "저 진짜 방전이에요." }
-      ] },
-      { group: "약속", items: [
-        { de: "Ehrenwort!", ko: "맹세해요!" }
+      { group: "약속 정하기", items: [
+        { de: "Wir treffen uns um … bei mir.", ko: "…시에 우리 집에서 만나요." },
+        { de: "Versprochen!", ko: "약속해요!" }
       ] }
     ]
   },
-
   {
     no: 2, lv: "MZ",
-    title: "Ghosting und Situationship", titleKo: "잠수 이별과 썸", type: "Beziehung", typeKo: "연애",
-    intro: "연락을 끊고 사라진 사람 때문에 속상한 친구와 이야기하는 대화예요.",
-    focus: ["ghosten", "Red Flag · Ick", "구어 반응 표현"],
+    title: "Du hast nicht mal angerufen", titleKo: "전화도 안 했잖아요", type: "Streit", typeKo: "다툼",
+    intro: "약속을 어긴 친구에게 서운함을 말하고, 사과하고 화해하는 대화예요.",
+    focus: ["weil + Hauptsatz", "Vorwurf und Entschuldigung", "eben · halt · nämlich"],
     roles: { A: "Nele", B: "Ben" },
     turns: [
-      { r: "A", de: "Ben, ich muss dir was erzählen. Darf ich kurz ranten?", ko: "벤, 할 얘기가 있어요. 잠깐 하소연해도 돼요?" },
-      { r: "B", de: "Klar, spill the tea! Was ist passiert?", ko: "물론이죠, 썰 풀어 봐요! 무슨 일이에요?" },
-      { r: "A", de: "Du weißt doch, dass ich seit ein paar Wochen mit Jonas schreibe. Wir waren zweimal Kaffee trinken, und es war richtig nice. Und dann plötzlich: nix mehr. Er hat mich komplett geghostet.", ko: "제가 몇 주째 요나스랑 연락한 거 알죠? 커피도 두 번 마셨고 정말 좋았어요. 그런데 갑자기 아무 연락이 없어요. 완전히 잠수 타 버렸어요." },
-      { r: "B", de: "Ernsthaft? Das ist so unreif. Hat er wenigstens noch deine Storys geliked?", ko: "진짜요? 너무 미성숙하네요. 적어도 스토리에 좋아요는 눌렀어요?" },
-      { r: "A", de: "Ja, genau das macht mich so fertig! Er schaut jede Story an, aber auf meine Nachrichten antwortet er nicht. Das ist doch eine klare Red Flag, oder?", ko: "네, 바로 그게 저를 힘들게 해요! 스토리는 다 보면서 제 메시지에는 답이 없어요. 이건 명백한 위험 신호죠?" },
-      { r: "B", de: "Absolut. Ihr habt ja nie gesagt, was das zwischen euch ist. Das war doch eine klassische Situationship.", ko: "당연하죠. 두 사람이 서로 무슨 사이인지 한 번도 말하지 않았잖아요. 전형적인 '썸'이었어요." },
-      { r: "A", de: "Ich weiß. Ich hab halt voll gehofft, dass das was wird. Vielleicht bin ich einfach delulu.", ko: "알아요. 잘될 거라고 진짜 기대했거든요. 어쩌면 제가 그냥 헛된 꿈을 꾸고 있는 걸지도 몰라요." },
-      { r: "B", de: "Ein bisschen, aber das ist menschlich. Hast du bei ihm vorher irgendwo einen Ick bekommen?", ko: "조금은요. 하지만 사람이라면 그럴 수 있어요. 그 사람에게 갑자기 정떨어진 순간은 없었어요?" },
-      { r: "A", de: "Nee, null Ick. Der war sogar Boyfriend-Material, deshalb tut's so weh.", ko: "아니요, 정떨어진 적 한 번도 없어요. 오히려 남자친구감이었어서 더 아파요." },
-      { r: "B", de: "Dann schreib ihm einmal klar, wie du das siehst, und fertig. Wenn er nicht antwortet, ist er raus. Der Macker hat dich nicht verdient.", ko: "그럼 한 번만 분명하게 생각을 적어 보내고 끝내요. 답이 없으면 그 사람은 아웃이에요. 그 인간은 당신을 가질 자격이 없어요." },
-      { r: "A", de: "Du hast recht. Ich schreib ihm heute Abend eine kurze Nachricht. Ich will nur nicht cringe wirken.", ko: "맞아요. 오늘 저녁에 짧게 메시지를 보낼게요. 다만 손발이 오그라들어 보이고 싶지 않아요." },
-      { r: "B", de: "Das ist nicht cringe, das ist ehrlich. Stabil, so machen wir das! Danach hol ich uns einen Bubble Tea.", ko: "그건 오그라드는 게 아니라 솔직한 거예요. 좋아요, 그렇게 해요! 그다음엔 제가 버블티 사 줄게요." },
-      { r: "A", de: "Danke, du bist echt die beste Bestie.", ko: "고마워요, 당신은 정말 최고의 절친이에요." }
+      { r: "A", de: "Sag mal, wo warst du denn gestern? Wir hatten um sieben ausgemacht, und du bist einfach nicht gekommen.", ko: "있잖아요, 어제 어디 있었어요? 7시로 약속했는데 그냥 안 왔잖아요." },
+      { r: "B", de: "Oh Mann, das tut mir wirklich leid. Ich hab total die Zeit vergessen, weil ich war noch bis acht im Büro.", ko: "아이고, 정말 미안해요. 시간을 완전히 잊었어요. 8시까지 사무실에 있었거든요." },
+      { r: "A", de: "Du hättest ja wenigstens kurz anrufen können! Ich hab 'ne halbe Stunde vor dem Kino gewartet wie bestellt und nicht abgeholt.", ko: "하다못해 잠깐 전화라도 할 수 있었잖아요! 영화관 앞에서 30분 동안 아무도 안 오는 채로 서 있었어요." },
+      { r: "B", de: "Ich weiß, das war blöd von mir. Mein Handy war nämlich auch noch leer. Ich konnte dich gar nicht erreichen.", ko: "알아요, 제가 멍청했어요. 게다가 휴대폰 배터리도 다 나갔어요. 연락할 방법이 아예 없었어요." },
+      { r: "A", de: "Aha, und das soll ich dir jetzt glauben? Das ist schon das zweite Mal diesen Monat.", ko: "아, 그래요? 그걸 지금 믿으라고요? 이번 달에만 벌써 두 번째예요." },
+      { r: "B", de: "Nein, du hast ja recht. Aber ich meine es wirklich nicht böse. Ich bin zurzeit einfach total im Stress mit dem Projekt.", ko: "아니요, 맞는 말이에요. 하지만 나쁜 뜻은 정말 없어요. 요즘 프로젝트 때문에 그냥 정신이 없어요." },
+      { r: "A", de: "Das versteh ich ja, aber dann sag doch einfach Bescheid. Das dauert doch nur fünf Sekunden.", ko: "그건 이해해요. 그래도 그냥 말을 해 주면 되잖아요. 5초면 되는데요." },
+      { r: "B", de: "Du hast recht. Ich hätte dir wenigstens 'ne Nachricht schreiben sollen.", ko: "맞아요. 최소한 메시지라도 보냈어야 했어요." },
+      { r: "A", de: "Eben. Mich nervt halt, dass ich immer als Letzte erfahre, was los ist.", ko: "그러니까요. 저는 늘 제일 마지막에 사정을 알게 되는 게 짜증 나요." },
+      { r: "B", de: "Kommt nicht wieder vor, versprochen. Ich lad dich zum Essen ein, als Entschuldigung.", ko: "다시는 이런 일 없을 거예요, 약속해요. 사과의 뜻으로 제가 밥 살게요." },
+      { r: "A", de: "Na gut, aber du zahlst. Und diesmal kommst du pünktlich, sonst bin ich echt sauer.", ko: "알겠어요, 대신 당신이 계산해요. 이번에는 제시간에 와요, 안 그러면 진짜 화낼 거예요." },
+      { r: "B", de: "Abgemacht. Samstag um sieben, und ich schreib dir vorher noch mal.", ko: "그렇게 해요. 토요일 7시에, 그리고 그 전에 메시지 한 번 더 보낼게요." }
     ],
-    slang: [
-      { de: "ranten", t: 1, ko: "하소연하다, 불만을 쏟아내다", std: "sich aufregen, sich beschweren", reg: "영어 차용" },
-      { de: "spill the tea", t: 2, ko: "썰 풀어 봐요, 뒷이야기 들려줘요", std: "Erzähl mir den neuesten Klatsch!", reg: "SNS" },
-      { de: "nice", t: 3, ko: "좋은, 괜찮은", std: "schön, gut", reg: "영어 차용" },
-      { de: "nix", t: 3, ko: "아무것도 (nichts의 구어)", std: "nichts", reg: "구어" },
-      { de: "geghostet", t: 3, ko: "연락을 끊고 잠수 탔다 (ghosten의 과거분사)", std: "den Kontakt ohne Erklärung abgebrochen", reg: "영어 차용" },
-      { de: "geliked", t: 4, ko: "좋아요를 눌렀다 (liken의 과거분사)", std: "als gefällt mir markiert", reg: "SNS" },
-      { de: "Red Flag", t: 5, ko: "위험 신호, 걸러야 할 행동 (eine Red Flag)", std: "Warnsignal", reg: "SNS" },
-      { de: "Situationship", t: 6, ko: "썸, 이름 없는 애매한 관계 (die Situationship)", std: "unklare Beziehung", reg: "영어 차용" },
-      { de: "delulu", t: 7, ko: "헛된 기대에 빠진 (delusional에서)", std: "realitätsfern, unrealistisch", reg: "SNS" },
-      { de: "Ick", t: [8, 9], ko: "갑자기 정떨어지는 순간 (einen Ick bekommen)", std: "plötzlicher Abtörner", reg: "SNS" },
-      { de: "Boyfriend-Material", t: 9, ko: "남자친구감", std: "als fester Partner geeignet", reg: "영어 차용" },
-      { de: "ist er raus", t: 10, ko: "그 사람은 아웃이에요 (더는 고려하지 않는다)", std: "dann scheidet er aus", reg: "구어" },
-      { de: "Macker", t: 10, ko: "남자애, 인간 (빈정대거나 친근하게)", std: "Typ, Kerl", reg: "은어", badge: "청소년어 2026 후보" },
-      { de: "cringe", t: [11, 12], ko: "오그라드는, 손발이 오그라들게 민망한", std: "peinlich", reg: "영어 차용", badge: "청소년어 2021 우승" },
-      { de: "Stabil", t: 12, ko: "좋아요, 든든해요 (동의·감탄)", std: "Gut! / Einverstanden!", reg: "은어" },
-      { de: "Bestie", t: 13, ko: "절친 (best friend)", std: "beste Freundin, bester Freund", reg: "구어" }
+    umg: [
+      { de: "Sag mal", t: 1, ko: "있잖아요 (질문이나 따지기 전에 던지는 말)", std: "Entschuldige, ich möchte etwas fragen", reg: "추임새" },
+      { de: "ausgemacht", t: 1, ko: "약속했다", std: "verabredet", reg: "구어" },
+      { de: "Oh Mann", t: 2, ko: "아이고, 어휴 (당황·실망)", std: "Das ist mir unangenehm.", reg: "감탄" },
+      { de: "total", t: 2, ko: "완전히, 몽땅", std: "völlig", reg: "구어" },
+      { de: "weil ich war", t: 2, ko: "weil 뒤에 동사를 둘째에 두는 말투 (표준은 weil ich … war)", std: "weil ich … war", reg: "구어 어순" },
+      { de: "'ne", t: [3, 8], ko: "eine의 구어 축약", std: "eine", reg: "축약" },
+      { de: "wie bestellt und nicht abgeholt", t: 3, ko: "와야 할 사람이 안 와서 홀로 기다리는 모습", std: "ganz allein und vergeblich", reg: "관용구" },
+      { de: "blöd", t: 4, ko: "바보 같은, 어리석은", std: "dumm, unüberlegt", reg: "구어" },
+      { de: "nämlich", t: 4, ko: "게다가, 사실 (이유를 덧붙이는 말)", std: "denn", reg: "불변화사" },
+      { de: "Aha", t: 5, ko: "아, 그래요? (믿지 못하는 투)", std: "Ach so", reg: "추임새" },
+      { de: "im Stress", t: 6, ko: "정신없는, 바쁜", std: "unter Zeitdruck", reg: "구어" },
+      { de: "Bescheid", t: 7, ko: "알려 주다 (Bescheid sagen)", std: "informieren", reg: "구어" },
+      { de: "Eben", t: 9, ko: "바로 그거예요, 그러니까요", std: "Genau", reg: "불변화사" },
+      { de: "halt", t: 9, ko: "그냥, 어쩔 수 없이 (이유를 담담히 말할 때)", std: "eben, nun einmal", reg: "불변화사" },
+      { de: "nervt", t: 9, ko: "짜증 나게 하다", std: "ärgert mich", reg: "구어" },
+      { de: "Kommt nicht wieder vor", t: 10, ko: "다시는 안 그럴게요", std: "Das passiert nicht noch einmal.", reg: "구어" },
+      { de: "lad", t: 10, ko: "초대한다 (lade의 e 탈락)", std: "lade", reg: "축약" },
+      { de: "sauer", t: 11, ko: "화난", std: "verärgert", reg: "구어" },
+      { de: "Abgemacht", t: 12, ko: "그렇게 하기로 해요", std: "Einverstanden", reg: "구어" }
     ],
     redemittel: [
-      { group: "이야기 꺼내기", items: [
-        { de: "Darf ich kurz ranten?", ko: "잠깐 하소연해도 돼요?" },
-        { de: "Spill the tea!", ko: "썰 풀어 봐요!" }
+      { group: "서운함 말하기", items: [
+        { de: "Du bist einfach nicht gekommen.", ko: "그냥 안 왔잖아요." },
+        { de: "Du hättest wenigstens anrufen können.", ko: "최소한 전화는 할 수 있었잖아요." },
+        { de: "Mich nervt, dass …", ko: "…라는 게 짜증 나요." }
       ] },
-      { group: "상황 평가", items: [
-        { de: "Das ist doch eine klare Red Flag, oder?", ko: "이건 명백한 위험 신호죠?" },
-        { de: "Das war doch eine klassische Situationship.", ko: "전형적인 썸이었어요." }
+      { group: "사과하기", items: [
+        { de: "Das tut mir wirklich leid.", ko: "정말 미안해요." },
+        { de: "Ich hätte … sollen.", ko: "…했어야 했어요." },
+        { de: "Kommt nicht wieder vor.", ko: "다시는 안 그럴게요." }
       ] },
-      { group: "위로 · 조언", items: [
-        { de: "Wenn er nicht antwortet, ist er raus.", ko: "답이 없으면 그 사람은 아웃이에요." },
-        { de: "Das ist nicht cringe, das ist ehrlich.", ko: "그건 오그라드는 게 아니라 솔직한 거예요." }
-      ] },
-      { group: "동의 · 마무리", items: [
-        { de: "Stabil, so machen wir das!", ko: "좋아요, 그렇게 해요!" }
+      { group: "화해하기", items: [
+        { de: "Ich lad dich zum Essen ein.", ko: "제가 밥 살게요." },
+        { de: "Abgemacht.", ko: "그렇게 해요." }
       ] }
     ]
   },
-
   {
     no: 3, lv: "MZ",
-    title: "Aura, Cringe und Algorithmus", titleKo: "SNS와 오그라드는 영상", type: "Social Media", typeKo: "SNS",
-    intro: "SNS 피드와 디지털 디톡스를 두고 두 친구가 나누는 대화예요.",
-    focus: ["Aura · cringe", "Ragebait · Das crazy", "FOMO · flexen"],
+    title: "Immer nur am Handy", titleKo: "맨날 휴대폰만 봐요", type: "Geschwister", typeKo: "남매",
+    intro: "휴대폰만 보는 동생에게 설거지와 저녁 준비를 말하는 집 안 대화예요.",
+    focus: ["nix · gibt's · leg's", "Aufforderung im Alltag", "Keine Ahnung · Na also"],
     roles: { A: "Luca", B: "Sophie" },
     turns: [
-      { r: "A", de: "Sophie, du musst dir dieses Video ansehen. Ein Typ tanzt mitten im Supermarkt und filmt sich dabei. Das ist so cringe, ich kann nicht mehr.", ko: "소피, 이 영상 꼭 봐요. 어떤 남자가 슈퍼 한복판에서 춤추면서 자기 자신을 찍고 있어요. 너무 오그라들어서 못 보겠어요." },
-      { r: "B", de: "Oh nein. Minus tausend Aura! Wie viele Views hat das?", ko: "어머나. 아우라 마이너스 천이네요! 조회수는 얼마나 돼요?" },
-      { r: "A", de: "Drei Millionen. Der Algorithmus liebt sowas. Mein FYP besteht nur noch aus Ragebait und Katzenvideos.", ko: "300만이에요. 알고리즘이 이런 걸 좋아하나 봐요. 제 추천 피드는 이제 어그로 영상이랑 고양이 영상뿐이에요." },
-      { r: "B", de: "Das crazy. Bei mir ist es genauso, ich doomscrolle jeden Abend zwei Stunden und fühl mich danach schlecht.", ko: "대박이네요. 저도 똑같아요. 매일 저녁 두 시간씩 우울한 콘텐츠를 계속 넘겨 보고, 끝나면 기분이 안 좋아요." },
-      { r: "A", de: "Ich sollte echt mal wieder offline gehen. Wie man so sagt: Touch grass.", ko: "진짜 다시 오프라인으로 돌아가야 해요. 흔히들 말하죠, '밖에 나가서 현실을 살아라(touch grass)'." },
-      { r: "B", de: "Mach doch eine Woche Social-Media-Detox. Ich hab das letzten Monat probiert, und es war richtig peak. Ich hab drei Bücher gelesen.", ko: "일주일 동안 SNS 디톡스를 해 봐요. 저는 지난달에 해 봤는데 진짜 최고였어요. 책을 세 권이나 읽었거든요." },
-      { r: "A", de: "Hattest du da keine FOMO? Ich hab immer Angst, was zu verpassen, vor allem bei den Storys von allen.", ko: "그때 FOMO(소외 불안) 안 왔어요? 저는 늘 뭔가 놓칠까 봐 겁나요. 특히 다른 사람들 스토리를 볼 때요." },
-      { r: "B", de: "Am Anfang schon, aber nach drei Tagen war's mir egal. Und ehrlich: Die meisten Storys sind eh nur Flexen.", ko: "처음엔 그랬는데 사흘 지나니까 신경 안 쓰였어요. 솔직히 대부분의 스토리는 그냥 자랑질이에요." },
-      { r: "A", de: "Stimmt, alle flexen mit ihrem Urlaub oder dem neuen Outfit. Und unter jedem Post sind Hater, die nur meckern.", ko: "맞아요, 다들 휴가나 새 옷을 자랑하죠. 그리고 모든 게시물 밑에는 불평만 하는 안티들이 있어요." },
-      { r: "B", de: "Und die Influencer verdienen sogar noch am Hate. Das ist doch nur ein Hamsterrad.", ko: "게다가 인플루언서들은 그 악플로도 돈을 벌어요. 그냥 쳇바퀴잖아요." },
-      { r: "A", de: "Okay, du hast mich überzeugt. Ab Montag bin ich eine Woche komplett offline. Aber nur, wenn du mitmachst.", ko: "알겠어요, 설득됐어요. 월요일부터 일주일 동안 완전히 오프라인이에요. 대신 당신도 같이 해야 해요." },
-      { r: "B", de: "Deal! Und wenn wir es schaffen, gönnen wir uns einen Döner. Das ist dann der Peak der Woche.", ko: "좋아요! 해내면 되너 케밥으로 보상해요. 그게 이번 주의 하이라이트가 될 거예요." }
+      { r: "A", de: "Sophie, du hängst schon wieder die ganze Zeit am Handy. Kannst du das nicht mal weglegen?", ko: "소피, 또 계속 휴대폰만 붙들고 있네요. 잠깐이라도 내려놓을 수 없어요?" },
+      { r: "B", de: "Ich schau doch nur schnell was nach. Hab ich dich gestört?", ko: "잠깐 뭘 좀 찾아보는 것뿐이에요. 제가 방해했어요?" },
+      { r: "A", de: "Du machst das jetzt seit zwei Stunden. Ich hab dich dreimal was gefragt, und du hast nix gehört.", ko: "벌써 두 시간째 그러고 있어요. 세 번이나 뭘 물었는데 아무것도 못 들었잖아요." },
+      { r: "B", de: "Echt? Ach so, tut mir leid. Ich hab 'nen Film über Berlin gesehen, der war total interessant.", ko: "정말요? 아, 미안해요. 베를린에 관한 영상을 봤는데 정말 흥미로웠어요." },
+      { r: "A", de: "Und was ist mit dem Abwasch? Du warst heute dran.", ko: "그런데 설거지는요? 오늘 당번이었잖아요." },
+      { r: "B", de: "Mist, den hab ich ganz vergessen. Gib mir fünf Minuten, ich mach den gleich.", ko: "아차, 완전히 잊어버렸어요. 5분만 줘요, 바로 할게요." },
+      { r: "A", de: "Das sagst du jetzt schon seit einer Stunde. Ehrlich gesagt nervt mich das ein bisschen.", ko: "그 말을 벌써 한 시간째 하고 있어요. 솔직히 말하면 좀 짜증 나요." },
+      { r: "B", de: "Du übertreibst echt. Aber okay, ich leg's weg. Ich muss eh gleich los zum Sport.", ko: "너무 과장하네요. 그래도 알겠어요, 내려놓을게요. 어차피 곧 운동하러 가야 해요." },
+      { r: "A", de: "Na also, geht doch! Und wenn du wiederkommst, kochen wir zusammen, okay?", ko: "거 봐요, 되잖아요! 돌아오면 같이 요리해요, 알았죠?" },
+      { r: "B", de: "Gern. Was gibt's denn dann zu essen?", ko: "좋아요. 그럼 뭘 먹어요?" },
+      { r: "A", de: "Keine Ahnung, schau mal im Kühlschrank. Ich glaub, da ist noch Gemüse drin.", ko: "모르겠어요, 냉장고를 한번 봐요. 야채가 아직 남아 있을 거예요." },
+      { r: "B", de: "Passt, dann mach ich 'ne Pfanne. Bis später!", ko: "좋아요, 그럼 볶음 요리를 할게요. 이따 봐요!" }
     ],
-    slang: [
-      { de: "cringe", t: 1, ko: "오그라드는, 대신 민망한", std: "peinlich", reg: "영어 차용", badge: "청소년어 2021 우승" },
-      { de: "Aura", t: 2, ko: "아우라, 분위기와 존재감 (\"minus 1000 Aura\"는 망신당한 순간)", std: "Ausstrahlung, Charisma", reg: "SNS", badge: "청소년어 2024 우승" },
-      { de: "Views", t: 2, ko: "조회수", std: "Aufrufe", reg: "영어 차용" },
-      { de: "FYP", t: 3, ko: "추천 피드 (For You Page)", std: "personalisierte Startseite", reg: "SNS" },
-      { de: "Ragebait", t: 3, ko: "분노를 일부러 끌어내려는 어그로 콘텐츠", std: "Inhalte, die gezielt Wut auslösen", reg: "SNS", badge: "청소년어 2026 우승" },
-      { de: "Das crazy", t: 4, ko: "대박 / 와 (어떤 상황에도 붙는 반응. 놀람, 무관심 모두)", std: "Das ist ja verrückt.", reg: "은어", badge: "청소년어 2025 우승" },
-      { de: "doomscrolle", t: 4, ko: "우울한 뉴스를 끝없이 넘겨 보다 (doomscrollen)", std: "stundenlang negative Nachrichten lesen", reg: "SNS" },
-      { de: "Touch grass", t: 5, ko: "화면을 끄고 밖에 나가 현실을 살아라", std: "Geh mal wieder raus an die frische Luft.", reg: "SNS" },
-      { de: "peak", t: 6, ko: "최고의, 10점 만점에 10점", std: "großartig, der Höhepunkt", reg: "은어", badge: "청소년어 2026 2위" },
-      { de: "FOMO", t: 7, ko: "놓칠까 불안해하는 마음 (Fear of Missing Out)", std: "Angst, etwas zu verpassen", reg: "영어 차용" },
-      { de: "Flexen", t: [8, 9], ko: "과시하다, 자랑하다", std: "angeben", reg: "영어 차용" },
-      { de: "Hater", t: 9, ko: "악플러, 안티", std: "Menschen, die nur Hass verbreiten", reg: "영어 차용" },
-      { de: "Influencer", t: 10, ko: "인플루언서", std: "Meinungsmacher in sozialen Medien", reg: "영어 차용" },
-      { de: "Hamsterrad", t: 10, ko: "쳇바퀴 (벗어날 수 없는 반복)", std: "ewiger Kreislauf", reg: "구어" },
-      { de: "Peak", t: 12, ko: "정점, 하이라이트 (명사로 쓴 경우)", std: "Höhepunkt", reg: "은어", badge: "청소년어 2026 2위" }
+    umg: [
+      { de: "hängst", t: 1, ko: "붙어 있다 (am Handy hängen: 휴대폰에 매달려 있다)", std: "benutzt ständig", reg: "구어" },
+      { de: "mal", t: 1, ko: "잠깐, 한번 (부탁이나 요청을 부드럽게 함)", std: "einmal", reg: "불변화사" },
+      { de: "schnell was nach", t: 2, ko: "잠깐 뭘 좀 찾아보다 (was = etwas)", std: "schnell etwas nach", reg: "축약" },
+      { de: "nix", t: 3, ko: "아무것도 (nichts의 구어형)", std: "nichts", reg: "축약" },
+      { de: "Echt?", t: 4, ko: "정말요?", std: "Wirklich?", reg: "추임새" },
+      { de: "Ach so", t: 4, ko: "아, 그렇군요", std: "Ich verstehe.", reg: "추임새" },
+      { de: "'nen", t: 4, ko: "einen의 구어 축약", std: "einen", reg: "축약" },
+      { de: "dran", t: 5, ko: "차례인, 당번인 (dran sein)", std: "an der Reihe", reg: "구어" },
+      { de: "Mist", t: 6, ko: "아차, 젠장 (가볍게 쓰는 감탄)", std: "Das ist ärgerlich.", reg: "감탄" },
+      { de: "Gib mir fünf Minuten", t: 6, ko: "5분만 줘요", std: "Warte bitte fünf Minuten.", reg: "구어" },
+      { de: "Ehrlich gesagt", t: 7, ko: "솔직히 말하면", std: "Offen gesagt", reg: "구어" },
+      { de: "nervt", t: 7, ko: "짜증 나게 하다", std: "ärgert", reg: "구어" },
+      { de: "leg's", t: 8, ko: "그것을 내려놓다 (leg es의 축약)", std: "lege es", reg: "축약" },
+      { de: "eh", t: 8, ko: "어차피", std: "sowieso", reg: "구어" },
+      { de: "Na also, geht doch", t: 9, ko: "거 봐요, 되잖아요", std: "Siehst du, es funktioniert.", reg: "구어" },
+      { de: "gibt's", t: 10, ko: "있다 (gibt es의 축약)", std: "gibt es", reg: "축약" },
+      { de: "Keine Ahnung", t: 11, ko: "모르겠어요", std: "Ich weiß es nicht.", reg: "구어" },
+      { de: "Passt", t: 12, ko: "좋아요, 그걸로 해요", std: "Das ist gut so.", reg: "구어" }
     ],
     redemittel: [
-      { group: "반응하기", items: [
-        { de: "Das ist so cringe.", ko: "너무 오그라들어요." },
-        { de: "Das crazy.", ko: "대박이네요." },
-        { de: "Minus tausend Aura!", ko: "아우라 마이너스 천이에요!" }
+      { group: "부드럽게 지적하기", items: [
+        { de: "Kannst du das nicht mal weglegen?", ko: "잠깐 그것 좀 내려놓을 수 없어요?" },
+        { de: "Ehrlich gesagt nervt mich das.", ko: "솔직히 말하면 그게 짜증 나요." }
       ] },
-      { group: "공감", items: [
-        { de: "Bei mir ist es genauso.", ko: "저도 똑같아요." }
+      { group: "변명 · 인정", items: [
+        { de: "Ich hab das ganz vergessen.", ko: "완전히 잊어버렸어요." },
+        { de: "Gib mir fünf Minuten.", ko: "5분만 줘요." }
       ] },
-      { group: "추천하기", items: [
-        { de: "Mach doch eine Woche …", ko: "일주일 동안 …해 봐요." },
-        { de: "Es war richtig peak.", ko: "진짜 최고였어요." }
-      ] },
-      { group: "비판", items: [
-        { de: "Die meisten … sind eh nur …", ko: "대부분의 …는 어차피 …일 뿐이에요." }
-      ] },
-      { group: "내기 · 결심", items: [
-        { de: "Du hast mich überzeugt.", ko: "설득됐어요." },
-        { de: "Deal!", ko: "좋아요, 그렇게 해요!" }
+      { group: "저녁 정하기", items: [
+        { de: "Was gibt's zu essen?", ko: "뭘 먹어요?" },
+        { de: "Keine Ahnung, schau mal im Kühlschrank.", ko: "모르겠어요, 냉장고를 한번 봐요." }
       ] }
     ]
   },
-
   {
     no: 4, lv: "MZ",
-    title: "Quiet Quitting", titleKo: "조용한 퇴사와 워라밸", type: "Beruf", typeKo: "직장",
-    intro: "불필요한 회의와 야근 문화에 대해 동료와 속마음을 나누는 대화예요.",
-    focus: ["Work-Life-Balance", "Boomer · Hustle", "직장 구어체"],
+    title: "Mittagspause im Büro", titleKo: "사무실 점심시간", type: "Kollegen", typeKo: "직장 동료",
+    intro: "야근에 지친 동료를 점심에 불러내고 상사에게 말해 보라고 권하는 대화예요.",
+    focus: ["Tja · halt · eh", "Rat geben", "auf den letzten Drücker"],
     roles: { A: "Kim", B: "Leon" },
     turns: [
-      { r: "A", de: "Alter, das Meeting eben war so unnötig. Das hätte locker eine Mail sein können.", ko: "진짜, 방금 회의는 너무 쓸데없었어요. 메일 한 통이면 충분했을 텐데요." },
-      { r: "B", de: "Eine Stunde lang, und am Ende wusste keiner, wer was macht. Mega ineffektiv.", ko: "한 시간이나 했는데 결국 누가 뭘 하는지 아무도 몰랐어요. 정말 비효율적이에요." },
-      { r: "A", de: "Und dann sagt der Chef, wir sollen mehr Hustle zeigen. Er meint damit: abends länger bleiben, und zwar unbezahlt. Das ist so Boomer-Denke.", ko: "그런데 팀장님이 더 열정(hustle)을 보이래요. 저녁에 더 남으라는 뜻이에요, 그것도 무급으로요. 완전 꼰대 사고방식이에요." },
-      { r: "B", de: "Ich sag's ehrlich: Ich mach nur noch Dienst nach Vorschrift. Quiet Quitting, wie man so sagt. Acht Stunden, dann bin ich raus.", ko: "솔직히 말하면 저는 이제 정해진 만큼만 해요. 요즘 말로 조용한 퇴사죠. 여덟 시간 하면 퇴근이에요." },
-      { r: "A", de: "Ist das nicht riskant? Ich bin noch in der Probezeit und will nicht faul wirken.", ko: "위험하지 않아요? 저는 아직 수습 기간이라서 게을러 보이고 싶지 않아요." },
-      { r: "B", de: "Verstehe ich. Aber Leistung ist nicht gleich Anwesenheit. Ich liefere meine Aufgaben, aber ich lass mich nicht ausbeuten. Meine Work-Life-Balance ist mir wichtiger als ein Titel.", ko: "이해해요. 그래도 성과는 자리를 지키는 것과 같지 않아요. 맡은 일은 해내지만 착취당하지는 않을 거예요. 직함보다 워라밸이 더 중요해요." },
-      { r: "A", de: "Du hast recht. Letztes Jahr war ich fast im Burnout, weil ich ständig Überstunden gemacht hab. Ich war komplett durch.", ko: "맞아요. 작년에는 계속 야근해서 번아웃 직전이었어요. 완전히 방전됐어요." },
-      { r: "B", de: "Eben. Eine Firma, die dich so ausnutzt, hat deine Loyalität nicht verdient. Das ist eine absolute Red Flag.", ko: "그래요. 그렇게 이용하는 회사는 충성을 받을 자격이 없어요. 이건 완전 위험 신호예요." },
-      { r: "A", de: "Okay, aber wie sag ich das dem Chef? Ich will keinen Beef.", ko: "그런데 팀장님께 어떻게 말하죠? 싸우고 싶지 않아요." },
-      { r: "B", de: "Sag einfach klar und höflich, wann du Feierabend machst. Und wenn er blöd reagiert, schreibst du das in eine Mail. Dann hast du es schwarz auf weiß.", ko: "그냥 몇 시에 퇴근하는지 분명하고 공손하게 말해요. 반응이 안 좋으면 메일로 남기고요. 그러면 증거가 남아요." },
-      { r: "A", de: "Stabil, mach ich. Ich schreib ihm noch heute und frag nach festen Arbeitszeiten und einem Homeoffice-Tag pro Woche.", ko: "좋아요, 그렇게 할게요. 오늘 안에 메일을 써서 고정 근무 시간과 주 1회 재택근무를 물어볼게요." },
-      { r: "B", de: "Slay! Und wenn die Mail raus ist, sagen wir beide: Gute Käse!", ko: "멋져요! 메일을 보내고 나면 우리 둘이서 외쳐요. 'Gute Käse!'(잘될 거야!)" }
+      { r: "A", de: "Hey Leon, gehst du mit in die Kantine? Ich hab einen Riesenhunger.", ko: "레온, 구내식당에 같이 갈래요? 배가 엄청 고파요." },
+      { r: "B", de: "Ich weiß nicht, ich hab noch ewig viel zu tun. Der Chef will die Zahlen bis heute Abend haben.", ko: "글쎄요, 아직 할 일이 끝도 없이 많아요. 팀장님이 오늘 저녁까지 수치를 달래요." },
+      { r: "A", de: "Schon wieder? Das ist jetzt das dritte Mal diese Woche. Immer wollen die alles auf den letzten Drücker.", ko: "또요? 이번 주에만 벌써 세 번째예요. 항상 다들 마지막 순간에 모든 걸 원해요." },
+      { r: "B", de: "Tja, so ist das halt. Und ich kann ja schlecht nein sagen, ich bin noch neu hier.", ko: "뭐, 원래 그런 거죠. 게다가 저는 아직 신입이라 거절하기도 어려워요." },
+      { r: "A", de: "Doch, kannst du! Man muss auch mal Grenzen setzen. Sonst machst du am Ende nur Überstunden, und keiner bedankt sich.", ko: "아니요, 할 수 있어요! 가끔은 선을 그어야 해요. 안 그러면 결국 야근만 하고 아무도 고마워하지 않아요." },
+      { r: "B", de: "Hm, vielleicht hast du recht. Aber bei dem Stress kann ich echt nicht abschalten.", ko: "음, 맞는 말일지도 몰라요. 하지만 이런 스트레스 속에서는 정말 머리를 식힐 수가 없어요." },
+      { r: "A", de: "Komm, wir gehen jetzt erst mal was essen. Mit leerem Magen denkt man eh schlecht.", ko: "자, 일단 뭘 좀 먹으러 가요. 어차피 배가 비면 생각도 잘 안 돼요." },
+      { r: "B", de: "Okay, überredet. Aber nur 'ne halbe Stunde, sonst werd ich nie fertig.", ko: "좋아요, 넘어갔어요. 그런데 30분만이에요, 안 그러면 영영 못 끝내요." },
+      { r: "A", de: "Alles klar. Ich lad dich auch ein, dann hast du keine Ausrede mehr.", ko: "알겠어요. 제가 살게요, 그러면 더는 핑계를 댈 수 없죠." },
+      { r: "B", de: "Na, das nehm ich an! Danke dir.", ko: "그럼 사양 않고 받을게요! 고마워요." },
+      { r: "A", de: "Und danach sprichst du mit dem Chef. Kein Mensch schafft so viel an einem Tag.", ko: "그리고 그다음에 팀장님께 말해요. 아무도 하루에 그렇게 많이 못 해요." },
+      { r: "B", de: "Mal schauen. Ich versuch's gleich nach dem Mittagessen.", ko: "생각해 볼게요. 점심 먹고 바로 시도해 볼게요." }
     ],
-    slang: [
-      { de: "Alter", t: 1, ko: "야, 진짜 (호칭이자 감탄 추임새)", std: "Mensch! / Ehrlich!", reg: "구어" },
-      { de: "hätte locker eine Mail sein können", t: 1, ko: "메일 한 통이면 충분했을 텐데 (불필요한 회의를 비꼬는 말)", std: "Das war ein unnötiges Treffen.", reg: "SNS" },
-      { de: "Mega", t: 2, ko: "엄청, 아주", std: "sehr", reg: "구어" },
-      { de: "Hustle", t: 3, ko: "열정적으로 몰아붙이는 일하기 방식", std: "großer Einsatz, hartes Arbeiten", reg: "영어 차용" },
-      { de: "Boomer-Denke", t: 3, ko: "꼰대 같은 사고방식 (Boomer는 낡은 생각을 가진 윗세대를 가리킴. 무례하게 들릴 수 있어요)", std: "veraltete Denkweise", reg: "SNS" },
-      { de: "Dienst nach Vorschrift", t: 4, ko: "정해진 근무만 하는 것 (표준 독일어 관용구)", std: "nur das Nötigste arbeiten", reg: "표준" },
-      { de: "Quiet Quitting", t: 4, ko: "조용한 퇴사 (그만두지 않고 정해진 만큼만 일함)", std: "innere Kündigung", reg: "SNS" },
-      { de: "bin ich raus", t: 4, ko: "그럼 저는 끝이에요 (퇴근이에요)", std: "dann habe ich Feierabend", reg: "구어" },
-      { de: "Work-Life-Balance", t: 6, ko: "일과 삶의 균형, 워라밸", std: "Gleichgewicht zwischen Arbeit und Privatleben", reg: "영어 차용" },
-      { de: "Burnout", t: 7, ko: "번아웃", std: "Erschöpfungszustand durch Überlastung", reg: "영어 차용" },
-      { de: "komplett durch", t: 7, ko: "완전히 방전된", std: "völlig erschöpft", reg: "구어" },
-      { de: "Red Flag", t: 8, ko: "위험 신호 (eine Red Flag)", std: "Warnsignal", reg: "SNS" },
-      { de: "Beef", t: 9, ko: "싸움, 갈등", std: "Streit, Konflikt", reg: "은어" },
-      { de: "Stabil", t: 11, ko: "좋아요, 든든해요", std: "Gut! / Einverstanden!", reg: "은어" },
-      { de: "Slay", t: 12, ko: "멋져요, 잘해냈어요", std: "Das hast du großartig gemacht!", reg: "SNS" },
-      { de: "Gute Käse", t: 12, ko: "잘될 거예요 (일부러 문법에 안 맞게 쓰는 밈)", std: "Das wird schon gut.", reg: "SNS", badge: "청소년어 2026 후보" }
+    umg: [
+      { de: "Riesenhunger", t: 1, ko: "엄청난 배고픔", std: "großen Hunger", reg: "구어" },
+      { de: "ewig viel", t: 2, ko: "끝도 없이 많이", std: "sehr viel", reg: "구어" },
+      { de: "Schon wieder?", t: 3, ko: "또요?", std: "Das ist schon wieder so?", reg: "추임새" },
+      { de: "auf den letzten Drücker", t: 3, ko: "마지막 순간에 (임박해서)", std: "erst im letzten Moment", reg: "관용구" },
+      { de: "Tja", t: 4, ko: "뭐, 글쎄요 (체념하는 말투)", std: "Nun", reg: "추임새" },
+      { de: "halt", t: 4, ko: "원래 그런 거예요 (so ist das halt)", std: "eben", reg: "불변화사" },
+      { de: "schlecht nein sagen", t: 4, ko: "거절하기 어렵다", std: "kaum ablehnen", reg: "구어" },
+      { de: "Doch", t: 5, ko: "아니요, 할 수 있어요 (상대의 부정을 뒤집을 때)", std: "Doch, das ist möglich.", reg: "불변화사" },
+      { de: "auch mal", t: 5, ko: "가끔은", std: "manchmal", reg: "불변화사" },
+      { de: "abschalten", t: 6, ko: "머리를 식히다, 긴장을 풀다", std: "sich entspannen", reg: "구어" },
+      { de: "Komm,", t: 7, ko: "자, 가요 (재촉하는 말)", std: "Los,", reg: "추임새" },
+      { de: "erst mal", t: 7, ko: "우선, 일단", std: "zunächst", reg: "구어" },
+      { de: "eh", t: 7, ko: "어차피", std: "sowieso", reg: "구어" },
+      { de: "überredet", t: 8, ko: "설득당했어요, 넘어갔어요", std: "Du hast mich überzeugt.", reg: "구어" },
+      { de: "'ne halbe Stunde", t: 8, ko: "30분 (eine의 축약)", std: "eine halbe Stunde", reg: "축약" },
+      { de: "das nehm ich an", t: 10, ko: "그럼 받을게요, 사양 않을게요", std: "Das nehme ich gern an.", reg: "구어" },
+      { de: "Kein Mensch", t: 11, ko: "아무도 (…하지 않는다)", std: "Niemand", reg: "구어" },
+      { de: "Mal schauen", t: 12, ko: "생각해 볼게요, 두고 봐요", std: "Ich werde sehen.", reg: "구어" },
+      { de: "versuch's", t: 12, ko: "시도해 볼게요 (versuche es)", std: "versuche es", reg: "축약" }
     ],
     redemittel: [
-      { group: "회의 불평", items: [
-        { de: "Das hätte locker eine Mail sein können.", ko: "메일 한 통이면 충분했을 텐데요." }
+      { group: "점심 권하기", items: [
+        { de: "Gehst du mit in die Kantine?", ko: "구내식당에 같이 갈래요?" },
+        { de: "Komm, wir gehen jetzt erst mal was essen.", ko: "자, 일단 뭘 좀 먹으러 가요." }
       ] },
-      { group: "입장 말하기", items: [
-        { de: "Ich mach nur noch Dienst nach Vorschrift.", ko: "저는 이제 정해진 만큼만 해요." },
-        { de: "Leistung ist nicht gleich Anwesenheit.", ko: "성과는 자리를 지키는 것과 같지 않아요." }
+      { group: "일이 많다고 말하기", items: [
+        { de: "Ich hab noch ewig viel zu tun.", ko: "아직 할 일이 끝도 없이 많아요." },
+        { de: "Ich kann ja schlecht nein sagen.", ko: "거절하기가 어려워요." }
       ] },
-      { group: "우려", items: [
-        { de: "Ist das nicht riskant?", ko: "위험하지 않아요?" },
-        { de: "Ich will keinen Beef.", ko: "싸우고 싶지 않아요." }
-      ] },
-      { group: "조언", items: [
-        { de: "Sag einfach klar und höflich, …", ko: "그냥 분명하고 공손하게 …라고 말해요." },
-        { de: "Dann hast du es schwarz auf weiß.", ko: "그러면 증거가 남아요." }
-      ] },
-      { group: "응원", items: [
-        { de: "Stabil, mach ich.", ko: "좋아요, 그렇게 할게요." },
-        { de: "Slay!", ko: "멋져요!" }
+      { group: "조언하기", items: [
+        { de: "Man muss auch mal Grenzen setzen.", ko: "가끔은 선을 그어야 해요." },
+        { de: "Dann sprichst du mit dem Chef.", ko: "그럼 팀장님께 말해 봐요." }
       ] }
     ]
   },
-
   {
     no: 5, lv: "MZ",
-    title: "Zocken mit Headset", titleKo: "헤드셋 끼고 게임하기", type: "Gaming", typeKo: "게임",
-    intro: "온라인 게임에서 팀원끼리 쓰는 구어체와 게임 용어가 나오는 대화예요.",
-    focus: ["Gaming-Slang", "Schere · Crashout", "영어 차용 동사"],
+    title: "Fußball in der Kneipe", titleKo: "술집에서 축구 보기", type: "Hobby", typeKo: "취미",
+    intro: "토요일 경기를 함께 볼 장소와 시간을 정하고 결과를 내기하는 대화예요.",
+    focus: ["Klar · Na ja", "tippen · wetten", "'nen · würd"],
     roles: { A: "Jan", B: "Mara" },
     turns: [
-      { r: "A", de: "Yo Mara, bist du on? Ich warte schon zehn Minuten in der Lobby.", ko: "마라, 접속했어요? 벌써 10분째 로비에서 기다리고 있어요." },
-      { r: "B", de: "Sorry, bin gleich da, ich musste noch schnell was essen. Ich joine jetzt.", ko: "미안해요, 곧 가요. 밥을 얼른 먹어야 했거든요. 지금 들어가요." },
-      { r: "A", de: "Endlich. Wir sind zu viert. Wir machen heute den Raid, aber bitte kein Chaos wie letztes Mal.", ko: "드디어요. 네 명이에요. 오늘은 레이드를 할 건데 지난번처럼 난장판은 사양이에요." },
-      { r: "B", de: "Ey, das war nicht meine Schuld, ich hab gelagt! Mein Ping war bei 300. Ich bin doch kein Noob.", ko: "아니, 제 잘못 아니에요, 렉이 걸렸어요! 핑이 300이었어요. 저 초보 아니거든요." },
-      { r: "A", de: "Ja ja. Also: Ich tanke, du heilst, und die anderen zwei machen Damage. Wenn wir den Boss legen, gibt's richtig guten Loot.", ko: "네, 네. 그럼 저는 탱커, 마라는 힐러, 나머지 둘은 딜러예요. 보스를 잡으면 아주 좋은 전리품이 나와요." },
-      { r: "B", de: "Plan steht. Und wenn wir wipen, hab ich einen Crashout, nur dass du's weißt.", ko: "계획은 알겠어요. 그리고 우리가 전멸하면 저 폭발해요, 미리 말해 두는 거예요." },
-      { r: "A", de: "Achtung, links! Der Typ hinter dir!", ko: "조심해요, 왼쪽! 뒤에 있는 놈이요!" },
-      { r: "B", de: "Schere, ich hab's komplett vergeigt! Ich heil dich sofort, bleib stehen!", ko: "미안해요, 제가 완전히 망쳤어요! 바로 치유할게요, 가만히 있어요!" },
-      { r: "A", de: "Alles gut, kein Ding. Du bist heute der absolute Carry, Mara. Ohne dich wären wir längst raus.", ko: "괜찮아요, 별일 아니에요. 오늘은 마라가 완전 캐리해요. 마라가 없었다면 벌써 탈락했을 거예요." },
-      { r: "B", de: "Ich weiß. Ich hab halt Main-Character-Energy.", ko: "알아요. 제가 원래 주인공 기운이 있잖아요." },
-      { r: "A", de: "Haha, okay. Boss ist down, GG! Und der Loot ist richtig peak: ein legendäres Schwert!", ko: "하하, 알겠어요. 보스 처치, GG! 전리품도 진짜 최고예요. 전설 검이에요!" },
-      { r: "B", de: "GG, Leute! Das machen wir morgen nochmal. Ich muss jetzt aber AFK, mein Bruder braucht den Router.", ko: "GG, 여러분! 내일 또 해요. 근데 지금은 자리를 비워야 해요. 형제가 공유기가 필요하대요." },
-      { r: "A", de: "Alles klar. Aber bitte nicht wieder bis vier Uhr nachts grinden, sonst bist du morgen komplett durch.", ko: "알겠어요. 그런데 또 새벽 4시까지 노가다 하지는 마요. 안 그러면 내일 또 녹초예요." }
+      { r: "A", de: "Mara, hast du am Samstag Zeit? Da spielt unser Verein gegen Köln.", ko: "마라, 토요일에 시간 있어요? 우리 팀이 쾰른이랑 경기해요." },
+      { r: "B", de: "Klar, das lass ich mir doch nicht entgehen. Wo wollen wir gucken, bei dir oder in der Kneipe?", ko: "당연하죠, 그걸 놓칠 수는 없어요. 어디서 볼까요, 당신 집이요, 아니면 술집이요?" },
+      { r: "A", de: "Ich würd sagen, in der Kneipe. Da ist die Stimmung viel besser als allein vor dem Fernseher.", ko: "술집이 좋겠어요. 혼자 TV 앞에 있는 것보다 분위기가 훨씬 좋아요." },
+      { r: "B", de: "Stimmt auch wieder. Aber da ist es oft total voll. Wir müssen früh hin, sonst kriegen wir keinen Platz.", ko: "그 말도 맞아요. 그런데 거기는 자주 사람이 꽉 차요. 일찍 가야 해요, 안 그러면 자리를 못 잡아요." },
+      { r: "A", de: "Dann treffen wir uns um halb zwei. Anpfiff ist um halb vier, das reicht locker.", ko: "그럼 1시 반에 만나요. 킥오프는 3시 반이라서 여유 있어요." },
+      { r: "B", de: "Gut. Was glaubst du denn, wie das ausgeht? Ich tipp auf ein Unentschieden.", ko: "좋아요. 결과가 어떻게 될 것 같아요? 저는 무승부에 걸래요." },
+      { r: "A", de: "Echt? Ich glaub, wir gewinnen zwei zu eins. Die Mannschaft ist gerade richtig gut drauf.", ko: "정말요? 저는 우리가 2대 1로 이길 거라고 생각해요. 선수들이 지금 컨디션이 아주 좋아요." },
+      { r: "B", de: "Na ja, abwarten. Letzte Saison haben sie auch am Anfang gut gespielt und dann total abgebaut.", ko: "글쎄요, 두고 봐야죠. 지난 시즌에도 처음에는 잘하다가 완전히 무너졌잖아요." },
+      { r: "A", de: "Stimmt, das war schon ärgerlich. Aber diesmal haben sie 'nen neuen Trainer, und der macht vieles anders.", ko: "맞아요, 정말 아쉬웠죠. 하지만 이번에는 새 감독이 있고, 많은 걸 다르게 해요." },
+      { r: "B", de: "Ich lass mich überraschen. Wetten wir um ein Bier?", ko: "어떻게 되나 보죠. 맥주 한 잔 내기할까요?" },
+      { r: "A", de: "Gern! Wer verliert, zahlt die Runde.", ko: "좋아요! 지는 사람이 한 턱 쏘기예요." },
+      { r: "B", de: "Abgemacht. Dann bis Samstag, und vergiss deinen Schal nicht!", ko: "그렇게 해요. 그럼 토요일에 봐요, 목도리 잊지 말고요!" }
     ],
-    slang: [
-      { de: "bist du on", t: 1, ko: "접속해 있어요? (온라인 상태)", std: "bist du online?", reg: "게임" },
-      { de: "Lobby", t: 1, ko: "로비, 게임 시작 전 대기 공간", std: "Warteraum", reg: "게임" },
-      { de: "joine", t: 2, ko: "들어가다, 참가하다 (joinen)", std: "beitreten, mitmachen", reg: "게임" },
-      { de: "Raid", t: 3, ko: "여럿이서 강한 보스를 공략하는 콘텐츠", std: "gemeinsamer Angriff auf einen starken Gegner", reg: "게임" },
-      { de: "gelagt", t: 4, ko: "렉이 걸렸다 (lagen의 과거분사)", std: "Verzögerung bei der Verbindung gehabt", reg: "게임" },
-      { de: "Ping", t: 4, ko: "서버 반응 속도(핑)", std: "Verbindungsverzögerung", reg: "게임" },
-      { de: "Noob", t: 4, ko: "초보 (놀리는 말이니 친구 사이에서만)", std: "Anfänger", reg: "게임" },
-      { de: "legen", t: 5, ko: "(보스를) 쓰러뜨리다", std: "besiegen", reg: "게임" },
-      { de: "Loot", t: [5, 11], ko: "전리품, 드롭 아이템", std: "Beute", reg: "게임" },
-      { de: "wipen", t: 6, ko: "파티가 전멸하다", std: "alle sterben", reg: "게임" },
-      { de: "Crashout", t: 6, ko: "감정이 폭발하다, 이성을 잃다 (과장해서 쓰기도 함)", std: "Wutausbruch, Zusammenbruch", reg: "SNS", badge: "청소년어 2026 3위" },
-      { de: "Schere", t: 8, ko: "내 실수예요, 미안해요 (게임에서 시작된 말)", std: "Mein Fehler, tut mir leid.", reg: "게임", badge: "청소년어 2026 후보" },
-      { de: "vergeigt", t: 8, ko: "망쳤다", std: "verdorben, versagt", reg: "구어" },
-      { de: "Carry", t: 9, ko: "캐리, 팀을 이끌어 이기게 하는 사람", std: "Spieler, der das Team zum Sieg führt", reg: "게임" },
-      { de: "Main-Character-Energy", t: 10, ko: "주인공 기운 (자신감 있게 구는 태도)", std: "selbstbewusstes Auftreten", reg: "SNS" },
-      { de: "GG", t: [11, 12], ko: "수고했어요 (Good Game)", std: "Gut gespielt!", reg: "게임" },
-      { de: "peak", t: 11, ko: "최고의", std: "großartig", reg: "은어", badge: "청소년어 2026 2위" },
-      { de: "AFK", t: 12, ko: "자리를 비운 (Away From Keyboard)", std: "nicht am Computer", reg: "게임" },
-      { de: "grinden", t: 13, ko: "경험치나 재료를 얻으려고 같은 일을 반복하다, 노가다", std: "stundenlang dasselbe wiederholen", reg: "게임" }
+    umg: [
+      { de: "Klar", t: 2, ko: "물론이죠, 당연하죠", std: "Selbstverständlich", reg: "구어" },
+      { de: "lass ich mir doch nicht entgehen", t: 2, ko: "놓칠 수 없어요 (lasse의 e 탈락)", std: "lasse ich mir nicht entgehen", reg: "축약" },
+      { de: "Kneipe", t: 2, ko: "동네 술집", std: "Gaststätte, Bar", reg: "구어" },
+      { de: "Ich würd sagen", t: 3, ko: "…라고 하겠어요 (würde의 e 탈락)", std: "Ich würde sagen", reg: "축약" },
+      { de: "Stimmt auch wieder", t: 4, ko: "그 말도 맞네요", std: "Da hast du auch recht.", reg: "구어" },
+      { de: "total voll", t: 4, ko: "꽉 찬", std: "sehr voll", reg: "구어" },
+      { de: "kriegen", t: 4, ko: "얻다, 받다", std: "bekommen", reg: "구어" },
+      { de: "locker", t: 5, ko: "여유롭게, 충분히", std: "ohne Probleme", reg: "구어" },
+      { de: "tipp auf", t: 6, ko: "…이라고 예상하다, 걸다", std: "tippe auf", reg: "축약" },
+      { de: "richtig gut drauf", t: 7, ko: "컨디션이 아주 좋은", std: "in sehr guter Form", reg: "구어" },
+      { de: "Na ja", t: 8, ko: "글쎄요 (완전히 동의하지는 않을 때)", std: "Nun ja", reg: "추임새" },
+      { de: "abgebaut", t: 8, ko: "무너지다, 기량이 떨어지다 (abbauen)", std: "nachgelassen", reg: "구어" },
+      { de: "'nen", t: 9, ko: "einen의 구어 축약", std: "einen", reg: "축약" },
+      { de: "Ich lass mich überraschen", t: 10, ko: "어떻게 될지 지켜볼게요", std: "Ich lasse mich überraschen.", reg: "구어" },
+      { de: "Wetten wir", t: 10, ko: "내기할까요?", std: "Sollen wir wetten?", reg: "구어" },
+      { de: "zahlt die Runde", t: 11, ko: "한 턱 쏘다 (모두의 술값을 내다)", std: "bezahlt für alle", reg: "구어" },
+      { de: "Abgemacht", t: 12, ko: "그렇게 해요", std: "Einverstanden", reg: "구어" }
     ],
     redemittel: [
-      { group: "접속 · 약속", items: [
-        { de: "Bist du on?", ko: "접속했어요?" },
-        { de: "Ich joine jetzt.", ko: "지금 들어가요." }
+      { group: "약속 · 장소 정하기", items: [
+        { de: "Hast du am Samstag Zeit?", ko: "토요일에 시간 있어요?" },
+        { de: "Ich würd sagen, in der Kneipe.", ko: "술집이 좋겠어요." },
+        { de: "Wir müssen früh hin, sonst kriegen wir keinen Platz.", ko: "일찍 가야 해요, 안 그러면 자리를 못 잡아요." }
       ] },
-      { group: "변명", items: [
-        { de: "Das war nicht meine Schuld, ich hab gelagt!", ko: "제 잘못 아니에요, 렉 걸렸어요!" }
+      { group: "예상 말하기", items: [
+        { de: "Ich tipp auf …", ko: "저는 …에 걸래요." },
+        { de: "Ich glaub, wir gewinnen …", ko: "우리가 …로 이길 것 같아요." }
       ] },
-      { group: "사과", items: [
-        { de: "Schere, ich hab's vergeigt!", ko: "미안해요, 제가 망쳤어요!" }
-      ] },
-      { group: "격려", items: [
-        { de: "Kein Ding.", ko: "별일 아니에요." },
-        { de: "Du bist heute der absolute Carry.", ko: "오늘은 정말 캐리해요." }
-      ] },
-      { group: "게임 종료", items: [
-        { de: "GG, Leute!", ko: "수고했어요, 여러분!" },
-        { de: "Ich muss jetzt AFK.", ko: "지금은 자리를 비워야 해요." }
+      { group: "내기하기", items: [
+        { de: "Wetten wir um …?", ko: "…를 걸고 내기할까요?" },
+        { de: "Wer verliert, zahlt die Runde.", ko: "지는 사람이 한 턱 쏘기예요." }
       ] }
     ]
   },
-
   {
     no: 6, lv: "MZ",
     title: "Das WG-Casting", titleKo: "룸메이트 면접", type: "Wohnen", typeKo: "주거",
-    intro: "셰어하우스에 들어가려는 사람이 기존 입주자와 분위기를 맞춰 보는 대화예요.",
-    focus: ["WG-Alltag", "Vibe · chillig", "Warmmiete"],
+    intro: "공동 주택(WG)에 들어가려는 사람이 기존 입주자와 만나 생활 규칙을 이야기하는 대화예요.",
+    focus: ["Sag mal · Hauptsache", "was = etwas", "Wohnen und Alltag"],
     roles: { A: "Paula", B: "Daniel" },
     turns: [
-      { r: "A", de: "Hey, komm rein! Ich bin Paula. Schön, dass du da bist. Ich zeig dir kurz die Bude, dann quatschen wir.", ko: "안녕하세요, 들어와요! 저는 파울라예요. 와 줘서 반가워요. 집을 잠깐 보여 주고 이야기해요." },
-      { r: "B", de: "Hi Paula, ich bin Daniel. Die Wohnung sieht schon mal mega aus, die ist ja richtig hell.", ko: "안녕하세요, 파울라. 저는 다니엘이에요. 집이 벌써 정말 멋져 보여요. 엄청 밝네요." },
-      { r: "A", de: "Ja, wir lieben das Licht. Dein Zimmer wäre das da hinten, 14 Quadratmeter, klein, aber fein. Die Miete liegt bei 450 Euro warm, inklusive Internet.", ko: "네, 저희도 이 햇빛이 좋아요. 다니엘 방은 저 뒤쪽이고 14제곱미터예요. 작지만 아담하고 좋아요. 월세는 관리비 포함 450유로이고 인터넷도 포함이에요." },
-      { r: "B", de: "Passt für mich. Wie läuft das bei euch im Alltag? Habt ihr 'nen Putzplan?", ko: "저는 괜찮아요. 평소에는 어떻게 지내요? 청소 당번표 있어요?" },
-      { r: "A", de: "Klar, sonst wird's eklig. Jeder ist eine Woche für Küche und Bad zuständig. Und wir haben 'nen Gruppenchat, da sprechen wir alles ab: Einkaufen, Pfand, Besuch.", ko: "물론이죠, 안 그러면 더러워져요. 각자 일주일씩 주방과 욕실을 맡아요. 단톡방도 있어서 장보기, 공병 보증금, 손님 문제까지 다 거기서 정해요." },
-      { r: "B", de: "Cool. Und wie ist so der Vibe bei euch? Eher chillig oder macht ihr jedes Wochenende Party?", ko: "좋네요. 그럼 분위기는 어때요? 주로 느긋한 편이에요, 아니면 주말마다 파티를 해요?" },
-      { r: "A", de: "Meistens chillig, ab und zu kochen wir zusammen. Eine Party gibt's höchstens einmal im Monat, und wir sagen vorher Bescheid. Uns ist wichtig, dass sich alle respektieren.", ko: "대부분 느긋하고 가끔 같이 요리해요. 파티는 많아야 한 달에 한 번이고 미리 알려요. 서로 존중하는 게 가장 중요해요." },
-      { r: "B", de: "Das ist genau mein Ding. Ich studiere Informatik und bin viel am Zocken oder Lernen. Aber ich hör Musik immer mit Kopfhörern.", ko: "딱 제 스타일이에요. 저는 컴퓨터공학을 전공하고 게임이나 공부를 많이 해요. 하지만 음악은 항상 헤드폰으로 들어요." },
-      { r: "A", de: "Hört sich gut an. Wir haben 'ne Katze. Ist das ein Problem für dich?", ko: "좋게 들리네요. 저희는 고양이를 키워요. 괜찮아요?" },
-      { r: "B", de: "Null Problem, ich liebe Katzen.", ko: "전혀 문제없어요, 고양이를 정말 좋아해요." },
-      { r: "A", de: "Nice. Ich sag dir ehrlich, wie es weitergeht: Wir sehen heute noch fünf andere und schreiben morgen Abend allen zurück.", ko: "좋아요. 앞으로 어떻게 되는지 솔직히 말해 줄게요. 오늘 다섯 명을 더 만나고 내일 저녁에 모두에게 답을 보내요." },
-      { r: "B", de: "Okay, fair. Ich hab bei dir direkt ein gutes Gefühl. Vibe-Check bestanden, würde ich sagen.", ko: "네, 공정하네요. 파울라와는 처음부터 느낌이 좋았어요. 분위기 검사는 통과인 것 같아요." },
-      { r: "A", de: "Haha, same. Wir melden uns, und ich drück dir schon mal die Daumen.", ko: "하하, 저도요. 연락드릴게요. 미리 행운도 빌어 줄게요." }
+      { r: "A", de: "Hi, du bist bestimmt Daniel. Komm rein, die Schuhe kannst du einfach hier abstellen.", ko: "안녕하세요, 다니엘이시죠? 들어와요, 신발은 그냥 여기에 두면 돼요." },
+      { r: "B", de: "Hallo Paula, danke. Schön habt ihr's hier! Die Wohnung ist viel größer, als ich gedacht hab.", ko: "안녕하세요, 파울라. 고마워요. 여기 참 좋네요! 생각했던 것보다 집이 훨씬 커요." },
+      { r: "A", de: "Ja, das stimmt. Wir sind zu dritt, jeder hat sein eigenes Zimmer, und es gibt 'ne große Küche. Willst du was trinken?", ko: "네, 맞아요. 세 명이 살고, 각자 자기 방이 있고, 큰 부엌도 있어요. 뭘 좀 마실래요?" },
+      { r: "B", de: "Gern, ein Wasser wär super. Sag mal, wie läuft das bei euch mit dem Putzen?", ko: "좋아요, 물이면 좋겠어요. 그런데 청소는 여기서 어떻게 해요?" },
+      { r: "A", de: "Wir haben 'nen Putzplan. Jeder ist eine Woche dran. Ist eigentlich recht entspannt.", ko: "청소 당번표가 있어요. 각자 일주일씩 맡아요. 사실 꽤 부담 없는 편이에요." },
+      { r: "B", de: "Das klingt gut. Ich bin ziemlich ordentlich, nur manchmal bleibt das Geschirr ein bisschen länger stehen.", ko: "좋게 들려요. 저는 꽤 깔끔한 편인데, 가끔 설거지가 조금 오래 쌓여 있긴 해요." },
+      { r: "A", de: "Haha, kenn ich. Dafür ist die Spülmaschine ja da. Und was machst du so beruflich?", ko: "하하, 저도 알아요. 그래서 식기세척기가 있는 거죠. 그런데 일은 뭘 해요?" },
+      { r: "B", de: "Ich arbeite als Grafiker, meistens von zu Hause. Das heißt, ich bin tagsüber öfter da. Stört dich das?", ko: "그래픽 디자이너로 일하고, 대부분 집에서 해요. 그러니까 낮에 집에 있는 날이 많아요. 불편해요?" },
+      { r: "A", de: "Überhaupt nicht. Tagsüber sind wir sowieso fast nie da. Hauptsache, du bist abends nicht zu laut.", ko: "전혀요. 낮에는 어차피 우리가 거의 없어요. 중요한 건 저녁에 너무 시끄럽지 않은 거예요." },
+      { r: "B", de: "Keine Sorge, ich bin eher der ruhige Typ. Wie viel Miete wären das denn im Monat?", ko: "걱정 마세요, 저는 조용한 편이에요. 한 달에 월세가 얼마나 되나요?" },
+      { r: "A", de: "Vierhundertfünfzig warm, also mit allem drin. Internet und Strom sind auch dabei.", ko: "관리비 포함 450유로예요, 그러니까 전부 다 들어 있어요. 인터넷과 전기도 포함이에요." },
+      { r: "B", de: "Das ist fair. Ich würd's gern nehmen. Wann erfahr ich denn, ob es klappt?", ko: "합리적이네요. 꼭 들어오고 싶어요. 언제쯤 결과를 알 수 있을까요?" },
+      { r: "A", de: "Wir melden uns bis Freitag bei dir. Aber mein Bauchgefühl sagt: Das passt.", ko: "금요일까지 연락드릴게요. 그런데 제 직감으로는 잘 맞을 것 같아요." },
+      { r: "B", de: "Super, ich freu mich! Vielen Dank für die Einladung.", ko: "좋아요, 기대돼요! 초대해 주셔서 정말 고마워요." }
     ],
-    slang: [
-      { de: "Bude", t: 1, ko: "집, 방 (친근한 말)", std: "Wohnung, Zimmer", reg: "구어" },
-      { de: "quatschen", t: 1, ko: "수다 떨다, 이야기하다", std: "sich unterhalten", reg: "구어" },
-      { de: "mega", t: 2, ko: "엄청 좋은", std: "sehr gut, großartig", reg: "구어" },
-      { de: "klein, aber fein", t: 3, ko: "작아도 알차고 좋은 (관용구)", std: "klein, aber schön", reg: "구어" },
-      { de: "warm", t: 3, ko: "관리비·난방비를 포함한 월세 (Warmmiete)", std: "inklusive Nebenkosten", reg: "표준" },
-      { de: "Passt", t: 4, ko: "괜찮아요, 맞아요", std: "Das passt mir. / Das ist in Ordnung.", reg: "구어" },
-      { de: "'nen", t: [4, 5], ko: "einen의 구어 축약 (말할 때만)", std: "einen", reg: "구어" },
-      { de: "Gruppenchat", t: 5, ko: "단체 채팅방, 단톡방", std: "gemeinsamer Messenger-Chat", reg: "구어" },
-      { de: "Pfand", t: 5, ko: "공병 보증금 (병을 반납하면 돌려받는 돈)", std: "Flaschenpfand", reg: "표준" },
-      { de: "Vibe", t: 6, ko: "분위기, 느낌", std: "Stimmung, Atmosphäre", reg: "영어 차용" },
-      { de: "chillig", t: [6, 7], ko: "느긋한, 편안한", std: "entspannt", reg: "구어" },
-      { de: "mein Ding", t: 8, ko: "딱 제 스타일", std: "genau das, was mir gefällt", reg: "구어" },
-      { de: "Zocken", t: 8, ko: "게임하다 (zocken)", std: "Videospiele spielen", reg: "구어" },
-      { de: "Null Problem", t: 10, ko: "전혀 문제없어요", std: "Das ist kein Problem.", reg: "구어" },
-      { de: "Nice", t: 11, ko: "좋아요", std: "Schön! / Gut!", reg: "영어 차용" },
-      { de: "Vibe-Check", t: 12, ko: "분위기가 맞는지 확인하는 일", std: "Prüfung, ob man gut zusammenpasst", reg: "SNS" },
-      { de: "same", t: 13, ko: "저도요", std: "Mir geht es genauso.", reg: "영어 차용" },
-      { de: "drück dir schon mal die Daumen", t: 13, ko: "행운을 빌다 (die Daumen drücken)", std: "Glück wünschen", reg: "구어" }
+    umg: [
+      { de: "Hi", t: 1, ko: "안녕 (가벼운 인사)", std: "Guten Tag", reg: "구어" },
+      { de: "habt ihr's", t: 2, ko: "…를 갖고 있다 (habt ihr es의 축약)", std: "habt ihr es", reg: "축약" },
+      { de: "gedacht hab", t: 2, ko: "생각했던 (habe의 e 탈락)", std: "gedacht habe", reg: "축약" },
+      { de: "'ne", t: 3, ko: "eine의 구어 축약", std: "eine", reg: "축약" },
+      { de: "was trinken", t: 3, ko: "뭘 좀 마시다 (was = etwas)", std: "etwas trinken", reg: "축약" },
+      { de: "Sag mal", t: 4, ko: "그런데요, 있잖아요", std: "Ich möchte gern wissen", reg: "추임새" },
+      { de: "wär", t: 4, ko: "…면 좋겠어요 (wäre의 e 탈락)", std: "wäre", reg: "축약" },
+      { de: "'nen", t: 5, ko: "einen의 구어 축약", std: "einen", reg: "축약" },
+      { de: "dran", t: 5, ko: "차례인, 당번인", std: "an der Reihe", reg: "구어" },
+      { de: "recht", t: 5, ko: "꽤, 제법", std: "ziemlich", reg: "구어" },
+      { de: "ziemlich", t: 6, ko: "꽤, 상당히", std: "relativ", reg: "구어" },
+      { de: "kenn ich", t: 7, ko: "저도 알아요, 그 마음 알아요", std: "Das kenne ich auch.", reg: "구어" },
+      { de: "was machst du so beruflich", t: 7, ko: "일은 뭘 하세요? (so = 대략, 부드럽게 묻는 말)", std: "Welchen Beruf haben Sie?", reg: "구어" },
+      { de: "Überhaupt nicht", t: 9, ko: "전혀 아니에요", std: "Gar nicht", reg: "구어" },
+      { de: "Hauptsache", t: 9, ko: "중요한 건, 그것만 되면", std: "Wichtig ist, dass", reg: "구어" },
+      { de: "Typ", t: 10, ko: "…한 사람, 유형", std: "Mensch, Person", reg: "구어" },
+      { de: "warm", t: 11, ko: "관리비 포함 (월세 Warmmiete)", std: "inklusive Nebenkosten", reg: "구어" },
+      { de: "würd's", t: 12, ko: "그걸 …하고 싶어요 (würde es)", std: "würde es", reg: "축약" },
+      { de: "klappt", t: 12, ko: "잘 풀리다, 성사되다", std: "funktioniert", reg: "구어" },
+      { de: "Bauchgefühl", t: 13, ko: "직감", std: "Intuition", reg: "구어" },
+      { de: "passt", t: 13, ko: "잘 맞다", std: "passt zusammen", reg: "구어" }
     ],
     redemittel: [
-      { group: "집 소개", items: [
-        { de: "Ich zeig dir kurz die Bude.", ko: "집을 잠깐 보여 줄게요." },
-        { de: "Klein, aber fein.", ko: "작지만 알차요." }
+      { group: "집 보기", items: [
+        { de: "Schön habt ihr's hier!", ko: "여기 참 좋네요!" },
+        { de: "Willst du was trinken?", ko: "뭘 좀 마실래요?" }
       ] },
-      { group: "생활 규칙", items: [
-        { de: "Habt ihr 'nen Putzplan?", ko: "청소 당번표 있어요?" },
-        { de: "Wir sprechen alles im Gruppenchat ab.", ko: "모든 걸 단톡방에서 정해요." }
+      { group: "생활 규칙 묻기", items: [
+        { de: "Wie läuft das bei euch mit dem Putzen?", ko: "청소는 여기서 어떻게 해요?" },
+        { de: "Jeder ist eine Woche dran.", ko: "각자 일주일씩 맡아요." },
+        { de: "Wie viel Miete wären das im Monat?", ko: "한 달 월세가 얼마나 돼요?" }
       ] },
-      { group: "분위기 묻기", items: [
-        { de: "Wie ist so der Vibe bei euch?", ko: "분위기는 어때요?" },
-        { de: "Eher chillig oder … ?", ko: "느긋한 편이에요, 아니면 …?" }
-      ] },
-      { group: "취향 말하기", items: [
-        { de: "Das ist genau mein Ding.", ko: "딱 제 스타일이에요." },
-        { de: "Null Problem.", ko: "전혀 문제없어요." }
-      ] },
-      { group: "마무리", items: [
-        { de: "Wir melden uns.", ko: "연락드릴게요." },
-        { de: "Ich drück dir die Daumen.", ko: "행운을 빌어요." }
+      { group: "관심 표현 · 마무리", items: [
+        { de: "Ich würd's gern nehmen.", ko: "꼭 들어오고 싶어요." },
+        { de: "Wann erfahr ich, ob es klappt?", ko: "언제쯤 결과를 알 수 있을까요?" },
+        { de: "Mein Bauchgefühl sagt: Das passt.", ko: "제 직감으로는 잘 맞을 것 같아요." }
       ] }
     ]
   }

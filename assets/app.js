@@ -14,7 +14,7 @@
     { code: 'C1', de: 'Fachkundige Sprachkenntnisse', ko: '논쟁하고 타협하기', step: 5,
       desc: '반론하고 조건을 달며 합의안을 만드는 토론, 인터뷰, 협상, 문학 대화예요.' },
     { code: 'MZ', de: 'Jugendsprache', ko: 'MZ 구어체', step: 0, special: true,
-      desc: '독일 젊은 층이 친구끼리 쓰는 은어와 구어체를 대화로 익혀요. 2026년 10월 기준 표현이에요.' }
+      desc: '독일 사람들이 일상에서 실제로 쓰는 구어체를 대화로 익혀요. 은어와 유행어는 쓰지 않아요.' }
   ];
   var LEVEL_BY = {};
   LEVELS.forEach(function (l) { LEVEL_BY[l.code] = l; });
@@ -27,7 +27,7 @@
     hide: 'none',     // none | A | B | all
     mine: 'none',     // none | A | B  (내가 맡는 역할)
     ko: true,         // 해석 보기
-    sl: true,         // 은어 표시
+    sl: true,         // 구어체 표시
     peek: {},         // 가려진 줄 중 눌러서 연 것
     practice: -1,     // 단계별 연습 중 현재 줄 번호 (-1: 꺼짐)
     recs: {},         // 녹음 결과 (메모리에만 보관)
@@ -55,7 +55,7 @@
     var t = it.t;
     return Array.isArray(t) ? t.indexOf(i + 1) >= 0 : t === i + 1;
   }
-  function hlSlang(text, items, i) {
+  function hlUmg(text, items, i) {
     if (!state.sl || !items || !items.length) return esc(text);
     var low = text.toLowerCase(), ranges = [];
     items.forEach(function (it) {
@@ -271,7 +271,7 @@
       '<div class="sec-h"><div class="lvhead"><span class="lv-code">' + lv + '</span>' +
       '<div><span class="kicker" lang="de">' + esc(L.de.toUpperCase()) + '</span><h1>' + esc(L.ko) + '</h1></div></div>' +
       '<p>' + esc(L.desc) + '</p></div>' +
-      (L.special ? '<aside class="mznote"><b>사용하기 전에</b><p>이 챕터의 표현은 친구 사이에서만 쓰는 구어체와 은어예요. 시험, 직장, 공식 자리에서는 쓰지 않아요. 유행어는 금방 바뀌니 대화마다 있는 ‘표준 독일어’ 풀이로 바꿔 쓰는 연습도 함께 해요.</p></aside>' : '') +
+      (L.special ? '<aside class="mznote"><b>사용하기 전에</b><p>이 챕터의 표현은 말할 때 쓰는 구어체예요. 일상 대화에서는 자연스럽지만 시험의 쓰기 과제나 공식 문서에서는 ‘표준 독일어’로 바꿔 써요. 대화마다 있는 ‘표준 독일어’ 풀이로 바꿔 말하는 연습도 함께 해요.</p></aside>' : '') +
       (items.length ? '<ul class="grid">' + cards + '</ul>' : '<p class="empty">아직 대화가 없어요.</p>') + '</main>';
   }
 
@@ -292,7 +292,7 @@
       '<button type="button" class="dctl-btn" data-act="ko" aria-pressed="' + (state.ko ? 'true' : 'false') + '">해석 ' + (state.ko ? '가리기' : '보기') + '</button>' +
       '<button type="button" class="dctl-btn" data-act="practice" aria-pressed="' + (pr >= 0 ? 'true' : 'false') + '">' +
       (pr >= 0 ? '연습 끝내기' : '단계별 연습') + '</button>' +
-      (t.slang && t.slang.length ? '<button type="button" class="dctl-btn" data-act="sl" aria-pressed="' + (state.sl ? 'true' : 'false') + '">은어 표시 ' + (state.sl ? '끄기' : '켜기') + '</button>' : '') +
+      (t.umg && t.umg.length ? '<button type="button" class="dctl-btn" data-act="sl" aria-pressed="' + (state.sl ? 'true' : 'false') + '">구어체 표시 ' + (state.sl ? '끄기' : '켜기') + '</button>' : '') +
       '</div>' +
       '<p class="dctl-note">가려진 문장은 눌러서 볼 수 있어요. 녹음은 이 화면을 떠나면 사라져요.</p>' +
       '</div>';
@@ -322,21 +322,20 @@
       }
       turns += '<li class="' + cls + '"' + (hidden ? ' data-act="peek" data-i="' + i + '"' : '') + '>' +
         '<div class="who"><b>' + esc(turn.r) + '</b><span>' + esc(t.roles[turn.r]) + '</span></div>' +
-        '<p class="de-line" lang="de">' + hlSlang(turn.de, t.slang, i) + '</p>' +
+        '<p class="de-line" lang="de">' + hlUmg(turn.de, t.umg, i) + '</p>' +
         (state.ko ? '<p class="ko-line">' + esc(turn.ko) + '</p>' : '') +
         '<div class="tools"><button type="button" class="tool" data-act="speak" data-i="' + i + '">🔊 원문 듣기</button>' + rec + '</div>' +
         '</li>';
     }
 
     var gloss = '';
-    if (t.slang && t.slang.length) {
-      gloss = '<section class="gloss"><h2>Slang · 은어와 구어 표현</h2>' +
-        '<p>표현을 누르면 독일어로 들을 수 있어요. 구어와 은어는 친구 사이에서만 쓰고, 시험·직장·공식 자리에서는 ‘표준 독일어’로 바꿔 써요.</p>' +
-        '<ul class="glist">' + t.slang.map(function (it) {
+    if (t.umg && t.umg.length) {
+      gloss = '<section class="gloss"><h2>Umgangssprache · 구어체 표현</h2>' +
+        '<p>표현을 누르면 독일어로 들을 수 있어요. 구어체는 말할 때 쓰고, 쓰기 시험과 공식 문서에서는 ‘표준 독일어’로 바꿔 써요.</p>' +
+        '<ul class="glist">' + t.umg.map(function (it) {
           return '<li><button type="button" data-act="say" data-text="' + esc(it.de) + '">' +
             '<span class="g-top"><span class="rde" lang="de">' + esc(it.de) + '</span>' +
-            (it.reg ? '<span class="g-chip">' + esc(it.reg) + '</span>' : '') +
-            (it.badge ? '<span class="g-chip hot">' + esc(it.badge) + '</span>' : '') + '</span>' +
+            (it.reg ? '<span class="g-chip">' + esc(it.reg) + '</span>' : '') + '</span>' +
             '<span class="rko">' + esc(it.ko) + '</span>' +
             '<span class="g-std"><small>표준 독일어</small><span lang="de">' + esc(it.std) + '</span></span></button></li>';
         }).join('') + '</ul></section>';

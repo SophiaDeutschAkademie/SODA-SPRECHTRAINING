@@ -4,15 +4,15 @@
 
   var LEVELS = [
     { code: 'A1', de: 'Anfänger', ko: '처음 말하는 독일어', step: 1,
-      desc: '빵집, 주문, 계산처럼 짧은 생활 대화를 따라 말해요.' },
+      desc: '자기소개, 길 묻기, 주문, 약속, 기차표 구입처럼 짧은 생활 대화를 따라 말해요.' },
     { code: 'A2', de: 'Grundlegende Kenntnisse', ko: '일상 대화', step: 2,
-      desc: '전화 예약, 증상 설명처럼 익숙한 상황의 대화를 말해요.' },
+      desc: '병원 예약, 집 구하기, 교환, 주말 이야기, 초대처럼 익숙한 상황의 대화를 말해요.' },
     { code: 'B1', de: 'Fortgeschrittene Sprachverwendung', ko: '문제를 풀어 말하기', step: 3,
-      desc: '부탁, 사과, 대안 제시, 합의처럼 이유를 덧붙이며 말하는 대화예요.' },
+      desc: '항의, 의견 나누기, 계획, 휴가 협의, 조언처럼 이유를 덧붙이며 말하는 대화예요.' },
     { code: 'B2', de: 'Selbständige Sprachverwendung', ko: '경험을 설명하기', step: 4,
-      desc: '면접처럼 경험과 생각을 논리적으로 설명하는 대화예요.' },
+      desc: '면접, 협상, 갈등 중재, 상담, 항의, 토론처럼 논리적으로 설명하는 대화예요.' },
     { code: 'C1', de: 'Fachkundige Sprachkenntnisse', ko: '논쟁하고 타협하기', step: 5,
-      desc: '반론하고 조건을 달며 합의안을 만드는 토론이에요.' }
+      desc: '반론하고 조건을 달며 합의안을 만드는 토론, 인터뷰, 협상, 문학 대화예요.' }
   ];
   var LEVEL_BY = {};
   LEVELS.forEach(function (l) { LEVEL_BY[l.code] = l; });
@@ -73,14 +73,16 @@
       alert('이 기기에서는 독일어 음성을 들을 수 없어요.');
       return;
     }
-    var s = window.speechSynthesis;
-    s.cancel();
-    var u = new SpeechSynthesisUtterance(text);
-    u.lang = 'de-DE';
-    u.rate = 0.9;
-    var v = s.getVoices().filter(function (x) { return /^de/i.test(x.lang); })[0];
-    if (v) u.voice = v;
-    s.speak(u);
+    try {
+      var s = window.speechSynthesis;
+      s.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'de-DE';
+      u.rate = 0.9;
+      var v = s.getVoices().filter(function (x) { return /^de/i.test(x.lang); })[0];
+      if (v) u.voice = v;
+      s.speak(u);
+    } catch (e) { /* 음성을 쓸 수 없어도 연습은 계속 */ }
   }
   function stopSpeech() {
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
@@ -130,8 +132,8 @@
   function enterStep(i) {
     state.practice = i;
     var t = current.turns[i];
-    if (!isMineRole(t.r)) speak(t.de);
     render();
+    if (!isMineRole(t.r)) speak(t.de);
   }
   function stopPractice() {
     state.practice = -1;
@@ -206,7 +208,8 @@
     document.title = '레벨 선택 · SODA SPRECHTRAINING';
     var cards = LEVELS.map(function (l, i) {
       var list = DATA[l.code] || [];
-      var turns = list.length ? list[0].turns.length : 0;
+      var turns = 0;
+      list.forEach(function (d) { turns += d.turns.length; });
       var steps = '';
       for (var k = 1; k <= 5; k++) steps += '<i class="' + (k <= l.step ? 'on' : '') + '"></i>';
       return '<li><a class="lv" href="#/' + l.code.toLowerCase() + '" style="--i:' + i + '">' +
@@ -219,7 +222,7 @@
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/', '표지') +
       '<div class="sec-h"><span class="kicker">STUFE</span><h1>레벨 선택</h1>' +
-      '<p>레벨마다 대화가 1개 있어요. 역할을 나눠 따라 말하고, 문장을 가린 뒤 말해 보고, 녹음해서 원문과 비교해요.</p></div>' +
+      '<p>레벨마다 대화가 6개 있어요. 역할을 나눠 따라 말하고, 문장을 가린 뒤 말해 보고, 녹음해서 원문과 비교해요.</p></div>' +
       '<ul class="levels">' + cards + '</ul></main>';
   }
 
@@ -234,7 +237,7 @@
         '<h2 class="card-de de" lang="de">' + esc(t.title) + '</h2>' +
         '<p class="card-ko">' + esc(t.titleKo) + '</p>' +
         '<p class="card-desc">' + esc(t.intro) + '</p>' +
-        '<div class="card-foot"><span class="tag">A · ' + esc(t.roles.A) + '</span><span class="tag">B · ' + esc(t.roles.B) + '</span>' +
+        '<div class="card-foot">' + (t.focus || []).slice(0, 3).map(function (f) { return '<span class="tag">' + esc(f) + '</span>'; }).join('') +
         '<span class="meta">발화 ' + t.turns.length + '개 · 표현 ' + phraseCount(t) + '개</span></div></a></li>';
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/levels', '레벨') +
@@ -306,6 +309,15 @@
       }).join('') +
       '</section>';
 
+    var all = DATA[t.lv] || [];
+    var idx = all.indexOf(t);
+    var nav = '';
+    if (all.length > 1) {
+      nav = '<nav class="dnav" aria-label="대화 이동">' +
+        (idx > 0 ? '<a class="dnav-a" href="#/' + t.lv.toLowerCase() + '/' + pad(all[idx - 1].no) + '">' + ICON.left + '<span><small>이전 대화</small><b lang="de">' + esc(all[idx - 1].title) + '</b></span></a>' : '<span></span>') +
+        (idx < all.length - 1 ? '<a class="dnav-a next" href="#/' + t.lv.toLowerCase() + '/' + pad(all[idx + 1].no) + '"><span><small>다음 대화</small><b lang="de">' + esc(all[idx + 1].title) + '</b></span>' + ICON.right + '</a>' : '<span></span>') +
+        '</nav>';
+    }
     document.title = t.title + ' · SODA SPRECHTRAINING';
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/' + t.lv.toLowerCase(), t.lv) +
       '<div class="sec-h"><span class="kicker" lang="de">' + esc(t.type) + ' · ' + esc(t.typeKo) + '</span>' +
@@ -313,7 +325,7 @@
       '<p>' + esc(t.titleKo) + ' · ' + esc(t.intro) + '</p></div>' +
       controls + bar +
       '<ol class="dlg">' + turns + '</ol>' +
-      redem + '</main>';
+      redem + nav + '</main>';
   }
 
   /* ───────── 이벤트 ───────── */
@@ -331,7 +343,7 @@
     else if (act === 'speak') { speak(current.turns[i].de); }
     else if (act === 'rec') { toggleRec(i); }
     else if (act === 'play') { var u = state.recs[keyOf(i)]; if (u) new Audio(u).play(); }
-    else if (act === 'say') { speak(el.getAttribute('data-text')); }
+    else if (act === 'say') { speak(el.getAttribute('data-text').replace(/\s*\/\s*/g, '. ').replace(/\s*…\s*/g, ' ').replace(/\s+([,.?!])/g, '$1').replace(/\s+/g, ' ').trim()); }
   });
 
   window.addEventListener('hashchange', route);

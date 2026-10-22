@@ -171,38 +171,38 @@ window.DIALOG_DATA.A1 = [
     focus: ["약속 잡기", "시각 말하기", "요일"],
     roles: { A: "Jonas", B: "Mia" },
     turns: [
-      { r: "A", de: "Hallo Mia, hier ist Jonas. Hast du am Samstag Zeit?", ko: "안녕하세요, 미아. 요나스예요. 토요일에 시간 있어요?" },
-      { r: "B", de: "Hallo Jonas! Am Samstag? Ja, ich habe Zeit. Was machst du?", ko: "안녕하세요, 요나스! 토요일이요? 네, 시간 있어요. 뭐 해요?" },
-      { r: "A", de: "Ich möchte ins Kino gehen. Kommst du mit?", ko: "영화관에 가고 싶어요. 같이 갈래요?" },
-      { r: "B", de: "Gute Idee! Welcher Film läuft denn?", ko: "좋은 생각이에요! 무슨 영화를 하는데요?" },
-      { r: "A", de: "Eine Komödie. Sie beginnt um 20 Uhr.", ko: "코미디예요. 저녁 8시에 시작해요." },
-      { r: "B", de: "Um 20 Uhr ist gut. Wo treffen wir uns?", ko: "8시는 괜찮아요. 어디에서 만날까요?" },
-      { r: "A", de: "Vor dem Kino, um 19 Uhr 30. Ist das okay?", ko: "영화관 앞에서 7시 30분에요. 괜찮아요?" },
-      { r: "B", de: "Hmm, ich arbeite bis 19 Uhr. Ich komme erst um 19 Uhr 45. Ist das okay?", ko: "음, 저는 7시까지 일해요. 7시 45분에야 도착해요. 괜찮아요?" },
-      { r: "A", de: "Ja, kein Problem. Ich kaufe die Karten.", ko: "네, 문제없어요. 제가 표를 살게요." },
-      { r: "B", de: "Super, danke! Dann bis Samstag.", ko: "좋아요, 고마워요! 그럼 토요일에 봐요." },
-      { r: "A", de: "Bis Samstag! Tschüs!", ko: "토요일에 봐요! 안녕!" }
+      { r: "A", de: "Hallo Mia, hier ist Jonas. Hast du am Samstag Zeit?", ko: "안녕, 미아. 나 요나스야. 토요일에 시간 있어?" },
+      { r: "B", de: "Hallo Jonas! Am Samstag? Ja, ich habe Zeit. Was machst du?", ko: "안녕, 요나스! 토요일? 응, 시간 있어. 뭐 해?" },
+      { r: "A", de: "Ich möchte ins Kino gehen. Kommst du mit?", ko: "영화관에 가고 싶어. 같이 갈래?" },
+      { r: "B", de: "Gute Idee! Welcher Film läuft denn?", ko: "좋은 생각이야! 무슨 영화를 하는데?" },
+      { r: "A", de: "Eine Komödie. Sie beginnt um 20 Uhr.", ko: "코미디야. 저녁 8시에 시작해." },
+      { r: "B", de: "Um 20 Uhr ist gut. Wo treffen wir uns?", ko: "8시는 괜찮아. 어디에서 만날까?" },
+      { r: "A", de: "Vor dem Kino, um 19 Uhr 30. Ist das okay?", ko: "영화관 앞에서 7시 30분에. 괜찮아?" },
+      { r: "B", de: "Hmm, ich arbeite bis 19 Uhr. Ich komme erst um 19 Uhr 45. Ist das okay?", ko: "음, 나는 7시까지 일해. 7시 45분에야 도착해. 괜찮아?" },
+      { r: "A", de: "Ja, kein Problem. Ich kaufe die Karten.", ko: "응, 문제없어. 내가 표를 살게." },
+      { r: "B", de: "Super, danke! Dann bis Samstag.", ko: "좋아, 고마워! 그럼 토요일에 봐." },
+      { r: "A", de: "Bis Samstag! Tschüs!", ko: "토요일에 봐! 안녕!" }
     ],
     redemittel: [
       { group: "제안", items: [
-        { de: "Hast du am Samstag Zeit?", ko: "토요일에 시간 있어요?" },
-        { de: "Kommst du mit?", ko: "같이 갈래요?" }
+        { de: "Hast du am Samstag Zeit?", ko: "토요일에 시간 있어?" },
+        { de: "Kommst du mit?", ko: "같이 갈래?" }
       ] },
       { group: "수락", items: [
-        { de: "Gute Idee!", ko: "좋은 생각이에요!" },
-        { de: "Ja, ich habe Zeit.", ko: "네, 시간 있어요." }
+        { de: "Gute Idee!", ko: "좋은 생각이야!" },
+        { de: "Ja, ich habe Zeit.", ko: "응, 시간 있어." }
       ] },
       { group: "시간 · 장소", items: [
-        { de: "Sie beginnt um 20 Uhr.", ko: "저녁 8시에 시작해요." },
-        { de: "Wo treffen wir uns?", ko: "어디에서 만날까요?" },
-        { de: "Vor dem Kino.", ko: "영화관 앞에서요." }
+        { de: "Sie beginnt um 20 Uhr.", ko: "저녁 8시에 시작해." },
+        { de: "Wo treffen wir uns?", ko: "어디에서 만날까?" },
+        { de: "Vor dem Kino.", ko: "영화관 앞에서." }
       ] },
       { group: "시간 조정", items: [
-        { de: "Ich komme erst um … Uhr. Ist das okay?", ko: "저는 …시에야 와요. 괜찮아요?" },
-        { de: "Ja, kein Problem.", ko: "네, 문제없어요." }
+        { de: "Ich komme erst um … Uhr. Ist das okay?", ko: "나는 …시에야 와. 괜찮아?" },
+        { de: "Ja, kein Problem.", ko: "응, 문제없어." }
       ] },
       { group: "마무리", items: [
-        { de: "Bis Samstag!", ko: "토요일에 봐요!" }
+        { de: "Bis Samstag!", ko: "토요일에 봐!" }
       ] }
     ]
   },

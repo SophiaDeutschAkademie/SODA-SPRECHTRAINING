@@ -132,34 +132,34 @@ window.DIALOG_DATA.A2 = [
     focus: ["Perfekt (haben · sein)", "과거 이야기", "시간 표현"],
     roles: { A: "Tom", B: "Nina" },
     turns: [
-      { r: "A", de: "Hallo Nina! Wie war dein Wochenende?", ko: "안녕, 니나! 주말 어땠어요?" },
-      { r: "B", de: "Hallo Tom! Es war sehr schön. Wir sind am Samstag an den See gefahren.", ko: "안녕, 톰! 아주 좋았어요. 토요일에 호수에 갔어요." },
-      { r: "A", de: "Toll! Wart ihr schwimmen?", ko: "좋네요! 수영했어요?" },
-      { r: "B", de: "Ja, aber das Wasser war noch kalt. Wir sind nur kurz geschwommen und haben dann ein Picknick gemacht.", ko: "네, 그런데 물이 아직 차가웠어요. 잠깐만 수영하고 소풍을 했어요." },
-      { r: "A", de: "Das klingt super. Wie war das Wetter?", ko: "멋지네요. 날씨는 어땠어요?" },
-      { r: "B", de: "Am Samstag war es sonnig, aber am Sonntag hat es den ganzen Tag geregnet. Da sind wir zu Hause geblieben.", ko: "토요일은 화창했는데, 일요일에는 하루 종일 비가 왔어요. 그래서 집에 있었어요." },
-      { r: "A", de: "Was habt ihr am Sonntag gemacht?", ko: "일요일에는 뭘 했어요?" },
-      { r: "B", de: "Ich habe ein Buch gelesen, und mein Mann hat gekocht. Am Abend haben wir einen Film gesehen. Und du? Was hast du gemacht?", ko: "저는 책을 읽었고 남편은 요리를 했어요. 저녁에는 영화를 봤어요. 톰은요? 뭐 했어요?" },
-      { r: "A", de: "Ich war am Samstag auf dem Flohmarkt und habe ein altes Fahrrad gekauft. Am Sonntag habe ich es repariert.", ko: "저는 토요일에 벼룩시장에 가서 낡은 자전거를 샀어요. 일요일에는 그걸 고쳤어요." },
-      { r: "B", de: "Wirklich? Hast du das allein gemacht?", ko: "정말요? 혼자 했어요?" },
-      { r: "A", de: "Ja, mein Nachbar hat mir ein bisschen geholfen. Heute bin ich damit zur Arbeit gefahren.", ko: "네, 이웃이 조금 도와줬어요. 오늘 그 자전거를 타고 출근했어요." },
-      { r: "B", de: "Das ist ja toll! Dann fahren wir bald zusammen eine Runde.", ko: "대단하네요! 그럼 곧 같이 한 바퀴 타요." }
+      { r: "A", de: "Hallo Nina! Wie war dein Wochenende?", ko: "안녕, 니나! 주말 어땠어?" },
+      { r: "B", de: "Hallo Tom! Es war sehr schön. Wir sind am Samstag an den See gefahren.", ko: "안녕, 톰! 아주 좋았어. 토요일에 호수에 갔어." },
+      { r: "A", de: "Toll! Wart ihr schwimmen?", ko: "좋네! 수영했어?" },
+      { r: "B", de: "Ja, aber das Wasser war noch kalt. Wir sind nur kurz geschwommen und haben dann ein Picknick gemacht.", ko: "응, 그런데 물이 아직 차가웠어. 잠깐만 수영하고 소풍을 했어." },
+      { r: "A", de: "Das klingt super. Wie war das Wetter?", ko: "멋지다. 날씨는 어땠어?" },
+      { r: "B", de: "Am Samstag war es sonnig, aber am Sonntag hat es den ganzen Tag geregnet. Da sind wir zu Hause geblieben.", ko: "토요일은 화창했는데, 일요일에는 하루 종일 비가 왔어. 그래서 집에 있었어." },
+      { r: "A", de: "Was habt ihr am Sonntag gemacht?", ko: "일요일에는 뭘 했어?" },
+      { r: "B", de: "Ich habe ein Buch gelesen, und mein Mann hat gekocht. Am Abend haben wir einen Film gesehen. Und du? Was hast du gemacht?", ko: "나는 책을 읽었고 남편은 요리를 했어. 저녁에는 영화를 봤어. 너는? 뭐 했어?" },
+      { r: "A", de: "Ich war am Samstag auf dem Flohmarkt und habe ein altes Fahrrad gekauft. Am Sonntag habe ich es repariert.", ko: "나는 토요일에 벼룩시장에 가서 낡은 자전거를 샀어. 일요일에는 그걸 고쳤어." },
+      { r: "B", de: "Wirklich? Hast du das allein gemacht?", ko: "정말? 혼자 했어?" },
+      { r: "A", de: "Ja, mein Nachbar hat mir ein bisschen geholfen. Heute bin ich damit zur Arbeit gefahren.", ko: "응, 이웃이 조금 도와줬어. 오늘 그 자전거를 타고 출근했어." },
+      { r: "B", de: "Das ist ja toll! Dann fahren wir bald zusammen eine Runde.", ko: "대단하네! 그럼 곧 같이 한 바퀴 타자." }
     ],
     redemittel: [
       { group: "묻기", items: [
-        { de: "Wie war dein Wochenende?", ko: "주말 어땠어요?" },
-        { de: "Und du? Was hast du gemacht?", ko: "당신은요? 뭘 했어요?" }
+        { de: "Wie war dein Wochenende?", ko: "주말 어땠어?" },
+        { de: "Und du? Was hast du gemacht?", ko: "너는? 뭘 했어?" }
       ] },
       { group: "한 일 말하기", items: [
-        { de: "Wir sind am Samstag an den See gefahren.", ko: "토요일에 호수에 갔어요." },
-        { de: "Ich habe ein Buch gelesen.", ko: "저는 책을 읽었어요." }
+        { de: "Wir sind am Samstag an den See gefahren.", ko: "토요일에 호수에 갔어." },
+        { de: "Ich habe ein Buch gelesen.", ko: "나는 책을 읽었어." }
       ] },
       { group: "대조", items: [
-        { de: "Am Samstag war es sonnig, aber am Sonntag hat es geregnet.", ko: "토요일은 화창했는데 일요일에는 비가 왔어요." }
+        { de: "Am Samstag war es sonnig, aber am Sonntag hat es geregnet.", ko: "토요일은 화창했는데 일요일에는 비가 왔어." }
       ] },
       { group: "반응", items: [
-        { de: "Das klingt super.", ko: "멋지네요." },
-        { de: "Wirklich? Hast du das allein gemacht?", ko: "정말요? 혼자 했어요?" }
+        { de: "Das klingt super.", ko: "멋지다." },
+        { de: "Wirklich? Hast du das allein gemacht?", ko: "정말? 혼자 했어?" }
       ] }
     ]
   },
@@ -216,37 +216,37 @@ window.DIALOG_DATA.A2 = [
     focus: ["초대 · 수락", "무엇을 가져갈까요", "sollen · können"],
     roles: { A: "Sara", B: "Felix" },
     turns: [
-      { r: "A", de: "Hallo Felix, hier ist Sara. Hast du kurz Zeit?", ko: "안녕, 펠릭스. 나 사라예요. 잠깐 시간 돼요?" },
-      { r: "B", de: "Hallo Sara! Ja, klar. Was gibt es?", ko: "안녕, 사라! 그럼요. 무슨 일이에요?" },
-      { r: "A", de: "Ich werde nächsten Samstag 30 und möchte mit ein paar Freunden feiern. Hast du Lust zu kommen?", ko: "다음 토요일에 서른 살이 돼요. 친구 몇 명과 파티를 하고 싶은데, 올래요?" },
-      { r: "B", de: "Oh, wie schön! Danke für die Einladung. Ich komme gern. Wann und wo feierst du?", ko: "와, 좋아요! 초대해 줘서 고마워요. 기꺼이 갈게요. 언제, 어디서 해요?" },
-      { r: "A", de: "Ab 18 Uhr bei mir zu Hause. Wir grillen im Garten.", ko: "저녁 6시부터 우리 집에서요. 정원에서 바비큐를 할 거예요." },
-      { r: "B", de: "Super! Soll ich etwas mitbringen?", ko: "좋아요! 뭘 가져갈까요?" },
-      { r: "A", de: "Das ist lieb von dir. Vielleicht einen Salat oder etwas zu trinken.", ko: "마음 써 줘서 고마워요. 샐러드나 마실 것이면 좋겠어요." },
-      { r: "B", de: "Ich bringe einen Nudelsalat mit. Kann ich auch meine Schwester mitbringen? Sie ist gerade bei mir zu Besuch.", ko: "파스타 샐러드를 가져갈게요. 제 여동생도 데려가도 될까요? 지금 저희 집에 놀러 와 있어요." },
-      { r: "A", de: "Natürlich, sie ist herzlich willkommen!", ko: "물론이죠, 환영해요!" },
-      { r: "B", de: "Aber einen Moment: Ich muss am Samstagnachmittag noch arbeiten. Ich komme vielleicht etwas später, so gegen 19 Uhr. Ist das okay?", ko: "그런데 잠깐만요. 토요일 오후에 일을 해야 해요. 7시쯤에 조금 늦게 갈 수도 있는데, 괜찮아요?" },
-      { r: "A", de: "Kein Problem. Hauptsache, du kommst!", ko: "문제없어요. 와 주기만 하면 돼요!" },
-      { r: "B", de: "Ich freue mich schon. Bis Samstag!", ko: "벌써 기대돼요. 토요일에 봐요!" }
+      { r: "A", de: "Hallo Felix, hier ist Sara. Hast du kurz Zeit?", ko: "안녕, 펠릭스. 나 사라야. 잠깐 시간 돼?" },
+      { r: "B", de: "Hallo Sara! Ja, klar. Was gibt es?", ko: "안녕, 사라! 그럼. 무슨 일이야?" },
+      { r: "A", de: "Ich werde nächsten Samstag 30 und möchte mit ein paar Freunden feiern. Hast du Lust zu kommen?", ko: "다음 토요일에 서른 살이 돼. 친구 몇 명과 파티를 하고 싶은데, 올래?" },
+      { r: "B", de: "Oh, wie schön! Danke für die Einladung. Ich komme gern. Wann und wo feierst du?", ko: "와, 좋다! 초대해 줘서 고마워. 기꺼이 갈게. 언제, 어디서 해?" },
+      { r: "A", de: "Ab 18 Uhr bei mir zu Hause. Wir grillen im Garten.", ko: "저녁 6시부터 우리 집에서. 정원에서 바비큐를 할 거야." },
+      { r: "B", de: "Super! Soll ich etwas mitbringen?", ko: "좋아! 뭘 가져갈까?" },
+      { r: "A", de: "Das ist lieb von dir. Vielleicht einen Salat oder etwas zu trinken.", ko: "마음 써 줘서 고마워. 샐러드나 마실 것이면 좋겠어." },
+      { r: "B", de: "Ich bringe einen Nudelsalat mit. Kann ich auch meine Schwester mitbringen? Sie ist gerade bei mir zu Besuch.", ko: "파스타 샐러드를 가져갈게. 내 여동생도 데려가도 될까? 지금 우리 집에 놀러 와 있거든." },
+      { r: "A", de: "Natürlich, sie ist herzlich willkommen!", ko: "물론이지, 환영이야!" },
+      { r: "B", de: "Aber einen Moment: Ich muss am Samstagnachmittag noch arbeiten. Ich komme vielleicht etwas später, so gegen 19 Uhr. Ist das okay?", ko: "그런데 잠깐만. 토요일 오후에 일을 해야 해. 7시쯤에 조금 늦게 갈 수도 있는데, 괜찮아?" },
+      { r: "A", de: "Kein Problem. Hauptsache, du kommst!", ko: "문제없어. 와 주기만 하면 돼!" },
+      { r: "B", de: "Ich freue mich schon. Bis Samstag!", ko: "벌써 기대돼. 토요일에 봐!" }
     ],
     redemittel: [
       { group: "초대", items: [
-        { de: "Hast du Lust zu kommen?", ko: "올래요?" },
-        { de: "Ab 18 Uhr bei mir zu Hause.", ko: "저녁 6시부터 우리 집에서요." }
+        { de: "Hast du Lust zu kommen?", ko: "올래?" },
+        { de: "Ab 18 Uhr bei mir zu Hause.", ko: "저녁 6시부터 우리 집에서." }
       ] },
       { group: "수락", items: [
-        { de: "Danke für die Einladung. Ich komme gern.", ko: "초대해 줘서 고마워요. 기꺼이 갈게요." }
+        { de: "Danke für die Einladung. Ich komme gern.", ko: "초대해 줘서 고마워. 기꺼이 갈게." }
       ] },
       { group: "준비물 · 동반", items: [
-        { de: "Soll ich etwas mitbringen?", ko: "뭘 가져갈까요?" },
-        { de: "Kann ich auch meine Schwester mitbringen?", ko: "제 여동생도 데려가도 될까요?" }
+        { de: "Soll ich etwas mitbringen?", ko: "뭘 가져갈까?" },
+        { de: "Kann ich auch meine Schwester mitbringen?", ko: "내 여동생도 데려가도 될까?" }
       ] },
       { group: "시간 조정", items: [
-        { de: "Ich komme vielleicht etwas später.", ko: "조금 늦게 갈 수도 있어요." },
-        { de: "Kein Problem. Hauptsache, du kommst!", ko: "문제없어요. 와 주기만 하면 돼요!" }
+        { de: "Ich komme vielleicht etwas später.", ko: "조금 늦게 갈 수도 있어." },
+        { de: "Kein Problem. Hauptsache, du kommst!", ko: "문제없어. 와 주기만 하면 돼!" }
       ] },
       { group: "마무리", items: [
-        { de: "Ich freue mich schon.", ko: "벌써 기대돼요." }
+        { de: "Ich freue mich schon.", ko: "벌써 기대돼." }
       ] }
     ]
   }

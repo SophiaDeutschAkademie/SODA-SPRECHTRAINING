@@ -95,6 +95,7 @@
   /* ───────── 음성 (기기의 독일어 음성 사용) ───────── */
   function speak(text) {
     if (!text) return;
+    if (lineAudio) { try { lineAudio.pause(); } catch (e) {} lineAudio = null; }
     if (!('speechSynthesis' in window)) {
       alert('이 기기에서는 독일어 음성을 들을 수 없어요.');
       return;
@@ -111,7 +112,21 @@
     } catch (e) { /* 음성을 쓸 수 없어도 연습은 계속 */ }
   }
   function stopSpeech() {
+    if (lineAudio) { try { lineAudio.pause(); } catch (e) {} lineAudio = null; }
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+  }
+  /* 대화 줄 음성: 녹음된 mp3(ElevenLabs)를 먼저 쓰고, 파일을 못 불러오면 기기 음성으로 대신해요 */
+  var lineAudio = null;
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function speakTurn(i) {
+    var t = current.turns[i];
+    stopSpeech();
+    var src = 'assets/audio/' + current.lv.toLowerCase() + '-' + pad2(current.no) + '-' + pad2(i + 1) + '.mp3?v=' + (window.APP_VERSION || '');
+    var a = new Audio(src);
+    lineAudio = a;
+    a.onerror = function () { if (lineAudio === a) { lineAudio = null; speak(t.de); } };
+    var pr = a.play();
+    if (pr && pr.catch) pr.catch(function () { if (lineAudio === a) { lineAudio = null; speak(t.de); } });
   }
 
   /* ───────── 녹음 ───────── */
@@ -159,7 +174,7 @@
     state.practice = i;
     var t = current.turns[i];
     render();
-    if (!isMineRole(t.r)) speak(t.de);
+    if (!isMineRole(t.r)) speakTurn(i);
   }
   function stopPractice() {
     state.practice = -1;
@@ -385,7 +400,7 @@
     else if (act === 'practice') { if (state.practice >= 0) stopPractice(); else startPractice(); }
     else if (act === 'next') { if (state.practice + 1 < current.turns.length) enterStep(state.practice + 1); else stopPractice(); }
     else if (act === 'peek') { state.peek[keyOf(i)] = true; render(); }
-    else if (act === 'speak') { speak(current.turns[i].de); }
+    else if (act === 'speak') { speakTurn(i); }
     else if (act === 'rec') { toggleRec(i); }
     else if (act === 'play') { var u = state.recs[keyOf(i)]; if (u) new Audio(u).play(); }
     else if (act === 'say') { speak(el.getAttribute('data-text').replace(/\s*\/\s*/g, '. ').replace(/\s*…\s*/g, ' ').replace(/\s+([,.?!])/g, '$1').replace(/\s+/g, ' ').trim()); }

@@ -286,19 +286,11 @@
   function renderLevels() {
     document.title = '레벨 선택 · SODA SPRECHTRAINING';
     var cards = LEVELS.map(function (l, i) {
-      var list = DATA[l.code] || [];
-      var turns = 0;
-      list.forEach(function (d) { turns += d.turns.length; });
-      var steps = '';
-      for (var k = 1; k <= 5; k++) steps += '<i class="' + (k <= l.step ? 'on' : '') + '"></i>';
-      if (l.special) steps = '<b class="sp-lab">SPECIAL</b>';
       return '<li><a class="lv" href="#/' + l.code.toLowerCase() + '" style="--i:' + i + '">' +
         '<span class="lv-code">' + l.code + '</span>' +
         '<div><div class="lv-de" lang="de">' + esc(l.de) + '</div><div class="lv-ko">' + esc(l.ko) + '</div>' +
         '<p class="lv-desc">' + esc(l.desc) + '</p></div>' +
-        '<div class="lv-side"><span class="steps" aria-hidden="true">' + steps + '</span>' +
-        '<span>대화 ' + list.length + '개 · 발화 ' + turns + '개</span>' +
-        '<span class="arrow">' + ICON.arrowR + '</span></div></a></li>';
+        '<span class="arrow lv-arrow">' + ICON.arrowR + '</span></a></li>';
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/', '표지') +
       '<div class="sec-h"><span class="kicker">STUFE</span><h1>레벨 선택</h1>' +
@@ -358,7 +350,7 @@
       return '<li><b>' + esc(x[0]) + '</b><p>' + esc(x[1]) + '</p></li>';
     }).join('');
     var mist = GUIDE_MISTAKES.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
-    app.innerHTML = '<main id="main" class="page view guide" tabindex="-1">' + brandTop('#/levels', '레벨 선택') +
+    app.innerHTML = '<main id="main" class="page view guide" tabindex="-1">' + brandTop('#/levels', '레벨') +
       '<div class="sec-h"><span class="kicker">LERNWEG</span><h1>이렇게 공부하세요</h1>' +
       '<p>대화 하나를 6단계로 연습하는 방법이에요. 대화 1개에 약 30분이 걸리고, 앞의 3단계만 해도 15분이면 돼요. 듣기, 따라 말하기, 기억해서 말하기, 녹음 비교의 순서로 말하는 힘을 키워요.</p></div>' +
       '<ol class="g-steps">' + steps + '</ol>' +
